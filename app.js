@@ -855,8 +855,39 @@
     __exam: renderExamView,
   };
 
+  /* ===================== 远程题库同步（APK 联网时拉取最新题库） ===================== */
+  function loadScript(url) {
+    return new Promise((resolve, reject) => {
+      const s = document.createElement('script');
+      s.src = url;
+      s.onload = resolve;
+      s.onerror = function () { reject(new Error('load fail: ' + url)); };
+      document.head.appendChild(s);
+    });
+  }
+
+  async function syncRemoteQuiz() {
+    // 仅原生 App（APK）需要远程同步；网页版本身就是最新的
+    const isNative = window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform();
+    if (!isNative) return;
+
+    const REMOTE = 'https://nanyi382.github.io/soft-test-network-engineer/';
+    const files = ['data/papers.js', 'data/chapters.js', 'data/paper1.js', 'data/paper2.js', 'data/paper3.js'];
+    const backupQ = window.QUESTIONS;
+    const backupP = window.PAPERS;
+    window.QUESTIONS = null;
+    window.PAPERS = null;
+    try {
+      for (const f of files) await loadScript(REMOTE + f);
+      if (!window.QUESTIONS || !window.QUESTIONS.length) throw new Error('empty remote');
+    } catch (e) {
+      window.QUESTIONS = backupQ;
+      window.PAPERS = backupP;
+    }
+  }
+
   /* ===================== 初始化 ===================== */
-  function init() {
+  async function init() {
     // 导航
     $$('.nav-btn').forEach(b => {
       b.addEventListener('click', () => {
@@ -867,6 +898,7 @@
         showView(b.dataset.view);
       });
     });
+    await syncRemoteQuiz();
     showView('home');
   }
 
