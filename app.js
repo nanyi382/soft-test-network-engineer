@@ -970,7 +970,7 @@
     if (!isNative) return;
 
     const REMOTE = 'https://nanyi382.github.io/soft-test-network-engineer/';
-    const files = ['data/papers.js', 'data/chapters.js', 'data/paper1.js', 'data/paper2.js', 'data/paper3.js', 'data/paper4.js'];
+    const files = ['data/papers.js', 'data/chapters.js', 'data/paper1.js', 'data/paper2.js', 'data/paper3.js', 'data/paper4.js', 'data/auto.js'];
     const backupQ = window.QUESTIONS;
     const backupP = window.PAPERS;
     window.QUESTIONS = null;
