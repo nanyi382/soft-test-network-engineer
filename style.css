@@ -53,6 +53,9 @@ html, body {
   padding-bottom: 10px;
 }
 .nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   border: none;
   background: transparent;
   color: var(--text-muted);
@@ -63,6 +66,7 @@ html, body {
   white-space: nowrap;
   transition: all .15s ease;
 }
+.nav-btn .ico { font-size: 16px; line-height: 1; }
 .nav-btn:hover { background: #eef2f7; color: var(--text); }
 .nav-btn.active { background: var(--primary); color: #fff; font-weight: 600; }
 
@@ -338,11 +342,53 @@ html, body {
   font-size: 15px;
 }
 
-/* ---------- 响应式 ---------- */
-@media (max-width: 600px) {
-  .topbar { padding: 0 12px; }
-  #app { padding: 16px 12px 80px; }
+/* ---------- 响应式：桌面端（顶栏 + 宽布局） ---------- */
+@media (min-width: 768px) {
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+  }
+  .topbar .logo { padding: 16px 0; }
+  .nav { padding-bottom: 0; }
+  #app { max-width: 1080px; padding: 28px 20px 80px; }
+}
+
+/* ---------- 响应式：手机端（底部 Tab 栏） ---------- */
+@media (max-width: 767px) {
+  .topbar { padding: 0 12px; backdrop-filter: none; background: #fff; }
+  .topbar .logo { font-size: 16px; padding: 12px 0; text-align: center; }
+
+  .nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 0;
+    background: rgba(255, 255, 255, .96);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--border);
+    padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
+    z-index: 100;
+    overflow-x: visible;
+  }
+  .nav-btn {
+    flex: 1;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 11px;
+    padding: 6px 2px;
+    border-radius: 10px;
+    white-space: normal;
+  }
+  .nav-btn .ico { font-size: 20px; }
+
+  #app { padding: 16px 12px calc(84px + env(safe-area-inset-bottom)); }
   .card { padding: 16px; }
   .question-text { font-size: 16px; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .menu-grid { grid-template-columns: repeat(2, 1fr); }
+  .option { padding: 14px 15px; }
 }
