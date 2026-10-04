@@ -1,19 +1,21 @@
 /* ==========================================================================
  * 题库自动更新脚本（GitHub Actions 定时调用）
- * 作用：调用 Anthropic API 按考点生成原创单选题，追加到 data/auto.js，
- *       并同步更新 index.html / app.js / sw.js。commit+push 由 workflow 完成。
- * 用法：ANTHROPIC_API_KEY=... node scripts/generate-quiz.js
+ * 调用 DeepSeek API（OpenAI 兼容格式）按考点生成原创单选题，追加到 data/auto.js，
+ * 并同步更新 index.html / app.js / sw.js。commit+push 由 workflow 完成。
+ * 用法：DEEPSEEK_API_KEY=... node scripts/generate-quiz.js
+ * 可选环境变量：MODEL（默认 deepseek-chat）、CATS_PER_RUN（默认 2）、
+ *              PER_CAT（默认 10）、LLM_API_URL（默认 DeepSeek 官方端点，可换其他兼容服务）
  * ========================================================================== */
 'use strict';
 
 const fs = require('fs');
 const path = require('path');
 
-const API_URL = process.env.ANTHROPIC_API_URL || 'https://api.anthropic.com/v1/messages';
-const MODEL = process.env.MODEL || 'claude-sonnet-5-5';
-const API_KEY = process.env.ANTHROPIC_API_KEY;
-const COUNT = Number(process.env.COUNT || 20);            // 每次生成题数（偶数，按考点平分）
-const CATS_PER_RUN = Number(process.env.CATS_PER_RUN || 2);
+const API_URL = process.env.LLM_API_URL || 'https://api.deepseek.com/chat/completions';
+const API_KEY = process.env.DEEPSEEK_API_KEY;
+const MODEL = process.env.MODEL || 'deepseek-chat';
+const CATS_PER_RUN = Number(process.env.CATS_PER_RUN || 2);   // 每次几个考点
+const PER_CAT = Number(process.env.PER_CAT || 10);            // 每个考点几道题
 
 const DATA_DIR = 'data';
 const AUTO_JSON = path.join(DATA_DIR, 'auto.json');
@@ -26,7 +28,7 @@ const ALL_CATS = [
 ];
 
 if (!API_KEY) {
-  console.error('缺少环境变量 ANTHROPIC_API_KEY');
+  console.error('缺少环境变量 DEEPSEEK_API_KEY');
   process.exit(1);
 }
 
@@ -51,11 +53,11 @@ function categoryCounts(src) {
 
 function pickCategories(src) {
   const counts = categoryCounts(src);
-  // 选出现次数最少的考点，实现轮换覆盖
+  // 选出题最少的考点，实现轮换覆盖
   return ALL_CATS.slice().sort((a, b) => (counts[a] || 0) - (counts[b] || 0)).slice(0, CATS_PER_RUN);
 }
 
-async function callAnthropic(cats, perCat) {
+async function callLLM(category, perCat) {
   const system = [
     '你是一名软考（计算机技术与软件专业技术资格）中级「网络工程师」考试的命题专家。',
     '请针对指定的考点编写高质量、答案唯一的单选题。要求：',
@@ -63,14 +65,13 @@ async function callAnthropic(cats, perCat) {
     '2. 每题 4 个选项，格式为 "A. xxx"、"B. xxx"、"C. xxx"、"D. xxx"；正确选项的字母要随机分散（不能总是 A）。',
     '3. 每题附一句准确、简洁的解析。',
     '4. 只输出一个 JSON 数组，不要任何解释文字、不要 markdown 代码块。',
-    '   数组元素结构：{"category":"考点名","question":"题干","options":["A. ..","B. ..","C. ..","D. .."],"answer":0,"explanation":"解析"}，answer 是正确选项下标（0=A,1=B,2=C,3=D）。'
+    '   数组元素结构：{"question":"题干","options":["A. ..","B. ..","C. ..","D. .."],"answer":0,"explanation":"解析"}，answer 是正确选项下标（0=A,1=B,2=C,3=D）。'
   ].join('\n');
 
-  const catList = cats.map((c, i) => `考点${i + 1}「${c}」`).join('、');
-  const user = `请为以下考点各编写 ${perCat} 道单选题，共 ${cats.length * perCat} 题：${catList}。只输出 JSON 数组。`;
+  const user = `请为考点「${category}」编写 ${perCat} 道单选题。只输出 JSON 数组。`;
 
   const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), 180000);
+  const timer = setTimeout(() => ctrl.abort(), 120000);
 
   let res;
   try {
@@ -79,15 +80,16 @@ async function callAnthropic(cats, perCat) {
       signal: ctrl.signal,
       headers: {
         'content-type': 'application/json',
-        'x-api-key': API_KEY,
-        'anthropic-version': '2023-06-01'
+        'authorization': `Bearer ${API_KEY}`
       },
       body: JSON.stringify({
         model: MODEL,
-        max_tokens: 20000,
+        messages: [
+          { role: 'system', content: system },
+          { role: 'user', content: user }
+        ],
         temperature: 0.5,
-        system,
-        messages: [{ role: 'user', content: user }]
+        max_tokens: 8192
       })
     });
   } finally {
@@ -99,7 +101,9 @@ async function callAnthropic(cats, perCat) {
     throw new Error(`API 请求失败 ${res.status}: ${body.slice(0, 300)}`);
   }
   const data = await res.json();
-  return data.content.filter(b => b.type === 'text').map(b => b.text).join('');
+  const content = data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content;
+  if (!content) throw new Error('API 响应中没有内容');
+  return content;
 }
 
 function extractJson(text) {
@@ -113,7 +117,7 @@ function validate(questions, expected) {
   if (!Array.isArray(questions)) throw new Error('AI 输出不是数组');
   if (questions.length !== expected) throw new Error(`题数不符：期望 ${expected}，得到 ${questions.length}`);
   for (const q of questions) {
-    if (!q || typeof q.category !== 'string' || typeof q.question !== 'string') throw new Error('题目缺少 category/question');
+    if (!q || typeof q.question !== 'string' || !q.question) throw new Error('题目缺少 question');
     if (!Array.isArray(q.options) || q.options.length !== 4) throw new Error('题目选项不是 4 个');
     const a = Number(q.answer);
     if (!Number.isInteger(a) || a < 0 || a > 3) throw new Error('answer 下标非法');
@@ -127,35 +131,36 @@ async function main() {
   const src = readAllData();
   const nextId = maxId(src) + 1;
   const cats = pickCategories(src);
-  const perCat = Math.floor(COUNT / CATS_PER_RUN);
-  const expected = perCat * CATS_PER_RUN;
 
-  console.log(`本次考点：${cats.join('、')}，各 ${perCat} 题，共 ${expected} 题，起始 id=${nextId}`);
+  console.log(`本次考点：${cats.join('、')}，各 ${PER_CAT} 题，起始 id=${nextId}`);
 
-  let questions;
-  try {
-    questions = validate(extractJson(await callAnthropic(cats, perCat)), expected);
-  } catch (e) {
-    console.warn('首次生成失败，重试一次：', e.message);
-    questions = validate(extractJson(await callAnthropic(cats, perCat)), expected);
-  }
-
-  // 分配 id 与类型（章节练习题，无 paper 字段）
   const old = fs.existsSync(AUTO_JSON) ? JSON.parse(fs.readFileSync(AUTO_JSON, 'utf8')) : [];
-  const fresh = questions.map((q, i) => ({
-    id: nextId + i,
-    type: 'single',
-    category: cats[Math.min(Math.floor(i / perCat), cats.length - 1)],
-    question: q.question,
-    options: q.options,
-    answer: Number(q.answer),
-    explanation: q.explanation
-  }));
+  const fresh = [];
+
+  for (const cat of cats) {
+    let qs;
+    try {
+      qs = validate(extractJson(await callLLM(cat, PER_CAT)), PER_CAT);
+    } catch (e) {
+      console.warn(`考点「${cat}」首次生成失败，重试一次：`, e.message);
+      qs = validate(extractJson(await callLLM(cat, PER_CAT)), PER_CAT);
+    }
+    qs.forEach(q => {
+      fresh.push({
+        id: nextId + fresh.length,
+        type: 'single',
+        category: cat,
+        question: q.question,
+        options: q.options,
+        answer: Number(q.answer),
+        explanation: q.explanation
+      });
+    });
+  }
 
   const merged = old.concat(fresh);
   fs.writeFileSync(AUTO_JSON, JSON.stringify(merged, null, 2));
 
-  // 重新生成 auto.js
   const js = '/* 自动更新的章节练习题（由 GitHub Actions 每周自动生成，勿手改） */\n'
     + 'window.QUESTIONS = window.QUESTIONS || [];\n'
     + '(function () {\n  const A = ' + JSON.stringify(merged) + ';\n  A.forEach(q => window.QUESTIONS.push(q));\n})();\n';
