@@ -223,7 +223,7 @@
       <div class="menu-grid">
         <div class="menu-item" data-go="chapter"><div class="icon">📚</div><div class="title">章节练习</div><div class="desc">按考点分类，逐题刷 + 即时解析</div></div>
         <div class="menu-item" data-go="random"><div class="icon">🎲</div><div class="title">随机刷题</div><div class="desc">从章节题库随机抽题</div></div>
-        <div class="menu-item" data-go="exam"><div class="icon">📝</div><div class="title">模拟考试</div><div class="desc">4 套全真真题卷，限时判分</div></div>
+        <div class="menu-item" data-go="exam"><div class="icon">📝</div><div class="title">模拟考试</div><div class="desc">历年真题 + 模拟卷，限时判分</div></div>
         <div class="menu-item" data-go="wrong"><div class="icon">❌</div><div class="title">错题本</div><div class="desc">${Store.getWrong().length} 道错题待重刷</div></div>
         <div class="menu-item" data-go="favorite"><div class="icon">⭐</div><div class="title">收藏</div><div class="desc">${Store.getFavorite().length} 道重点题</div></div>
       </div>`;
@@ -311,7 +311,7 @@
           </div>
           <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
             <button class="btn primary" data-am="${esc(p.id)}">上午场（150 分钟）</button>
-            <button class="btn" data-pm="${esc(p.id)}">下午场（150 分钟）</button>
+            ${cases > 0 ? `<button class="btn" data-pm="${esc(p.id)}">下午场（150 分钟）</button>` : ''}
           </div>
         </div>`;
     }).join('');
@@ -970,7 +970,7 @@
     if (!isNative) return;
 
     const REMOTE = 'https://nanyi382.github.io/soft-test-network-engineer/';
-    const files = ['data/papers.js', 'data/chapters.js', 'data/paper1.js', 'data/paper2.js', 'data/paper3.js', 'data/paper4.js', 'data/auto.js'];
+    const files = ['data/papers.js', 'data/chapters.js', 'data/paper1.js', 'data/paper2.js', 'data/paper3.js', 'data/paper4.js', 'data/auto.js', 'data/real_papers.js'];
     const backupQ = window.QUESTIONS;
     const backupP = window.PAPERS;
     window.QUESTIONS = null;
