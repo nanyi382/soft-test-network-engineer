@@ -1,6 +1,6 @@
 /* Service Worker：缓存全部静态资源，实现离线可用。
    注意：如果以后改了题库/代码，把下面 CACHE 版本号从 npe-v1 改成 npe-v2 即可强制刷新缓存。 */
-const CACHE = 'npe-v7';
+const CACHE = 'npe-v8';
 const ASSETS = [
   './',
   './index.html',
