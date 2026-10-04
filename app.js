@@ -52,6 +52,10 @@
       setStats(obj) { this.set('npe.stats', obj); },
       getDoneIds() { return this.get('npe.doneIds', []); },
       setDoneIds(list) { this.set('npe.doneIds', list); },
+      remove(key) {
+        if (ok) { try { localStorage.removeItem(key); } catch (e) {} }
+        else { delete mem[key]; }
+      },
     };
   })();
 
@@ -142,9 +146,52 @@
     // 练习模式
     practice: { list: [], index: 0, answers: {}, selfGrade: {}, title: '', backTo: null, done: false },
     // 考试模式
-    exam: { paperId: null, part: null, list: [], answers: {}, selfGrade: {}, timeLeft: 0, timer: null, submitted: false },
+    exam: { paperId: null, part: null, list: [], answers: {}, selfGrade: {}, timeLeft: 0, timer: null, submitted: false, deadline: null },
   };
   const examRecorded = new Set(); // 考试中已记录过错题/统计的题目 id
+
+  /* ===================== 进度持久化（断点续做） ===================== */
+  const KEY_PRACTICE = 'npe.progress.practice';
+  const KEY_EXAM = 'npe.progress.exam';
+
+  function saveProgress() {
+    // practice.backTo 是函数、exam.timer 是句柄，JSON 序列化时自动丢弃，恢复时重建
+    if (state.practice && !state.practice.done && state.practice.list.length) {
+      Store.set(KEY_PRACTICE, state.practice);
+    } else {
+      Store.remove(KEY_PRACTICE);
+    }
+    if (state.exam && !state.exam.submitted && state.exam.list.length) {
+      Store.set(KEY_EXAM, state.exam);
+    } else {
+      Store.remove(KEY_EXAM);
+    }
+  }
+
+  // 返回应恢复的视图名（'__practice' / '__exam'），无则返回 null
+  function restoreProgress() {
+    const p = Store.get(KEY_PRACTICE, null);
+    if (p && p.list && p.list.length && !p.done) {
+      p.backTo = null;
+      if (confirm('检测到上次未完成的「' + (p.title || '练习') + '」，是否继续？')) {
+        state.practice = p;
+        return '__practice';
+      }
+      Store.remove(KEY_PRACTICE);
+    }
+    const e = Store.get(KEY_EXAM, null);
+    if (e && e.list && e.list.length && !e.submitted) {
+      e.timer = null;
+      if (e.deadline) e.timeLeft = Math.max(0, Math.round((e.deadline - Date.now()) / 1000));
+      if (confirm('检测到上次未交卷的模拟考试「' + (e.name || '') + '」，是否继续？')) {
+        state.exam = e;
+        examRecorded.clear();
+        return '__exam';
+      }
+      Store.remove(KEY_EXAM);
+    }
+    return null;
+  }
 
   /* ===================== 视图切换 ===================== */
   function showView(name) {
@@ -448,6 +495,8 @@
       p.index++;
       renderPractice(app);
     });
+
+    saveProgress();
   }
 
   function submitPracticeAnswer(q, ans) {
@@ -526,6 +575,7 @@
             if (rr.correct) removeWrong(q.id); else addWrong(q.id);
           }
           draw();
+          saveProgress();
         });
       });
     }
@@ -560,6 +610,8 @@
       const list = shuffle(p.list);
       startPractice(list, p.title, p.backTo);
     });
+
+    saveProgress();
   }
 
   /* ===================== 考试模式 ===================== */
@@ -575,9 +627,33 @@
       name: (paper ? paper.name : '') + (part === 'am' ? ' · 上午场' : ' · 下午场'),
       list, answers: {}, selfGrade: {},
       timeLeft: 150 * 60, timer: null, submitted: false,
+      deadline: Date.now() + 150 * 60 * 1000,
     };
     examRecorded.clear();
     showView('__exam');
+  }
+
+  function examSingleExplainHtml(q, chosen, ok) {
+    return `<div class="explain ${ok ? 'ok' : 'no'}" style="margin-top:10px">
+      <div class="head">${ok ? '✔ 回答正确' : '✘ 回答错误'}</div>
+      <div>正确答案：${esc(q.options[q.answer])}</div>
+      <div style="margin-top:6px">${esc(q.explanation || '')}</div>
+    </div>`;
+  }
+  function examFillExplainHtml(q, pi, val, ok) {
+    const part = q.parts[pi];
+    return `<div class="small" style="margin-top:5px;padding:6px 8px;border-radius:6px;background:${ok ? 'var(--success-weak)' : 'var(--danger-weak)'};color:${ok ? 'var(--success)' : 'var(--danger)'}">
+      <b>${ok ? '✔ 正确' : '✘ 错误'}</b> 参考：${esc(part.blanks.join(' 或 '))}${ok ? '' : ' · 你的答案：' + esc(val || '（空）')}
+      ${part.explanation ? '<div style="margin-top:3px">解析：' + esc(part.explanation) + '</div>' : ''}
+    </div>`;
+  }
+  function examQaExplainHtml(q, pi, val) {
+    const part = q.parts[pi];
+    return `<div class="small" style="margin-top:5px;padding:6px 8px;border-radius:6px;background:var(--primary-weak);color:var(--primary)">
+      <b>参考答案：</b>${esc(part.reference || '')}
+      ${part.explanation ? '<div style="margin-top:3px">解析：' + esc(part.explanation) + '</div>' : ''}
+      <div style="margin-top:3px">评分：交卷后逐题自评</div>
+    </div>`;
   }
 
   function renderExamView(app) {
@@ -646,13 +722,8 @@
           if (Number(o.dataset.opt) === q.answer) o.classList.add('correct');
           else if (Number(o.dataset.opt) === chosen) o.classList.add('wrong');
         });
-        if (box) {
-          box.innerHTML = `<div class="explain ${ok ? 'ok' : 'no'}" style="margin-top:10px">
-            <div class="head">${ok ? '✔ 回答正确' : '✘ 回答错误'}</div>
-            <div>正确答案：${esc(q.options[q.answer])}</div>
-            <div style="margin-top:6px">${esc(q.explanation || '')}</div>
-          </div>`;
-        }
+        if (box) box.innerHTML = examSingleExplainHtml(q, chosen, ok);
+        saveProgress();
       });
     });
 
@@ -666,12 +737,8 @@
         (e.answers[q.id] = e.answers[q.id] || [])[pi] = val;
         const ok = val.trim() !== '' && part.blanks.some(b => norm(b) === norm(val));
         const box = $(`.exam-fill-explain[data-qi="${qi}"][data-fill="${pi}"]`, app);
-        if (box) {
-          box.innerHTML = `<div class="small" style="margin-top:5px;padding:6px 8px;border-radius:6px;background:${ok ? 'var(--success-weak)' : 'var(--danger-weak)'};color:${ok ? 'var(--success)' : 'var(--danger)'}">
-            <b>${ok ? '✔ 正确' : '✘ 错误'}</b> 参考：${esc(part.blanks.join(' 或 '))}${ok ? '' : ' · 你的答案：' + esc(val || '（空）')}
-            ${part.explanation ? '<div style="margin-top:3px">解析：' + esc(part.explanation) + '</div>' : ''}
-          </div>`;
-        }
+        if (box) box.innerHTML = examFillExplainHtml(q, pi, val, ok);
+        saveProgress();
       });
     });
 
@@ -684,18 +751,48 @@
         const val = ta.value;
         (e.answers[q.id] = e.answers[q.id] || [])[pi] = val;
         const box = $(`.exam-qa-explain[data-qi="${qi}"][data-qa="${pi}"]`, app);
-        if (box && val.trim() !== '') {
-          box.innerHTML = `<div class="small" style="margin-top:5px;padding:6px 8px;border-radius:6px;background:var(--primary-weak);color:var(--primary)">
-            <b>参考答案：</b>${esc(part.reference || '')}
-            ${part.explanation ? '<div style="margin-top:3px">解析：' + esc(part.explanation) + '</div>' : ''}
-            <div style="margin-top:3px">评分：交卷后逐题自评</div>
-          </div>`;
-        }
+        if (box && val.trim() !== '') box.innerHTML = examQaExplainHtml(q, pi, val);
+        saveProgress();
       });
+    });
+
+    // 恢复已作答状态（断点续做）
+    qs.forEach((q, qi) => {
+      if (q.type === 'single') {
+        const chosen = e.answers[q.id];
+        if (chosen == null) return;
+        $$(`.option[data-qi="${qi}"]`, app).forEach(o => {
+          o.classList.remove('selected');
+          o.disabled = true;
+          if (Number(o.dataset.opt) === q.answer) o.classList.add('correct');
+          else if (Number(o.dataset.opt) === chosen) o.classList.add('wrong');
+        });
+        const box = $(`.exam-explain[data-qi="${qi}"]`, app);
+        if (box) box.innerHTML = examSingleExplainHtml(q, chosen, chosen === q.answer);
+      } else {
+        q.parts.forEach((part, pi) => {
+          const val = (e.answers[q.id] || [])[pi];
+          if (val == null) return;
+          if (part.type === 'fill') {
+            const inp = $(`.fill-input[data-qi="${qi}"][data-fill="${pi}"]`, app);
+            if (inp) inp.value = val;
+            const ok = val.trim() !== '' && part.blanks.some(b => norm(b) === norm(val));
+            const box = $(`.exam-fill-explain[data-qi="${qi}"][data-fill="${pi}"]`, app);
+            if (box) box.innerHTML = examFillExplainHtml(q, pi, val, ok);
+          } else {
+            const ta = $(`.fill-input[data-qi="${qi}"][data-qa="${pi}"]`, app);
+            if (ta) ta.value = val;
+            const box = $(`.exam-qa-explain[data-qi="${qi}"][data-qa="${pi}"]`, app);
+            if (box && val.trim() !== '') box.innerHTML = examQaExplainHtml(q, pi, val);
+          }
+        });
+      }
     });
 
     $('#exam-submit', app).addEventListener('click', () => { if (confirm('确定交卷？交卷后将无法修改答案。')) submitExam(); });
     $('#exam-submit2', app).addEventListener('click', () => { if (confirm('确定交卷？交卷后将无法修改答案。')) submitExam(); });
+
+    saveProgress();
   }
 
   function submitExam() {
@@ -703,6 +800,7 @@
     if (e.submitted) return;
     e.submitted = true;
     clearInterval(e.timer);
+    saveProgress();
 
     // 收集填空/问答答案
     const app = $('#app');
@@ -899,7 +997,8 @@
       });
     });
     await syncRemoteQuiz();
-    showView('home');
+    const restored = restoreProgress();
+    showView(restored || 'home');
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);

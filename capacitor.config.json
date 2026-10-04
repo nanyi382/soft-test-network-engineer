@@ -1,0 +1,8 @@
+{
+  "appId": "com.nanyi.softengineer",
+  "appName": "软考网络工程师刷题",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": true
+  }
+}

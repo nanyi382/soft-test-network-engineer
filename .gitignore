@@ -6,3 +6,9 @@ Thumbs.db
 
 # 无关文档
 docs/superpowers/
+
+# Capacitor / Android 构建产物
+android/
+www/
+.capacitor/
+dist/
