@@ -5,6 +5,7 @@ node_modules/
 Thumbs.db
 __pycache__/
 *.pyc
+server.pid
 
 # 无关文档
 docs/superpowers/

@@ -53,17 +53,36 @@ function start(port, attemptsLeft) {
     console.log('============================================');
     console.log('  软考网络工程师刷题 已启动');
     console.log('  地址：' + url);
-    console.log('  保持本窗口打开即可正常使用，关闭窗口即停止服务。');
+    console.log('  服务已在后台运行；停止请运行「停止刷题.vbs」。');
     console.log('  提示：首次打开后，可在浏览器地址栏右侧点「安装」图标，');
     console.log('  把它安装成独立 App（桌面 / 开始菜单会生成图标）。');
     console.log('============================================');
-    if (!NO_OPEN) {
-      const cmd = process.platform === 'win32'
-        ? 'start "" "' + url + '"'
-        : process.platform === 'darwin' ? 'open "' + url + '"' : 'xdg-open "' + url + '"';
-      exec(cmd);
-    }
+    openBrowser(url);
+    try { fs.writeFileSync(path.join(ROOT, 'server.pid'), String(process.pid)); } catch (e) {}
   });
 }
 
-start(8000, 10);
+function openBrowser(url) {
+  if (NO_OPEN) return;
+  const cmd = process.platform === 'win32'
+    ? 'start "" "' + url + '"'
+    : process.platform === 'darwin' ? 'open "' + url + '"' : 'xdg-open "' + url + '"';
+  exec(cmd);
+}
+
+function isPortOpen(port, cb) {
+  const net = require('net');
+  const s = net.connect({ port, host: '127.0.0.1' }, () => { s.destroy(); cb(true); });
+  s.on('error', () => cb(false));
+}
+
+// 若已有实例在运行（端口被占），直接打开浏览器并退出，避免重复启动后台进程
+const BASE_PORT = 8000;
+isPortOpen(BASE_PORT, (open) => {
+  if (open) {
+    console.log('检测到已有实例运行，直接打开浏览器。');
+    openBrowser('http://localhost:' + BASE_PORT);
+    process.exit(0);
+  }
+  start(BASE_PORT, 10);
+});
