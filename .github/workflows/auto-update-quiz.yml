@@ -66,6 +66,17 @@ jobs:
           TARGET_PER_CAT: ${{ inputs.target_per_cat || '100' }}
         run: node scripts/generate-quiz.js
 
+      # AI 批量生成有两个系统性毛病：同一章反复出重复题、正确答案集中在 A/B。
+      # 这一步做去重 + 在安全子集内重排选项把答案分布拉均匀（解析里引用了
+      # 选项字母、或选项含「以上都」这类兜底项的题目一律不动）。
+      - name: 去重并配平答案分布
+        continue-on-error: true
+        run: node scripts/rebalance-quiz.js
+
+      - name: 校验题库
+        continue-on-error: true
+        run: node scripts/verify-quiz.js
+
       - name: 统计各章题量
         run: |
           node -e "

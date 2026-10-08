@@ -151,8 +151,11 @@ function singleSystem() {
     '你是一名软考（计算机技术与软件专业技术资格）中级「网络工程师」考试命题专家。',
     '请依据历年真题的高频考点与典型题型编写单选题，题目为原创表述（不照抄真题原文）。要求：',
     '1. 考点与答案必须准确、无争议；每道题都必须有准确解析。',
-    '2. 每题 4 个选项，格式 "A. xxx"…"D. xxx"；正确选项字母随机分散（不能总是 A）。',
-    '3. 只输出一个 JSON 数组，不要解释文字、不要 markdown 代码块。',
+    '2. 每题 4 个选项，格式 "A. xxx"…"D. xxx"。正确选项的位置必须在本批题目里',
+    '   均匀分布在 A/B/C/D 四个位置上，各约 25%，绝对不要集中在 A 或 B。',
+    '3. 解析里不要用「选项 A/选项 B」这种方式指代选项，直接复述选项内容，',
+    '   避免选项顺序调整后解析与选项对不上。',
+    '4. 只输出一个 JSON 数组，不要解释文字、不要 markdown 代码块。',
     '   元素结构：{"category":"考点名","question":"题干","options":["A. ..","B. ..","C. ..","D. .."],"answer":0,"explanation":"解析"}，answer 是正确选项下标（0=A…3=D）。'
   ].join('\n');
 }
@@ -172,10 +175,26 @@ function validateSingles(questions, expected) {
   return questions;
 }
 
+/* 取某章已有题目的题干，喂给模型避免重复出题。
+   实测不带这个提示时，868 道自动生成题里有 83 道与已有题目重复。 */
+const STEM_LIMIT = 150;
+function stemsOf(category) {
+  return chapterPool()
+    .filter((q) => q.category === category)
+    .map((q) => String(q.question).replace(/\s+/g, ' ').slice(0, 50))
+    .slice(-STEM_LIMIT);
+}
+
+function stemBlock(stems) {
+  if (!stems || !stems.length) return '';
+  return `\n\n以下题目已经存在，新题不得与它们重复（题干相同、或只是换个说法问同一个知识点都算重复）：\n`
+    + stems.map((s) => `- ${s}`).join('\n');
+}
+
 // 生成一批选择题，并二次校验（自查）答案，返回 [{category,question,options,answer,explanation}]
-async function genSingles(catHint, count) {
+async function genSingles(catHint, count, existing) {
   const sys = singleSystem();
-  const user = `请围绕考点「${catHint}」编写 ${count} 道单选题。只输出 JSON 数组。`;
+  const user = `请围绕考点「${catHint}」编写 ${count} 道单选题。只输出 JSON 数组。` + stemBlock(existing);
   let qs;
   try {
     qs = validateSingles(extractJson(await chat(sys, user)), count);
@@ -361,7 +380,7 @@ async function runChapter() {
   const fresh = [];
   for (const ch of chapters) {
     const hint = `${ch.name}（本章考纲要点：${ch.summary}）`;
-    const singles = await genSingles(hint, perCat);
+    const singles = await genSingles(hint, perCat, stemsOf(ch.name));
     const cases = await genCases(hint, casePerCat);
     const objs = toQuestionObjs(ch.name, singles, cases, nextId + fresh.length);
     fresh.push(...objs);
@@ -401,7 +420,8 @@ async function runFill() {
     for (let got = 0; got < singleNeed; got += batch) {
       const n = Math.min(batch, singleNeed - got);
       try {
-        const singles = await genSingles(hint, n);
+        // 每批重新取一次已有题干：上一批刚写入的题也会进到避重清单里
+        const singles = await genSingles(hint, n, stemsOf(ch.name));
         const objs = toQuestionObjs(ch.name, singles, [], nextId);
         nextId += objs.length;
         writeAuto(objs);
