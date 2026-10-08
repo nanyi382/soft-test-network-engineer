@@ -1,10 +1,30 @@
-name: 每周自动抓取最新真题
+name: 题库自动更新（真题抓取 + 章节题生成）
 
 on:
   schedule:
-    # 每周一 01:37 UTC = 北京时间 09:37
+    # 每周一 01:37 UTC = 北京时间 09:37，跑一轮全章节增量（每章 10 选择 + 1 案例）
     - cron: '37 1 * * 1'
-  workflow_dispatch: {}   # 支持手动触发
+  workflow_dispatch:
+    inputs:
+      task:
+        description: '任务类型'
+        required: true
+        default: 'chapter'
+        type: choice
+        options:
+          - chapter   # 每周增量：10 章各 10 选择 + 1 案例
+          - fill      # 补齐：每章补到 TARGET_PER_CAT 题
+          - paper     # 新出一套真题模拟卷
+      target_per_cat:
+        description: 'task=fill 时每章的目标题量'
+        required: false
+        default: '100'
+      skip_scrape:
+        description: '跳过真题抓取'
+        required: false
+        default: 'false'
+        type: choice
+        options: ['false', 'true']
 
 permissions:
   contents: write
@@ -12,19 +32,55 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 350   # Actions 单任务上限 6 小时；留一点余量
+
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
 
       - name: 安装 Python
+        if: github.event_name == 'schedule' || inputs.skip_scrape != 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
+      - name: 安装 Node
+        if: github.event_name == 'schedule' || inputs.task != ''
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: 抓取最新真题并补解析
+        if: github.event_name == 'schedule' || inputs.skip_scrape != 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python scripts/scrape_real_exams.py
+
+      # 生成过程是分批 + 每批落盘的，单批 API 失败被脚本内部吞掉不影响整体，
+      # 所以这里 continue-on-error 保证后面仍能提交已完成的部分。
+      - name: 生成章节题
+        continue-on-error: true
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          TASK: ${{ github.event_name == 'schedule' && 'chapter' || inputs.task }}
+          TARGET_PER_CAT: ${{ inputs.target_per_cat || '100' }}
+        run: node scripts/generate-quiz.js
+
+      - name: 统计各章题量
+        run: |
+          node -e "
+          const fs=require('fs'),vm=require('vm');
+          const sb={};sb.window=sb;vm.createContext(sb);
+          ['papers.js','chapters_meta.js','chapters.js','auto.js','case_config.js']
+            .forEach(f=>{const p='data/'+f;if(fs.existsSync(p))vm.runInContext(fs.readFileSync(p,'utf8'),sb,{filename:f});});
+          const pool=(sb.QUESTIONS||[]).filter(q=>!q.paper);
+          const n={};pool.forEach(q=>{n[q.category]=(n[q.category]||0)+1;});
+          const meta=(sb.CHAPTERS||[]).filter(c=>c.no);
+          console.log('| 章节 | 题数 |');
+          console.log('| --- | --- |');
+          meta.forEach(c=>console.log('| 第'+c.no+'章 '+c.name+' | '+(n[c.name]||0)+' |'));
+          console.log('章节练习合计 '+pool.length+' 题');
+          " >> $GITHUB_STEP_SUMMARY
 
       - name: 提交并推送
         run: |
@@ -32,8 +88,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then
-            echo "无新增真题，跳过提交"
+            echo "无变化，跳过提交"
           else
-            git commit -m "自动更新题库：抓取最新一期网络工程师上午真题"
+            git commit -m "自动更新题库：${{ github.event_name == 'schedule' && 'chapter' || inputs.task }}（新增章节题见各章统计）"
             git push
           fi

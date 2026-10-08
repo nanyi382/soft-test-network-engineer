@@ -21,7 +21,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1534,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2025a",
     "question": "下列关于交换机Trunk端口处理数据帧的说法正确的是（）。",
     "options": [
@@ -81,7 +81,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1538,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2025a",
     "question": "下列关于IPv6地址FE80::1说法正确的是（）。",
     "options": [
@@ -96,7 +96,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1539,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2025a",
     "question": "在Linux操作系统中，要显式除tmpfs、devtmpfs以外的挂载点的空间使用情况，并以常见的KB.MB.GB等单位显示，可以使用（）命令。",
     "options": [
@@ -141,7 +141,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1542,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2025a",
     "question": "OSPF路由协议中tpye-3类型LSA的发布者是（）。",
     "options": [
@@ -156,7 +156,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1543,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2025a",
     "question": "在WLAN环境中，可使用（）技术来应对某一区域短时间内大量用户联网的需求。",
     "options": [
@@ -201,7 +201,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1546,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2025a",
     "question": "在Linux操作系统中，将文件从a目录复制到b目录，并保留文件的创建者，创建时间、修改时间等信息。应使用下面的（）命令。",
     "options": [
@@ -231,7 +231,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1548,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2025a",
     "question": "在光网络中，0ADM（光分插复用器）设备的主要功能是（）。",
     "options": [
@@ -261,7 +261,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1550,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2025a",
     "question": "在DNS记录中，映射IPV6地址的记录是（）。",
     "options": [
@@ -276,7 +276,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1551,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2025a",
     "question": "要使Hybrid模式的端口对转发的数据帧添加VLAN Tag，应执行（）操作。",
     "options": [
@@ -291,7 +291,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1552,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2025a",
     "question": "当交换机收到一个未知目的MAC地址的单播帧时，下列操作正确的是（）。",
     "options": [
@@ -321,7 +321,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1554,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2025a",
     "question": "下列选项中的地址段可以聚合为172.16.40.0/21的是（）。",
     "options": [
@@ -351,7 +351,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1556,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2025a",
     "question": "使用一个C类网络地址为50台主机的局域网进行地址规划，其网络掩码的长度应为（66）位。",
     "options": [
@@ -396,7 +396,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1559,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2025a",
     "question": "某园区与ISP运营商建立eBGP邻居，配置完成后，BGP邻居始终无法进入“Established”状态，网络拓扑和路由器配置如下所示：造成故障的可能原因是（）。",
     "options": [
@@ -426,7 +426,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1561,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2025a",
     "question": "在系统视图下执行以下命令：[R5] observe-port 1 interface Gigabit Ethernet O/0/2其作用是将指定端口配置为（）。",
     "options": [
@@ -441,7 +441,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1562,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2025a",
     "question": "OSPF路由协议使用（）来维护邻居关系。",
     "options": [
@@ -456,7 +456,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1563,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2025a",
     "question": "IP数据报首部中的TTL字段作用是（）。",
     "options": [
@@ -486,7 +486,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1565,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2025a",
     "question": "在路由器上执行以下命令[R1-0SPF-1] preference ase 80其作用是（）。",
     "options": [
@@ -516,7 +516,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1567,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2025a",
     "question": "在TCP/IP模型中，网络层的数据单元称为（）。",
     "options": [
@@ -531,7 +531,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1568,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2025a",
     "question": "在TCP拥塞控制机制中，如果重传计时器超时，通常会（）。",
     "options": [
@@ -546,7 +546,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1569,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2025a",
     "question": "下列选项中，可防止BGP路由环路的是（）。",
     "options": [
@@ -561,7 +561,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1570,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2025a",
     "question": "下列关于NFC和RFID的描述中，错误的是（）。",
     "options": [
@@ -576,7 +576,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1571,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2025a",
     "question": "某集群中服务器性能差异较大，配置（）负载均衡方式较为合理。",
     "options": [
@@ -606,7 +606,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1573,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2025a",
     "question": "如果TCP连接的接收窗口是20KB，往返时间（RTT）是100ms，那么在不考虑其他因素时，理论上该连接的最大吞吐量约为（）。",
     "options": [
@@ -636,7 +636,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1575,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2025a",
     "question": "在交换机执行以下命令，其作用是（）。[SW1-GigabitEtherneto/o/l] description vlan20",
     "options": [
@@ -651,7 +651,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1576,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2025a",
     "question": "操作系统中的“Shel1”属于（）。",
     "options": [
@@ -681,7 +681,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1578,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2025a",
     "question": "数据报文从二层交换机端口G0/0/2进入交换机，从端口G0/0/10送出交换机，拓扑结构如下所示，则该数据报文被送出时，其Tag情况是（）。",
     "options": [
@@ -741,7 +741,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1582,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2025a",
     "question": "某企业网络拓扑如图所示，骨干区域的3台路由器运行0SPF路由协议，在排除网络故障时，发现RA收到RB发送的Hello报文，但是没有收到RC发送的Hello报文，可能原因是（）。",
     "options": [
@@ -756,7 +756,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1583,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2025a",
     "question": "光纤万兆以太网所发送的信息流使用的编码方式是（）。",
     "options": [
@@ -771,7 +771,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1584,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2025a",
     "question": "在windows操作系统中，可以使用（）命令查看主机的IP地址配置信息。",
     "options": [
@@ -786,7 +786,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1585,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2025a",
     "question": "若使用172.16.0.0/16地址段进行子网划分，每个子网至少500个可用IP地址的子网，最多可划分（）个可用的子网。",
     "options": [
@@ -816,7 +816,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1587,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2025a",
     "question": "下列关于Rip路由协议的描述错误的是（）。",
     "options": [
@@ -846,7 +846,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1589,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2025a",
     "question": "在全网状拓扑中，若节点数为N，所需的物理链路数量是（）。",
     "options": [
@@ -861,7 +861,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1590,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2025a",
     "question": "下列（）为WLAN用户提供Web身份认证。",
     "options": [
@@ -891,7 +891,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1592,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2025a",
     "question": "ARP请求包的目标地址是（）。",
     "options": [
@@ -906,7 +906,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1593,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2025a",
     "question": "下列关于STP生成树的说法正确的是（）。",
     "options": [
@@ -936,7 +936,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1595,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2025a",
     "question": "在数据链路层，以太网帧头通常包括（）。",
     "options": [
@@ -966,7 +966,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1597,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2025a",
     "question": "UDP首部不包括（）字段。",
     "options": [
@@ -981,7 +981,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1598,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2025a",
     "question": "在5G网络架构中，网络切片（Network Slicing）的主要优势是（）。",
     "options": [
@@ -996,7 +996,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1599,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2025a",
     "question": "某网络中，使用集线器（Hub）连接多台终端，如果将集线器替换为交换机后，下列说法正确的是（）。",
     "options": [
@@ -1011,7 +1011,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1600,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2025a",
     "question": "企业园区网络设计时，采用“核心-汇聚-接入”分层模型的优点是（）。",
     "options": [
@@ -1032,7 +1032,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1601,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2024a",
     "question": "1、以下不属于5G网络优点的是（）",
     "options": [
@@ -1047,7 +1047,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1602,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2024a",
     "question": "关于BGP协议描述不正确的是（）",
     "options": [
@@ -1062,7 +1062,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1603,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2024a",
     "question": "当VLAN数据帧通过trunk链路转发时加入的802.1q标识位于原始以太网帧的（）.",
     "options": [
@@ -1092,7 +1092,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1605,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2024a",
     "question": "拥塞控制的最终目标是（）",
     "options": [
@@ -1107,7 +1107,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1606,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2024a",
     "question": "PON网络中的OLT是什么（）的简称",
     "options": [
@@ -1137,7 +1137,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1608,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2024a",
     "question": "netstat命令中的（）选项可以用于显示网络接口的IP地址和MAC地址",
     "options": [
@@ -1152,7 +1152,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1609,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2024a",
     "question": "下列关于干线子系统的说法中错误的是（）",
     "options": [
@@ -1197,7 +1197,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1612,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2024a",
     "question": "CSMA/CD的具体作用是（）",
     "options": [
@@ -1212,7 +1212,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1613,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2024a",
     "question": "关于VLAN说法错误的是（）",
     "options": [
@@ -1227,7 +1227,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1614,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2024a",
     "question": "当（）时不应该发送ICMP差错报文。",
     "options": [
@@ -1242,7 +1242,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1615,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2024a",
     "question": "VxLAN与QinQ相比，说法错误的是（）.",
     "options": [
@@ -1272,7 +1272,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1617,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2024a",
     "question": "下列层次化网络设计的说法中正确的是（）",
     "options": [
@@ -1287,7 +1287,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1618,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2024a",
     "question": "在Linux系统将所有的外部设备均作为文件统—进行管理，默认情况下，外部设备文件的目录是（）",
     "options": [
@@ -1302,7 +1302,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1619,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2024a",
     "question": "在Windows下，可以在开始菜单的“运行”窗口中键入（）命令，可运行Microsoft管理控制台。",
     "options": [
@@ -1317,7 +1317,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1620,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2024a",
     "question": "下列路由协议中属于外部网关协议（EGP）的是（）",
     "options": [
@@ -1347,7 +1347,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1622,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2024a",
     "question": "在域名解析过程中，通常主机会首先查找（）",
     "options": [
@@ -1392,7 +1392,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1625,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2024a",
     "question": "下列WPA无线加密技术的说法中错误的是（）",
     "options": [
@@ -1407,7 +1407,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1626,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2024a",
     "question": "在局域网中为防止网络环路，应在交换机中配置（）",
     "options": [
@@ -1422,7 +1422,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1627,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2024a",
     "question": "在DNS服务器中，名字服务器及其优先级由（）资源记录定义。",
     "options": [
@@ -1437,7 +1437,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1628,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2024a",
     "question": "WiFi6的传输速率可以达到（）",
     "options": [
@@ -1452,7 +1452,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1629,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2024a",
     "question": "RIP协议在更新和维护路由信息时主要使用四个定时器，（））超时，立即发送更新报文。",
     "options": [
@@ -1497,7 +1497,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1632,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2024a",
     "question": "POP3协议采用（）模式为用户服务。",
     "options": [
@@ -1512,7 +1512,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1633,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2024a",
     "question": "以太网10BASE-T的编码方式是（）",
     "options": [
@@ -1527,7 +1527,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1634,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2024a",
     "question": "在Windows中，可以使用（）来浏览日志文件。",
     "options": [
@@ -1542,7 +1542,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1635,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2024a",
     "question": "下列关于RIP协议的描述不正确的是（）",
     "options": [
@@ -1602,7 +1602,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1639,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2024a",
     "question": "我国拥有自主知识产权的4G标准是（）.",
     "options": [
@@ -1662,7 +1662,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1643,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2024a",
     "question": "下列关于PPPoE协议的说法正确的是（）",
     "options": [
@@ -1692,7 +1692,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1645,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2024a",
     "question": "下列AC+FITAP无线组网的说法中错误的是（）",
     "options": [
@@ -1767,7 +1767,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1650,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2024a",
     "question": "下列网络工程项目需求管理应遵循的原则中，不正确的是（）",
     "options": [
@@ -1842,7 +1842,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1655,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2024a",
     "question": "系统维护的功能不包括（）",
     "options": [
@@ -1857,7 +1857,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1656,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2024a",
     "question": "TCP协议与UDP协议工作在（）",
     "options": [
@@ -1872,7 +1872,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1657,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2024a",
     "question": "在Linux系统中，使用Apache作为Web服务器时其默认的目录是（）。",
     "options": [
@@ -1902,7 +1902,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1659,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2024a",
     "question": "下列IP地址（）不属于子网172.16.24.0/21",
     "options": [
@@ -1917,7 +1917,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1660,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2024a",
     "question": "在Linux系统中，鼠标、键盘等以字节为单位进行输入输出的设备属于（）",
     "options": [
@@ -1932,7 +1932,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1661,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2024a",
     "question": "下列关于自治系统（AS）的措述中正确的是（）。",
     "options": [
@@ -1947,7 +1947,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1662,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2024a",
     "question": "IPv6地址通常以十六进制数字表示，4个数字为一组用冒号分隔，下面对IPv6地址FE80:0000:0000:0000:004B:EAO0:008E:D426正确的简化的写法是（）。",
     "options": [
@@ -2028,7 +2028,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1667,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2023a",
     "question": "下列操作系统中，不属于国产操作系统的是（）",
     "options": [
@@ -2058,7 +2058,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1669,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2023a",
     "question": "在网络工程的生命周期中，对用户需求进行了解和分析是在（）阶段。",
     "options": [
@@ -2163,7 +2163,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1676,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2023a",
     "question": "百兆以太网采用的数据编码方法是（）。",
     "options": [
@@ -2208,7 +2208,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1679,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2023a",
     "question": "使用Traceroute命令时，由中间路由器返回的ICMP超时报文中Type和Code分别是（）。",
     "options": [
@@ -2223,7 +2223,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1680,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2023a",
     "question": "在EPON (Ethernet Passive Optical Network,以太网无源光网络)中，如果用户端的家庭网关或者交换机是运营商提供并统一进行VLAN管理，那么在UNI端口上VLAN操作模式优先配置为（）。",
     "options": [
@@ -2238,7 +2238,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1681,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2023a",
     "question": "在IEEE标准体系中，WiFi 6对应的标准是（）。",
     "options": [
@@ -2253,7 +2253,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1682,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2023a",
     "question": "在TCP建立连接的三次握手时，假设客户端发送的SYN段中的序号字段为，a,则服务端回复的SYN+ACK段中的确认号为（）。",
     "options": [
@@ -2268,7 +2268,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1683,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2023a",
     "question": "在OSI参考模型中，负责对应用层消息进行压缩，加密功能的层次为（）。",
     "options": [
@@ -2283,7 +2283,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1684,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2023a",
     "question": "在TCP拥塞控制机制中，快速重传的目的是让主机在计时器超时前能够快速恢复，其触发条件是（）。",
     "options": [
@@ -2298,7 +2298,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1685,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2023a",
     "question": "下列用于AS之间的路由协议是（）。",
     "options": [
@@ -2343,7 +2343,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1688,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2023a",
     "question": "WWW的控制协议是（）。",
     "options": [
@@ -2388,7 +2388,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1691,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2023a",
     "question": "IPv6组播地址的前缀是( )。",
     "options": [
@@ -2403,7 +2403,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1692,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2023a",
     "question": "为了方便运维人员远程维护Windows Server20O8R2服务器，需要在服务器上启用（）服务。",
     "options": [
@@ -2463,7 +2463,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1696,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2023a",
     "question": "以下关于ICMP 的叙述中，错误的是 ( )。",
     "options": [
@@ -2478,7 +2478,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1697,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2023a",
     "question": "某主机无法上网，查看本地连接后，发现只有发送包没有接收包，故障原因可能是( )。",
     "options": [
@@ -2523,7 +2523,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1700,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2023a",
     "question": "下列IP地址中不能够被路由器转发的是（）。",
     "options": [
@@ -2538,7 +2538,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1701,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2023a",
     "question": "路由器收到一个目标地址为201.46.17.4的数据包，应将该数据包发往（）子网。",
     "options": [
@@ -2553,7 +2553,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1702,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2023a",
     "question": "将连续的2个C类地址聚合后，子网掩码最长是（）位。",
     "options": [
@@ -2568,7 +2568,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1703,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2023a",
     "question": "以下关于命令user-interface vty 0的说法中，正确的是（）。",
     "options": [
@@ -2598,7 +2598,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1705,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2023a",
     "question": "在以下命令执行结果中，Routing Tables 描述路由标记的字段是（）。",
     "options": [
@@ -2613,7 +2613,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1706,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2023a",
     "question": "以下关于VLAN标识的叙述中，错误的是（）。",
     "options": [
@@ -2628,7 +2628,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1707,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2023a",
     "question": "IEEE802.1Q规定VLAN的Tag字段中，用来定义帧的优先级的是（）。",
     "options": [
@@ -2643,7 +2643,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1708,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2023a",
     "question": "（）命令可通过VLAN对二层流量隔离，实现对网络资源控制。",
     "options": [
@@ -2658,7 +2658,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1709,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2023a",
     "question": "在交换机SWA上执行如下命令后，输出如下:[SWA]display stp-----[CIST Global lnfo][Mode MSTPJ------CIST Bridge:32768.000f-e23e-f9b0Bridge Times:Hello 2s MaxAge 20s FwDly 15s MaxHop20从输出结果可以判断（）。",
     "options": [
@@ -2673,7 +2673,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1710,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2023a",
     "question": "在5G技术中，用于提升接入用户数的技术是（）。",
     "options": [
@@ -2688,7 +2688,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1711,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2023a",
     "question": "在100BaseT以太网中，若争用时间片为25.6μs，某站点在发送帧时已经连续3次冲突，则基于二进制指数回退算法，该站点需等待的最短和最长时间分别是（）。",
     "options": [
@@ -2703,7 +2703,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1712,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2023a",
     "question": "以下关于2.4G和5G无线网络区别的说法中，错误的是（）。",
     "options": [
@@ -2718,7 +2718,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1713,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2023a",
     "question": "某公司有20间办公室，均分布在办公大楼的同一楼层，计划在办公区域组建无线网络，为移动工作终端提供无线网络接入，要求连接一次网络后，均可以在各办公室无缝漫游，下列组网方案最合理的是（）。",
     "options": [
@@ -2733,7 +2733,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1714,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2023a",
     "question": "FC-SAN存储常通过光纤与服务器的（）连接。",
     "options": [
@@ -2748,7 +2748,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1715,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2023a",
     "question": "以下关于结构化布线系统的说法中，错误的是（）。",
     "options": [
@@ -2763,7 +2763,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1716,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2023a",
     "question": "以下关于三层模型核心层设计的说法中，错误的是（）。",
     "options": [
@@ -2859,7 +2859,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1722,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2022b",
     "question": "下列操作系统中，()与另外三种操作系统的内核种类不同。",
     "options": [
@@ -2874,7 +2874,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1723,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2022b",
     "question": "下列功能模块中，不属于操作系统内核功能模块的是()。",
     "options": [
@@ -2889,7 +2889,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1724,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2022b",
     "question": "在网络工程项目全流程中，项目测试的测试目标来自于()阶段。",
     "options": [
@@ -2934,7 +2934,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1727,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2022b",
     "question": "五类、六类网线的标准是由()制定的。",
     "options": [
@@ -2979,7 +2979,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1730,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2022b",
     "question": "依据《数据中心设计规范》，在设计数据中心时，成行排列的机柜，其长度大于()米时，两端应设有通道。",
     "options": [
@@ -3009,7 +3009,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1732,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2022b",
     "question": "5G无线通信采用的载波调制技术是()。",
     "options": [
@@ -3054,7 +3054,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1735,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2022b",
     "question": "SONET采用的成帧方法是()。",
     "options": [
@@ -3069,7 +3069,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1736,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2022b",
     "question": "下列关于IEEE802.11a的描述中，不正确的是()。",
     "options": [
@@ -3084,7 +3084,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1737,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2022b",
     "question": "一个IP报文经过路由器处理后，若TTL字段值变为0，则路由器会进行的操作是()。",
     "options": [
@@ -3099,7 +3099,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1738,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2022b",
     "question": "当IP报文从一个网络转发到另一个网络时，()。",
     "options": [
@@ -3114,7 +3114,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1739,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2022b",
     "question": "以下网络控制参数中，不随报文传送到对端实体的是()。",
     "options": [
@@ -3129,7 +3129,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1740,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2022b",
     "question": "在下图的拓扑结构中，RouterA和RouterB均运行RIPvl协议，在RouterA上使用()命令即可完成路由信息的宣告。",
     "options": [
@@ -3174,7 +3174,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1743,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2022b",
     "question": "以下关于IPv6与Pv4报文头区别比较的说法中，错误的是()。",
     "options": [
@@ -3204,7 +3204,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1745,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2022b",
     "question": "安装Linux时必须创建的分区是()。",
     "options": [
@@ -3294,7 +3294,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1751,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2022b",
     "question": "在OSPF的广播网络中，有4台路由器Router A.Router B.Router C和RouterD，其优先级分别为2、1、1和0，RouterID分别为192.168.1.1、192.168.2.1、192.168.3.1和192.168.4.1。若在此4台路由器上同时启用OSPF协议，OSPF选出的BDR为()。",
     "options": [
@@ -3309,7 +3309,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1752,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2022b",
     "question": "在生成快速转发表的过程中，五元组是指()。",
     "options": [
@@ -3354,7 +3354,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1755,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2022b",
     "question": "在IPv4地址192.168.1.0/24中，表示主机的二进制位数是()位。",
     "options": [
@@ -3369,7 +3369,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1756,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2022b",
     "question": "将地址段172.16.32.0/24、172.16.33.0/24、172.16.34.0/24、172.16.35.0/24进行聚合后得到的地址是()。",
     "options": [
@@ -3399,7 +3399,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1758,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2022b",
     "question": "使用()命令可以查看IS-IS协议的概要信息。",
     "options": [
@@ -3414,7 +3414,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1759,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2022b",
     "question": "下列路由表信息中显示的区域内部网络总数是()。",
     "options": [
@@ -3429,7 +3429,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1760,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2022b",
     "question": "GVRP可以实现跨交换机进行动态注册和删除，以下关于GVRP协这的描述中，错误的是()。",
     "options": [
@@ -3444,7 +3444,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1761,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2022b",
     "question": "由IEEE制定的最早的STP标准是()。",
     "options": [
@@ -3459,7 +3459,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1762,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2022b",
     "question": "5G网络采用()可将5G网路分割成多张虚拟网路，每个虚拟网路的接入、传输和核心网是逻辑独立的，任何一个虚拟网络发生故障都不会影响到其它虚拟网络。",
     "options": [
@@ -3474,7 +3474,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1763,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2022b",
     "question": "1EEE802.3Z是()标准。",
     "options": [
@@ -3489,7 +3489,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1764,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2022b",
     "question": "某写字楼无线网络采用相邻两间办公室共用1个无线AP的设计方案，该方案可能会造成无线信号衰减，造成信号衰减的主要原因是()。",
     "options": [
@@ -3504,7 +3504,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1765,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2022b",
     "question": "下列Wifi认证方式中，()使用了AES加密算法，安全性更高。",
     "options": [
@@ -3519,7 +3519,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1766,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2022b",
     "question": "（）存储方式常使用多副本技术实现数据冗余。",
     "options": [
@@ -3534,7 +3534,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1767,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2022b",
     "question": "结构化布线系统中，实现各楼层设备间子系统互联的是()。",
     "options": [
@@ -3549,7 +3549,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1768,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2022b",
     "question": "以下关于网络需求分析的说法中，错误的是()。",
     "options": [
@@ -3630,7 +3630,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1773,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2022a",
     "question": "为了减少在线观看网络视频卡顿，经常采用流媒体技术。以下关于流媒体说法不正确的是（）。",
     "options": [
@@ -3750,7 +3750,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1781,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2022a",
     "question": "以下关于以太网交换机的说法中，错误的是（）。",
     "options": [
@@ -3765,7 +3765,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1782,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2022a",
     "question": "一台 16 口的全双工千兆交换机，至少需要（）的背板带宽才能实现线速转发。",
     "options": [
@@ -3795,7 +3795,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1784,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2022a",
     "question": "5G 采用的正交振幅调制（Quadrature Amplitude Modulation,QAM）技术中，2560QAM 的一个载波上可以调制（）比特信息。",
     "options": [
@@ -3825,7 +3825,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1786,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2022a",
     "question": "在光纤接入技术中，EPON 系统中的 ONU 向 OLT 发送数据采用（）技术。",
     "options": [
@@ -3840,7 +3840,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1787,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2022a",
     "question": "在下图所示的双链路热备份无线接入网中，STA 通过 Pontal 认证上线，AP 当前连接的主 AC 为 AC1，STA通过 AP 在 AC1 上线，以下关于 AC2 的描述中，正确的是（）。",
     "options": [
@@ -3855,7 +3855,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1788,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2022a",
     "question": "在 TCP 协议连接释放过程中，请求释放连接的一方（客户端）发送连接释放报文段，该报文段应该将（）。",
     "options": [
@@ -3870,7 +3870,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1789,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2022a",
     "question": "以下关于 TCP 拥塞控制机制的说法中，错误的是（）。",
     "options": [
@@ -3885,7 +3885,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1790,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2022a",
     "question": "在 OSI 参考模型中，（）在物理线路上提供可靠的数据传输服务。",
     "options": [
@@ -3900,7 +3900,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1791,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2022a",
     "question": "以下路由协议中（）属于有类路由协议。",
     "options": [
@@ -3915,7 +3915,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1792,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2022a",
     "question": "以下关于 RIPv1 和 RIPv2 路由选择协议说法中，错误的是（）。",
     "options": [
@@ -3930,7 +3930,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1793,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2022a",
     "question": "一台运行 OSPF 路由协议的路由器，转发接口为 100Mbps，其 cost 值应该是（）。",
     "options": [
@@ -3945,7 +3945,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1794,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2022a",
     "question": "在 BGP 路由选择协议中，（）属性可以避免在 AS 之间产生环路。",
     "options": [
@@ -3960,7 +3960,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1795,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2022a",
     "question": "以下关于 IS-IS 路由选择协议的说法中，错误的是（）。",
     "options": [
@@ -3990,7 +3990,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1797,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2022a",
     "question": "在浏览器地址栏输入 ftp://ftp.tsinghua.edu.cn/进行访问时，下列操作中浏览器不会执行的是（）。",
     "options": [
@@ -4005,7 +4005,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1798,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2022a",
     "question": "下列端口号中，（）是电子邮件发送协议默认的服务端口号。",
     "options": [
@@ -4020,7 +4020,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1799,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2022a",
     "question": "以下关于 IPv6 与 IPv4 比较的说法中，错误的是（）。",
     "options": [
@@ -4050,7 +4050,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1801,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2022a",
     "question": "在 Linux 中，可以使用（）命令创建一个文件目录。",
     "options": [
@@ -4065,7 +4065,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1802,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2022a",
     "question": "在 Windows 中，DHCP 客户端手动更新租期时使用的命令是（）。",
     "options": [
@@ -4080,7 +4080,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1803,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2022a",
     "question": "Windows Server 2008 R2 上配置（）服务器前需要先安装 IIS 服务。",
     "options": [
@@ -4095,7 +4095,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1804,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2022a",
     "question": "服务器提供 WEB 服务，本地默认监听（）端口。",
     "options": [
@@ -4110,7 +4110,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1805,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2022a",
     "question": "用户在 PC 上安装使用邮件客户端，希望同步客户端和服务器上的操作，需使用的协议是（）。",
     "options": [
@@ -4245,7 +4245,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1814,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2022a",
     "question": "下面说法中，能够导致 BGP 邻居关系无法建立的是（）。",
     "options": [
@@ -4290,7 +4290,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1817,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2022a",
     "question": "能够容纳 200 台客户机的 IP 地址段，其网络位最长是（）位。",
     "options": [
@@ -4305,7 +4305,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1818,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2022a",
     "question": "下列 IP 地址中属于私有地址的是（）。",
     "options": [
@@ -4320,7 +4320,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1819,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2022a",
     "question": "公司要为 900 个终端分配 IP 地址，下面的地址分配方案中，在便于管理的前提下，最节省网络资源的方案是（）。",
     "options": [
@@ -4335,7 +4335,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1820,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2022a",
     "question": "关于以下命令片段的说法中，正确的是（）。",
     "options": [
@@ -4350,7 +4350,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1821,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2022a",
     "question": "以下命令片段中，描述路由优先级的字段是（）。",
     "options": [
@@ -4365,7 +4365,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1822,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2022a",
     "question": "显示 OSPF 邻居信息的命令是（）。",
     "options": [
@@ -4380,7 +4380,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1823,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2022a",
     "question": "以下关于 VLAN 的描述中，不正确的是（）。",
     "options": [
@@ -4395,7 +4395,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1824,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2022a",
     "question": "使用命令“vlan batch 30 40”和“vlan batch 30 to 40”分别创建的 VLAN 数量是（）。",
     "options": [
@@ -4410,7 +4410,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1825,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2022a",
     "question": "下列命令片段中划分 VLAN 的方式是（）。",
     "options": [
@@ -4425,7 +4425,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1826,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2022a",
     "question": "存储转发式交换机中运行生成树协议（STP）可以（）。",
     "options": [
@@ -4440,7 +4440,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1827,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2022a",
     "question": "在 5G 关键技术中，将传统互联网控制平面与数据平面分离，使网络的灵活性、可管理性和可扩展性大幅提升的是（）。",
     "options": [
@@ -4455,7 +4455,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1828,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2022a",
     "question": "以下关于二进制指数退避算法的描述中，正确的是（）。",
     "options": [
@@ -4470,7 +4470,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1829,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2022a",
     "question": "下列 IEEE 802.11 系列标准中，支持 2.4GHz 和 5GHz 两个工作频段的是（）。",
     "options": [
@@ -4485,7 +4485,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1830,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2022a",
     "question": "某无线路由器，在 2.4GH 频道上配置了 2 个信道，使用（）信道间干扰最小。",
     "options": [
@@ -4500,7 +4500,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1831,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2022a",
     "question": "以下关于层次化网络设计模型的描述中，不正确的是（）。",
     "options": [
@@ -4731,7 +4731,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1846,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2021b",
     "question": "在10GBase-ER标准中，使用单模光纤最大传输距离是( )。",
     "options": [
@@ -4746,7 +4746,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1847,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2021b",
     "question": "在OSI参考模型中，传输层处理的数据单位是( )。",
     "options": [
@@ -4761,7 +4761,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1848,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2021b",
     "question": "使用ADSL接入电话网采用的认证协议是( )。",
     "options": [
@@ -4776,7 +4776,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1849,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2021b",
     "question": "在主机上禁止( )协议，可以不响应来自别的主机的Ping包。",
     "options": [
@@ -4791,7 +4791,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1850,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2021b",
     "question": "HDLC协议中，帧的编号和应答号存放在( )字段中。",
     "options": [
@@ -4806,7 +4806,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1851,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2021b",
     "question": "在OSPF路由协议中，路由器在( )进行链路状态广播。",
     "options": [
@@ -4821,7 +4821,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1852,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2021b",
     "question": "Ping使用了( )类型的ICMP查询报文。",
     "options": [
@@ -4836,7 +4836,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1853,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2021b",
     "question": "以下关于路由协议的叙述中，错误的是( )。",
     "options": [
@@ -4851,7 +4851,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1854,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2021b",
     "question": "以下关于RIPv2对于RIPv1改进的说法中，错误的是( )。",
     "options": [
@@ -4866,7 +4866,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1855,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2021b",
     "question": "以下关于OSPF路由协议的说法中，错误的是( )。",
     "options": [
@@ -4881,7 +4881,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1856,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2021b",
     "question": "以下关于IS-IS路由协议的说法中，错误的是( )。",
     "options": [
@@ -4896,7 +4896,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1857,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2021b",
     "question": "以下关于BGP路由协议的说法中，错误的是( )。",
     "options": [
@@ -4926,7 +4926,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1859,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2021b",
     "question": "在浏览器地址栏输入ftp://ftp.tsinghua.edu.cn/进行访问时，首先执行的操作是( )",
     "options": [
@@ -4941,7 +4941,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1860,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2021b",
     "question": "下列端口号中，不属于常用电子邮件协议默认使用的端口的是( )。",
     "options": [
@@ -4956,7 +4956,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1861,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2021b",
     "question": "在Linux中，用于解析主机域名的文件是( )。",
     "options": [
@@ -4971,7 +4971,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1862,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2021b",
     "question": "在linux中，可以使用命令( )将文件abe.txt拷贝到目录/home/my/office中，且保留原文件访问权限。",
     "options": [
@@ -4986,7 +4986,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1863,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2021b",
     "question": "在Linux中，要使用命令“chmod-Rxxx/home/abc\"修改目录/home/abc的访问权限为可读、可写、可执行，命令中的“xxx”应该是( )。",
     "options": [
@@ -5001,7 +5001,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1864,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2021b",
     "question": "在Windows中，DNS客户端手工向服务器注册时使用的命令是( )。",
     "options": [
@@ -5016,7 +5016,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1865,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2021b",
     "question": "Windows Server 2008 R2上内嵌的Web服务器是( )服务器。",
     "options": [
@@ -5031,7 +5031,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1866,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2021b",
     "question": "Windows中，在命令行输入( )命令可以得到如下的回显。Server: UnKnownAdress: 159.47.11.80xxx.edu.cnprimary name server = nsl.xxx.edu.cnresponsible mail addr = mailxxx.edu.cnserial = 2020061746refresh= 1200(20 mins)retry= 7200(2 hours)expire = 3600(1 hour)default TTL = 3600(1 hour)",
     "options": [
@@ -5046,7 +5046,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1867,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2021b",
     "question": "以下关于电子邮件服务的说法中，正确的是( )。",
     "options": [
@@ -5166,7 +5166,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1875,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2021b",
     "question": "管理员发现交换机的二层转发表空间被占满，清空后短时间内仍然会被沾满，造成这种现象的原因可能是( )。",
     "options": [
@@ -5181,7 +5181,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1876,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2021b",
     "question": "某网络结构如下图所示。PC1的用户在浏览器地址栏中入www.abc.com获取响应页面，而输入61.102.58.77可以正常打开Web页面，则导致该现象的可能是()。",
     "options": [
@@ -5196,7 +5196,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1877,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2021b",
     "question": "下面的IP地址中，能够作为主机地址的是( )",
     "options": [
@@ -5211,7 +5211,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1878,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2021b",
     "question": "下面的IP地址中，不属于同一网络的是( )",
     "options": [
@@ -5226,7 +5226,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1879,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2021b",
     "question": "PC1的IP地址为192.168.5.16，PC2的IP地址为192.168.5.100，PC1和PC2在同一网段中，其子网掩码可能是()",
     "options": [
@@ -5241,7 +5241,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1880,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2021b",
     "question": "下列命令片段含义是( )。system-view[HUAWEI] observe-port 1 interface gigabitethernet 0/0/1[HUAWEI] interface gigabitethernet 0/0/2[HUAWEI-GigabitEthernet0/0/2] port-mirroring to observe-port 1 inbound",
     "options": [
@@ -5256,7 +5256,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1881,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2021b",
     "question": "使用( )命令可以显示OSPF接口信息。",
     "options": [
@@ -5271,7 +5271,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1882,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2021b",
     "question": "GVRP是跨交换机进行VLAN动态注册和删除的协议，关于对GVRP描述不准确的是( )。",
     "options": [
@@ -5286,7 +5286,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1883,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2021b",
     "question": "使用命令vlan batch 10 15 to 19 25 28 to 30创建了( )个VLAN。",
     "options": [
@@ -5331,7 +5331,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1886,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2021b",
     "question": "下列通信技术标准中，使用频带相同的是( )。",
     "options": [
@@ -5346,7 +5346,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1887,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2021b",
     "question": "以下关子WIFI6的说法中，错误的是( )。",
     "options": [
@@ -5361,7 +5361,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1888,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2021b",
     "question": "以下关于无线漫游的说法中，错误的是( )。",
     "options": [
@@ -5376,7 +5376,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1889,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2021b",
     "question": "在大型无线网络中，AP通常通过DHCP option( )来获取AC的IP地址。",
     "options": [
@@ -5391,7 +5391,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1890,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2021b",
     "question": "网络规划中，冗余设计不能( )。",
     "options": [
@@ -5487,7 +5487,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1896,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2021a",
     "question": "基于Android的移动端开发平台是一个以( )为基础的开源移动设备操作系统。",
     "options": [
@@ -5637,7 +5637,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1906,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2021a",
     "question": "100BASE-FX采用的编码技术为( )。",
     "options": [
@@ -5667,7 +5667,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1908,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2021a",
     "question": "万兆以太网标准中，传输距离最远的是( )。",
     "options": [
@@ -5682,7 +5682,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1909,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2021a",
     "question": "2.4GH2频段划分成11个互相覆盖的信道，中心频率间隔为( )MHz。",
     "options": [
@@ -5712,7 +5712,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1911,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2021a",
     "question": "以下关于HDLC协议的说法中，错误的是( )。",
     "options": [
@@ -5727,7 +5727,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1912,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2021a",
     "question": "ICMP是TCP/IP分层模型第三层协议，其报文封装在( )中传送。",
     "options": [
@@ -5742,7 +5742,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1913,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2021a",
     "question": "TCP伪首部不包含的字段为( )。",
     "options": [
@@ -5757,7 +5757,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1914,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2021a",
     "question": "用于自治系统(AS)之间路由选择的路由协议是( )。",
     "options": [
@@ -5772,7 +5772,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1915,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2021a",
     "question": "以下关于OSPF协议的描述中，错误的是( )。",
     "options": [
@@ -5787,7 +5787,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1916,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2021a",
     "question": "Telnet是一种用于远程访问的协议。以下关于Telnet的描述中，正确的是( )。",
     "options": [
@@ -5802,7 +5802,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1917,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2021a",
     "question": "在浏览器地址栏输入192.168.1.1进行访问时，首先执行的操作是( )。",
     "options": [
@@ -5817,7 +5817,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1918,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2021a",
     "question": "SMTP的默认服务端口号是( )。",
     "options": [
@@ -5832,7 +5832,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1919,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2021a",
     "question": "6to4是一种支持IPv6站点通过IPv4网络进行通信的技术，下面IP地址中( )属于6to4地址。",
     "options": [
@@ -5877,7 +5877,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1922,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2021a",
     "question": "在Windows系统中，用于清除本地DNS缓存的命令是( )。",
     "options": [
@@ -5892,7 +5892,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1923,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2021a",
     "question": "Windows Server 2008 R2上可配置( )服务，提供文件的上传和下载服务。",
     "options": [
@@ -5907,7 +5907,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1924,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2021a",
     "question": "邮件客户端需监听( )端口及时接收邮件。",
     "options": [
@@ -5952,7 +5952,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1927,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2021a",
     "question": "在Linux系统通过( )命令，可以拒绝IP地址为192.168.0.2的远程主机登录到该服务器。",
     "options": [
@@ -6042,7 +6042,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1933,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2021a",
     "question": "某主机无法上网，查看\"本地连接\"属性中的数据发送情况，发现只有发送没有接收，造成该主机网络故障的原因最有可能是( )。",
     "options": [
@@ -6057,7 +6057,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1934,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2021a",
     "question": "网络管理员用netstat命令监测系统当前的连接情况，若要显示所有80端口的网络连接，则应该执行的命令是( )。",
     "options": [
@@ -6072,7 +6072,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1935,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2021a",
     "question": "在Linux系统中，不能为网卡eth0添加IP∶192.168.0.2的命令是( )。",
     "options": [
@@ -6102,7 +6102,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1937,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2021a",
     "question": "某公司的员工区域使用的IP地址段是172.16.132.0/23.该地址段中最多能够容纳的主机数量是( )台。",
     "options": [
@@ -6117,7 +6117,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1938,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2021a",
     "question": "某学校网络分为家属区和办公区，网管员将192.168.16.0/24、192.168.18.0/24两个IP地址段汇聚为192.168.16.0/22用于家属区IP地址段，下面的IP地址中可用作办公区IP地址的是( )。",
     "options": [
@@ -6147,7 +6147,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1940,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2021a",
     "question": "当网络中充斥着大量广播包时，可以采取( )措施解决问题。",
     "options": [
@@ -6162,7 +6162,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1941,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2021a",
     "question": "下列命令片段含义是( )。",
     "options": [
@@ -6177,7 +6177,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1942,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2021a",
     "question": "要实现PC机切换IP地址后，可以访问不同的VLAN，需采用基于( )技术划分VLAN。",
     "options": [
@@ -6237,7 +6237,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1946,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2021a",
     "question": "( )存储方式常使用NFS协议为Linux操作系统提供文件共享服务。",
     "options": [
@@ -6252,7 +6252,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1947,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2021a",
     "question": "在网络系统设计时，不可能使所有设计目标都能达到最优，下列措施中较为合理的是( )。",
     "options": [
@@ -6267,7 +6267,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1948,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2021a",
     "question": "在结构化布线系统设计时，配线间到工作区信息插座的双绞线最大不超过90米，信息插座到终端电脑网卡的双绞线最大不超过( )米。",
     "options": [
@@ -6348,7 +6348,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1953,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2020b",
     "question": "下列操作系统中，不是基于linux内核的是（ ）。",
     "options": [
@@ -6468,7 +6468,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1961,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2020b",
     "question": "以下千兆以太网标准中，支持1000m以上传输距离的是（ ）。",
     "options": [
@@ -6483,7 +6483,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1962,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2020b",
     "question": "综合布线系统中，用于连接各层配线室，并连接主配线室的子系统为（ ）。",
     "options": [
@@ -6528,7 +6528,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1965,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2020b",
     "question": "某IP网络连接如下图所示，下列说法中正确的是（ ）。",
     "options": [
@@ -6558,7 +6558,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1967,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2020b",
     "question": "若主机采用以太网接入Internet，TCP段格式中，数据字段最大长度为（ ）字节。",
     "options": [
@@ -6573,7 +6573,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1968,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2020b",
     "question": "TCP采用拥塞窗口(cwnd)进行拥塞控制。以下关于cwnd的说法中正确的是（ ）。",
     "options": [
@@ -6588,7 +6588,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1969,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2020b",
     "question": "UDP头部的大小为（ ）字节。",
     "options": [
@@ -6603,7 +6603,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1970,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2020b",
     "question": "为了控制P数据报在网络中无限转发，在IPv4数据报首部中设置了（ ）字段。",
     "options": [
@@ -6663,7 +6663,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1974,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2020b",
     "question": "在Linux系统中，DNS配置文件的（ ）参数，用于确定DNS服务器地址。",
     "options": [
@@ -6678,7 +6678,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1975,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2020b",
     "question": "在Linux系统中，要将文件复制到另一个目录中，为防止意外覆盖相同文件名的文件，可使用（ ）命令实现。",
     "options": [
@@ -6693,7 +6693,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1976,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2020b",
     "question": "在Linux系统中，可在（ ）文件中修改系统主机名。",
     "options": [
@@ -6723,7 +6723,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1978,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2020b",
     "question": "Windows Server 2008 R2上IIS 7.5能提供的服务有（ ）。",
     "options": [
@@ -6738,7 +6738,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1979,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2020b",
     "question": "用户在登录FTP服务器的过程中，建立TCP连接时使用的默认端口号是（ ）。",
     "options": [
@@ -6753,7 +6753,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1980,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2020b",
     "question": "用户使用域名访问某网站时，是通过（ ）得到目的主机的IP地址。",
     "options": [
@@ -6768,7 +6768,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1981,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2020b",
     "question": "在DNS的资源记录中，类型A（ ）。",
     "options": [
@@ -6933,7 +6933,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1992,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2020b",
     "question": "公司为服务器分配了IP地址段121.21.35.192/28，下面的IP地址中，不能作为Web服务器地址的是（ ）。",
     "options": [
@@ -6948,7 +6948,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1993,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2020b",
     "question": "下面的IP地址中，可以用作主机IP地址的是（ ）。",
     "options": [
@@ -6963,7 +6963,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1994,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2020b",
     "question": "OSPF协议相对于RIP的优势在于（ ）。①没有跳数的限制②支持可变长子网掩码(VLSM)③支持网络规模大④收敛速度快",
     "options": [
@@ -6978,7 +6978,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1995,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2020b",
     "question": "OSPF协议中DR的作用范围是（ ）。",
     "options": [
@@ -6993,7 +6993,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1996,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2020b",
     "question": "GVRP定义的四种定时器中缺省值最小的是（ ）。",
     "options": [
@@ -7008,7 +7008,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1997,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2020b",
     "question": "下列命令片段的含义是（ ）。",
     "options": [
@@ -7023,7 +7023,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1998,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2020b",
     "question": "（ ）的含义是一台交换机上的VLAN配置信息可以传播、复制到网络中相连的其他交换机上。",
     "options": [
@@ -7038,7 +7038,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 1999,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2020b",
     "question": "以下关于BGP的说法中，正确的是（ ）。",
     "options": [
@@ -7053,7 +7053,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2000,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2020b",
     "question": "快速以太网100BASE-T4采用的传输介质为（ ）。",
     "options": [
@@ -7068,7 +7068,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2001,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2020b",
     "question": "CSMA/CD采用的介质访问技术属于资源的（ ）。",
     "options": [
@@ -7083,7 +7083,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2002,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2020b",
     "question": "WLAN接入安全控制中，采用的安全措施不包括（ ）。",
     "options": [
@@ -7098,7 +7098,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2003,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2020b",
     "question": "下列IEEE 802.11系列标准中，WLAN的传输速率达到300Mbps的是（ ）。",
     "options": [
@@ -7128,7 +7128,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2005,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2020b",
     "question": "对某银行业务系统的网络方案设计时，应该优先考虑（ ） 原则。",
     "options": [
@@ -7314,7 +7314,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2017,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2019b",
     "question": "以太网采用的编码技术为（ ）。",
     "options": [
@@ -7329,7 +7329,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2018,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2019b",
     "question": "下列千兆以太网标准中，传输距离最长的是（ ）。",
     "options": [
@@ -7359,7 +7359,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2020,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2019b",
     "question": "某局域网采用CSMA/CD协议实现介质访问控制，数据传输速率为10Mbps，主机甲和主机乙之间的距离为2km，信号传播速度是200m/μs。若主机甲和主机乙发送数据时发生冲突。从开始发送数据起，到两台主机均检测到冲突时刻为止，最短需经过的时间是（ ）μs。",
     "options": [
@@ -7374,7 +7374,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2021,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2019b",
     "question": "以太网中，主机甲和主机乙采用停等差错控制方式进行数据传输，应答帧大小为（ ）字节。",
     "options": [
@@ -7389,7 +7389,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2022,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2019b",
     "question": "TCP采用慢启动进行拥塞控制，若TCP在某轮拥塞窗口为8时出现拥塞，经过4个均成功收到应答，此时拥塞窗口为（ ）。",
     "options": [
@@ -7404,7 +7404,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2023,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2019b",
     "question": "建立TCP连接时，被动打开一端在收到对端SYN前所处的状态为（ ）。",
     "options": [
@@ -7419,7 +7419,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2024,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2019b",
     "question": "端口号的作用是（ ）。",
     "options": [
@@ -7449,7 +7449,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2026,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2019b",
     "question": "Web 页面访问过程中，在浏览器发出HTTP请求报文之前不可能执行的操作是（ ）。",
     "options": [
@@ -7479,7 +7479,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2028,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2019b",
     "question": "在Linux操作系统中，外部设备文件通常放在（ ）目录中。",
     "options": [
@@ -7494,7 +7494,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2029,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2019b",
     "question": "在Linux操作系统中，命令“chmod ugo+r filel.txt\"的作用是（ ）。",
     "options": [
@@ -7509,7 +7509,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2030,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2019b",
     "question": "在Linux操作系统中，命令（ ）可以正确关闭系统防火墙。",
     "options": [
@@ -7524,7 +7524,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2031,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2019b",
     "question": "Windows Server 2008 R2默认状态下没有安装IIS服务，必须手动安装。配置下列（ ）服务前需先安装IIS服务。",
     "options": [
@@ -7554,7 +7554,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2033,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2019b",
     "question": "在进行DNS查询时，首先向（ ）进行域名查询，以获取对应的IP地址。",
     "options": [
@@ -7629,7 +7629,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2038,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2019b",
     "question": "ICMP差错报告报文格式中，除了类型、代码和校验和外，还需加上（ ）。",
     "options": [
@@ -7644,7 +7644,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2039,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2019b",
     "question": "逻辑网络设计是体现网络设计核心思想的关键阶段，下列选项中不属于逻辑网络设计内容的是（ ）。",
     "options": [
@@ -7659,7 +7659,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2040,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2019b",
     "question": "FTP的默认数据端口号是（ ）",
     "options": [
@@ -7689,7 +7689,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2042,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2019b",
     "question": "无线局域网中采用不同帧间间隔划定优先级，通过冲突避免机制来实现介质访问控制。其中RTS/CTS帧（ ）。",
     "options": [
@@ -7704,7 +7704,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2043,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2019b",
     "question": "属于网络215.17.204.0/22的地址是（ ）。",
     "options": [
@@ -7719,7 +7719,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2044,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2019b",
     "question": "主机地址202.15.2.160所在的网络是（ ）。",
     "options": [
@@ -7734,7 +7734,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2045,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2019b",
     "question": "某端口的IP地址为61.116.7.131/26，则该IP地址所在网络的广播地址是（ ）。",
     "options": [
@@ -7749,7 +7749,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2046,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2019b",
     "question": "IPv6协议数据单元由一个固定头部和若干个扩展头部以及上层协议提供的负载组成。如果有多个扩展头部，第一个扩展头部为（ ）",
     "options": [
@@ -7779,7 +7779,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2048,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2019b",
     "question": "通常情况下，信息插座的安装位置距离地面的高度为（ ）cm。",
     "options": [
@@ -7794,7 +7794,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2049,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2019b",
     "question": "计算机网络机房建设过程中，单独设置接地体时，安全接地电阻要求小于（ ）。",
     "options": [
@@ -7809,7 +7809,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2050,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2019b",
     "question": "确定网络的层次结构及各层采用的协议是网络设计中（ ）阶段的主要任务。",
     "options": [
@@ -7824,7 +7824,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2051,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2019b",
     "question": "在两台交换机间启用STP协议，其中SWA配置了STP root primary,SWB配置了STP root secondary,则图中（ ）端口将被堵塞。",
     "options": [
@@ -7839,7 +7839,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2052,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2019b",
     "question": "RIPv1与RIPv2说法错误的是（ ）。",
     "options": [
@@ -7854,7 +7854,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2053,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2019b",
     "question": "OSPF协议是（ ）。",
     "options": [
@@ -7884,7 +7884,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2055,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2019b",
     "question": "三层网络设计方案中，（ ）是核心层的功能。",
     "options": [
@@ -7899,7 +7899,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2056,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2019b",
     "question": "五阶段迭代周期模型把网络开发过程分为需求分析、通信规范分析、逻辑网络设计、物理网络设计、安装和维护等五个阶段。以下叙述中正确的是（ ）。",
     "options": [
@@ -7914,7 +7914,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2057,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2019b",
     "question": "以下关于网络冗余设计的叙述中，错误的是（ ）。",
     "options": [
@@ -7929,7 +7929,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2058,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2019b",
     "question": "网络规划与设计过程中应遵循一些设计原则，保证网络的先进性、可靠性、容错性、安全性和性能等。以下原则中有误的是（ ）。",
     "options": [
@@ -8085,7 +8085,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2068,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2019a",
     "question": "下列千兆以太网标准中，传输距离最短的是（13）。",
     "options": [
@@ -8100,7 +8100,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2069,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2019a",
     "question": "以下关于直通式交换机和存储转发式交换机的叙述中，正确的是（14）。",
     "options": [
@@ -8115,7 +8115,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2070,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2019a",
     "question": "下列指标中，仅用于双绞线测试的是（15）。",
     "options": [
@@ -8130,7 +8130,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2071,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2019a",
     "question": "TCP和UDP协议均提供了（20）能力。",
     "options": [
@@ -8145,7 +8145,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2072,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2019a",
     "question": "建立TCP连接时，一端主动打开后所处的状态为（）。",
     "options": [
@@ -8160,7 +8160,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2073,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2019a",
     "question": "在点对点网络上，运行OSPF协议的路由器每（）秒钟向它的各个接口发送Hello分组，告知邻居它的存在。",
     "options": [
@@ -8175,7 +8175,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2074,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2019a",
     "question": "配置POP3服务器时，邮件服务器中默认开放TCP的（）端口。",
     "options": [
@@ -8190,7 +8190,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2075,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2019a",
     "question": "在Linux中，可以使用命令（）针对文件newfiles.txt为所有用户添加执行权限。",
     "options": [
@@ -8205,7 +8205,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2076,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2019a",
     "question": "在Linux中，可在（）文件中修改Web服务器配置。",
     "options": [
@@ -8220,7 +8220,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2077,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2019a",
     "question": "在Linux中，要查看文件的详细信息，可使用（）命令。",
     "options": [
@@ -8235,7 +8235,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2078,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2019a",
     "question": "在Windows命令行窗口中使用（）命令可以查看本机各个接口的DHCP服务是否已启用。",
     "options": [
@@ -8250,7 +8250,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2079,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2019a",
     "question": "在Windows系统的服务项中，（）服务使用SMB协议创建并维护客户端网络与远程服务器之间的链接。",
     "options": [
@@ -8310,7 +8310,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2083,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2019a",
     "question": "在Windows Server2008系统中，不能使用IIS搭建的是（）服务器。",
     "options": [
@@ -8385,7 +8385,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2088,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2019a",
     "question": "设备上无法创建正确的MAC转发表项，造成二层数据转发失败，故障的原因包括（）。①MAC、接口、VLAN绑定错误②配置了MAC地址学习去使能③存在环路MAC地址学习错误④MAC表项限制或超规格",
     "options": [
@@ -8400,7 +8400,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2089,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2019a",
     "question": "路由器收到一个数据报文，其目标地址为20.112.17.12，该地址属于（）子网。",
     "options": [
@@ -8415,7 +8415,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2090,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2019a",
     "question": "某校园网的地址是202.115.192.0/19，要把该网络分成30个子网，则子网掩码应该是（）。",
     "options": [
@@ -8445,7 +8445,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2092,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2019a",
     "question": "下面列出的4种快速以太网物理层标准中，采用4B5B编码技术的是（）。",
     "options": [
@@ -8460,7 +8460,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2093,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2019a",
     "question": "以太网协议中使用了二进制指数后退算法，其冲突后最大的尝试次数为（）次。",
     "options": [
@@ -8490,7 +8490,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2095,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2019a",
     "question": "默认管理VLAN是（）。",
     "options": [
@@ -8505,7 +8505,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2096,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2019a",
     "question": "以下关于跳频扩频技术的描述中，正确的是（）。",
     "options": [
@@ -8520,7 +8520,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2097,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2019a",
     "question": "下列无线网络技术中，覆盖范围最小的是（）。",
     "options": [
@@ -8535,7 +8535,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2098,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2019a",
     "question": "无线局域网中AP的轮询会说的异步帧，在IEEE802.11网络中定义了（）机制来解决这一问题。",
     "options": [
@@ -8565,7 +8565,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2100,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2019a",
     "question": "三层网络设计方案中，（）是汇聚层的功能。",
     "options": [
@@ -8580,7 +8580,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2101,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2019a",
     "question": "以下关于网络工程需求分析的叙述中，错误的是（）。",
     "options": [
@@ -8841,7 +8841,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2118,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2018b",
     "question": "使用ADSL接入Intermet,用户端需要安装（ ）协议。",
     "options": [
@@ -8856,7 +8856,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2119,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2018b",
     "question": "下列关于OSPF协议的说法中，错误的是（ ）。",
     "options": [
@@ -8871,7 +8871,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2120,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018b",
     "question": "ARP 协议数据单元封装在( )中传送。",
     "options": [
@@ -8886,7 +8886,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2121,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2018b",
     "question": "RIP协议默认的路由更新周期是( )秒。",
     "options": [
@@ -8901,7 +8901,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2122,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2018b",
     "question": "以下关于OSPF协议的叙述中，正确的是( )。",
     "options": [
@@ -8916,7 +8916,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2123,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2018b",
     "question": "在Linux中，( )命令可将文件按修改时间顺序显示。",
     "options": [
@@ -8931,7 +8931,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2124,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2018b",
     "question": "在Linux中，强制复制目录的命令是( )。",
     "options": [
@@ -8946,7 +8946,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2125,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2018b",
     "question": "可以利用( )实现Linux平台和Windows平台之间的数据共享。",
     "options": [
@@ -8976,7 +8976,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2127,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2018b",
     "question": "在配置IIS时，IIS的发布目录( )。",
     "options": [
@@ -9036,7 +9036,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2131,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2018b",
     "question": "用于配置 DDR (Dial-on-Demand Routing)链路重新建立连接等待时间的命令是( )。",
     "options": [
@@ -9111,7 +9111,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2136,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018b",
     "question": "下列关于私有地址个数和地址的描述中，都正确的是( )。",
     "options": [
@@ -9126,7 +9126,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2137,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018b",
     "question": "网络192.21.136.0/24 和192.21.143.0/24汇聚后的地址是( )。",
     "options": [
@@ -9141,7 +9141,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2138,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018b",
     "question": "把IP网络划分成子网的好处是( )。",
     "options": [
@@ -9156,7 +9156,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2139,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018b",
     "question": "某主机接口的IP地址为192.16.7.131/26. 则该IP地址所在网络的广播地址是( ).",
     "options": [
@@ -9171,7 +9171,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2140,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018b",
     "question": "IPv6链路本地单播地址的前级为( ).",
     "options": [
@@ -9186,7 +9186,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2141,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2018b",
     "question": "路由器的( )接口通过光纤连接广城网。",
     "options": [
@@ -9201,7 +9201,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2142,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2018b",
     "question": "CSMA/CD 协议是( )协议。",
     "options": [
@@ -9216,7 +9216,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2143,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2018b",
     "question": "以太网的最大帧长为1518字节，每个数据帧前面有8个字节的前导字段，帧间隔为9.6μs，快速以太网100 BASE-T发送两帧之间的最大间隔时间约为( ) μs。",
     "options": [
@@ -9261,7 +9261,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2146,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2018b",
     "question": "下面的描述中属于工作区子系统区城范围的是( )。",
     "options": [
@@ -9276,7 +9276,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2147,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2018b",
     "question": "以下关于三层交换机的叙述中，正确的是( )。",
     "options": [
@@ -9291,7 +9291,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2148,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018b",
     "question": "IP数据报首部中IHL (Internet首部长度)字段的最小值为( )。",
     "options": [
@@ -9402,7 +9402,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2155,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2018a",
     "question": "100BASE-TX交换机，一个端口通信的数据速率（全双工）最大可以达到（）。",
     "options": [
@@ -9417,7 +9417,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2156,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2018a",
     "question": "快速以太网标准100BASE-FX采用的传输介质是（）。",
     "options": [
@@ -9432,7 +9432,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2157,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2018a",
     "question": "按照同步光纤网传输标准（SONET），OC-1的数据速率为（）Mb/s。",
     "options": [
@@ -9462,7 +9462,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2159,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018a",
     "question": "路由器通常采用（）连接以太网交换机。",
     "options": [
@@ -9492,7 +9492,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2161,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2018a",
     "question": "VLAN之间的通信通过（）实现。",
     "options": [
@@ -9507,7 +9507,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2162,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2018a",
     "question": "HFC接入网采用（）传输介质接入住宅小区。",
     "options": [
@@ -9522,7 +9522,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2163,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018a",
     "question": "TCP协议中，URG指针的作用是（）。",
     "options": [
@@ -9537,7 +9537,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2164,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018a",
     "question": "RARP协议的作用是（）。",
     "options": [
@@ -9552,7 +9552,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2165,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2018a",
     "question": "E1载波的基本帧由32个子信道组成，其中子信道（）用于传送控制信令。",
     "options": [
@@ -9567,7 +9567,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2166,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2018a",
     "question": "以太网的数据帧封装如下图所示，包含在IP数据报中的数据部分最长应该是（）字节。",
     "options": [
@@ -9582,7 +9582,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2167,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2018a",
     "question": "在RIP协议中，默认（）秒更新一次路由。",
     "options": [
@@ -9597,7 +9597,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2168,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2018a",
     "question": "以下关于OSPF的描述中，错误的是（）。",
     "options": [
@@ -9612,7 +9612,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2169,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2018a",
     "question": "以下关于RIP与OSPF的说法中，错误的是（）。",
     "options": [
@@ -9627,7 +9627,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2170,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2018a",
     "question": "在Linux中，使用Apache发布Web服务时默认Web站点的目录为（）。",
     "options": [
@@ -9642,7 +9642,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2171,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2018a",
     "question": "在Linux中，要更改一个文件的权限设置可使用（）命令。",
     "options": [
@@ -9657,7 +9657,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2172,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2018a",
     "question": "在Linux中，负责配置DNS的文件是（），它包含了主机的域名搜索顺序和DNS服务器的地址。",
     "options": [
@@ -9672,7 +9672,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2173,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2018a",
     "question": "主域名服务器在接收到域名请求后，首先查询的是（）。",
     "options": [
@@ -9687,7 +9687,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2174,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2018a",
     "question": "主机host1对host2进行域名查询的过程如下图所示，下列说法中正确的是（）。",
     "options": [
@@ -9702,7 +9702,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2175,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018a",
     "question": "自动专用IP地址（APIPA），用于当客户端无法获得动态地址时作为临时的主机地址，以下地址中属于自动专用IP地址的是（）。",
     "options": [
@@ -9717,7 +9717,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2176,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2018a",
     "question": "在DNS的资源记录中，A记录（）。",
     "options": [
@@ -9732,7 +9732,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2177,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2018a",
     "question": "DHCP客户端通过（）方式发送DHCPDiscovey消息。",
     "options": [
@@ -9747,7 +9747,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2178,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2018a",
     "question": "FTP协议默认使用的数据端口是（）。",
     "options": [
@@ -9822,7 +9822,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2183,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2018a",
     "question": "在TCP协议中，用于进行流量控制的字段为（）。",
     "options": [
@@ -9852,7 +9852,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2185,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018a",
     "question": "以下地址中用于组播的是（）。",
     "options": [
@@ -9867,7 +9867,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2186,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018a",
     "question": "下列IP地址中，不能作为源地址的是（）。",
     "options": [
@@ -9882,7 +9882,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2187,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018a",
     "question": "使用CIDR技术把4个C类网络110.217.128.0/22、110.217.132.0/22、110.217.136.0/22和110.217.140.0/22汇聚成一个超网，得到的地址是（）。",
     "options": [
@@ -9897,7 +9897,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2188,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018a",
     "question": "如果IPv6头部包含多个扩展头部，第一个扩展头部为（）。",
     "options": [
@@ -9912,7 +9912,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2189,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2018a",
     "question": "用于生成VLAN标记的协议是（）。",
     "options": [
@@ -9927,7 +9927,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2190,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2018a",
     "question": "两个站点采用二进制指数后退算法进行避让，3次冲突之后再次冲突的概率是（）。",
     "options": [
@@ -9942,7 +9942,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2191,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2018a",
     "question": "在CSMA/CD以太网中，数据速率为100Mb/s，网段长2km，信号速率为200m/us，则此网络的最小帧长是（）比特。",
     "options": [
@@ -9957,7 +9957,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2192,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2018a",
     "question": "下列快速以太网物理层标准中，使用5类无屏蔽双绞线作为传输介质的是（）。",
     "options": [
@@ -9972,7 +9972,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2193,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2018a",
     "question": "在802.11中采用优先级来进行不同业务的区分，优先级最低的是（）。",
     "options": [
@@ -9987,7 +9987,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2194,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2018a",
     "question": "以下关于网络布线子系统的说法中，错误的是（）。",
     "options": [
@@ -10017,7 +10017,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2196,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018a",
     "question": "下面关于路由器的描述中，正确的是（）。",
     "options": [
@@ -10047,7 +10047,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2198,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2018a",
     "question": "如果DHCP客户端发现分配的IP地址已经被使用，客户端向服务器发出（）报文，拒绝该IP地址。",
     "options": [
@@ -10062,7 +10062,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2199,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2018a",
     "question": "在层次化园区网络设计中，（）是汇聚层的功能。",
     "options": [
@@ -10248,7 +10248,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2211,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2017b",
     "question": "下列分组交换网络中，采用的交换技术与其他 3 个不同的是（）网。",
     "options": [
@@ -10263,7 +10263,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2212,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2017b",
     "question": "以下关于OSPF 路由协议的描述中，错误的是（）。",
     "options": [
@@ -10278,7 +10278,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2213,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2017b",
     "question": "相比于TCP，UDP的优势为（）。",
     "options": [
@@ -10293,7 +10293,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2214,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2017b",
     "question": "以太网可以传送最大的TCP段为（）字节。",
     "options": [
@@ -10308,7 +10308,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2215,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2017b",
     "question": "IP数据报经过MTU较小的网络时需要分片。假设一个大小为1500的报文分为2个较小报文，其中 一个报文大小为800字节，则另一个报文的大小至少为（）字节。",
     "options": [
@@ -10323,7 +10323,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2216,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2017b",
     "question": "IPv4首部中填充字段的作用是（）。",
     "options": [
@@ -10338,7 +10338,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2217,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2017b",
     "question": "主机甲向主机乙发送了一个TCP连接建立请求，主机乙给主机甲的响应报文中，标志字段正确的是（）。",
     "options": [
@@ -10353,7 +10353,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2218,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2017b",
     "question": "浏览器向Web服务器发送了一个报文，其TCP段不可能出现的端口组合是（）。",
     "options": [
@@ -10368,7 +10368,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2219,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2017b",
     "question": "以下关于VLAN标记的说法中，错误的是（）。",
     "options": [
@@ -10398,7 +10398,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2221,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2017b",
     "question": "在BGP4 协议中，当接收到对方open报文后，路由器采用（）报文响应，从而建立两个路由器之间的邻居关系。",
     "options": [
@@ -10413,7 +10413,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2222,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2017b",
     "question": "在Linux 中，要复制整个目录，应使用（）命令。",
     "options": [
@@ -10428,7 +10428,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2223,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2017b",
     "question": "在Linux 中，（）是默认安装 DHCP服务器的配置文件。",
     "options": [
@@ -10443,7 +10443,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2224,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2017b",
     "question": "（）是Linux中Samba的功能。",
     "options": [
@@ -10518,7 +10518,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2229,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2017b",
     "question": "下面的应用中，（）基于UDP协议。",
     "options": [
@@ -10533,7 +10533,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2230,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2017b",
     "question": "在一台服务器上只开放了25和110两个端口，这台服务器可以提供（）服务。",
     "options": [
@@ -10578,7 +10578,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2233,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2017b",
     "question": "无线局域网通常采用的加密方式是WPA2，其安全加密算法是（）。",
     "options": [
@@ -10638,7 +10638,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2237,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2017b",
     "question": "IPv4的D类地址是组播地址， 224.0.0.1表示（）构成的组播组。",
     "options": [
@@ -10653,7 +10653,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2238,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2017b",
     "question": "在设置家用无线路由器时，下面（）可以作为 DHCP服务器地址池。",
     "options": [
@@ -10668,7 +10668,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2239,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2017b",
     "question": "使用CIDR技术把4个C类网络202.15.145.0/24 、202.15.147.0/24 、202.15.149.0/24 和202.15.150.0/24汇聚成一个超网，得到的地址是（）。",
     "options": [
@@ -10683,7 +10683,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2240,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2017b",
     "question": "下面的地址中，可以分配给某台主机接口的地址是（）。",
     "options": [
@@ -10698,7 +10698,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2241,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2017b",
     "question": "以下IP地址中，属于网络 201.110.12.224/28 的主机IP是（）。",
     "options": [
@@ -10713,7 +10713,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2242,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2017b",
     "question": "以下关于直通交换的叙述中，正确的是（）。",
     "options": [
@@ -10743,7 +10743,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2244,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2017b",
     "question": "以下关于在IPv6中任意播地址的叙述中，错误的是（）。",
     "options": [
@@ -10773,7 +10773,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2246,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2017b",
     "question": "当站点收到\"在数据包组装期间生存时间为0\"的 ICMP 报文，说明（）。",
     "options": [
@@ -10788,7 +10788,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2247,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2017b",
     "question": "以下关于VLAN的叙述中，错误的是（）。",
     "options": [
@@ -10818,7 +10818,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2249,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2017b",
     "question": "以下关于层次化网络设计的叙述中，错误的是（）。",
     "options": [
@@ -10848,7 +10848,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2251,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2017b",
     "question": "关于华为交换机设置密码，正确的说法是（）。①华为交换机的缺省用户名是 admin，无密码②通过 B∞tOM 可以重置Cònsole 口密码③ telnet 登录密码丢失，通过 Console 口登录交换机后重新进行配置④通过 COnsole 口登录交换机重置 B∞tROM 密码。",
     "options": [
@@ -10863,7 +10863,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2252,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2017b",
     "question": "观察交换机状态指示灯是初步判断交换机故障的检测方法，以下关于交换机状态指示灯的描述中，错误的是（）。",
     "options": [
@@ -10878,7 +10878,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2253,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2017b",
     "question": "下面消除交换机上MAC地址漂移告警的方法中，描述正确的是（）。①人工把发生漂移的接口 shutdown②在接口上配置 error-down.自动 down 掉漂移的端口③在接口上配置 quit-vlan.使发生漂移的接口指定 VLAN 域内退出④在接口上配置 stp tc-protection 解决MAC地址漂移。",
     "options": [
@@ -10893,7 +10893,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2254,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2017b",
     "question": "两台交换机的光口对接，其中一台设备的光UP，另一台设备的光口DOWN定位此类故障的思路包括（）。①光纤是否交叉对接②两端使用的光模块被长和速率是否→样③两端 COMB0口是否都设置为光口④两个光口是否未同时配置自协商或者强制协商。",
     "options": [
@@ -10908,7 +10908,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2255,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2017b",
     "question": "某STP网络从链路故障中恢复时，端口收敛时间超过30秒，处理该故障的思路不包括：（）。",
     "options": [
@@ -11064,7 +11064,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2265,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2017a",
     "question": "1996年3月 .IEEE成立了802.3z工作组开始制定1000Mb/s标准。下列千兆以太网中不属于该标准的是（）",
     "options": [
@@ -11079,7 +11079,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2266,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2017a",
     "question": "主机甲和主机乙建立一条 TCP 连接，采用慢启动进行拥塞控制，TCP最大段长度为 1000字节。主机甲向主机乙发送第 1 个段并收到主机乙的确认，确认段中接收窗口大小为 3000字节，则此时主机甲可以向主机乙发送的最大字节数是（）字节。",
     "options": [
@@ -11094,7 +11094,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2267,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2017a",
     "question": "OSPF协议把网络划分成 4 种区域（Area），其中 (27)一不接受本地自治系统以外的路由信息，对自治系统以外的目标采用默认路由0.0.0.0 。",
     "options": [
@@ -11109,7 +11109,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2268,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2017a",
     "question": "下面关于 Linux目录的描述中，正确的是（）。",
     "options": [
@@ -11124,7 +11124,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2269,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2017a",
     "question": "在 Linux中，可以使用（）命令为计算机配置 IP 地址。",
     "options": [
@@ -11139,7 +11139,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2270,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2017a",
     "question": "在 Linux中，通常使用（）命令删除一个文件或目录。",
     "options": [
@@ -11154,7 +11154,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2271,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2017a",
     "question": "在以太网中发生冲突时采用退避机制，（）优先传输数据。",
     "options": [
@@ -11169,7 +11169,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2272,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2017a",
     "question": "在 Windows 操作系统中，远程桌面使用的默认端口是（）。",
     "options": [
@@ -11184,7 +11184,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2273,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2017a",
     "question": "在 Linux中，创建权限设置为-rw-rw-r--的普通文件，下面的说法中正确的是（）。",
     "options": [
@@ -11214,7 +11214,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2275,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2017a",
     "question": "在浏览器地址栏输入一个正确的网址后，本地主机将首先在（）中查询该网址对应的 IP 地址。",
     "options": [
@@ -11274,7 +11274,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2279,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2017a",
     "question": "某网络管理员在网络检测时，执行了 undo mac-address blackhole命令。该命令的作用是（）。",
     "options": [
@@ -11304,7 +11304,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2281,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2017a",
     "question": "在 SwìtchA 上 Ping SwìtchB 的地址 192.168.1，100不通。通过步骤①到④解决了该故障，该故障产生的原因是 ()①使用 display port vlan命令查看 SwitchA 和 SwitchB 接口配置② 使用displayipinterfácebrief命令查看SwitchA 和 SwitchB 接口配置③使用 portlink-typetrunk命令修改 SwitchB 配置④使用 ping192.168.1.100检查，故障排除",
     "options": [
@@ -11319,7 +11319,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2282,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2017a",
     "question": "DHCP 服务器给PCl分配IP地址时默认网关地址是202.117.110.65/27，则 PCl 的地址可能是（）",
     "options": [
@@ -11334,7 +11334,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2283,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2017a",
     "question": "某单位 IP 地址需求数如下表所示，给定地址 192.168.1.0/24，按照可变长子网掩码的设计思想，部门 3 的子网掩码为（）",
     "options": [
@@ -11349,7 +11349,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2284,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2017a",
     "question": "在网络 101.113.10.0/29 中，能接收到目的地址是 101.113.10.7的报文的主机数最多有（）个。",
     "options": [
@@ -11364,7 +11364,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2285,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2017a",
     "question": "查看 VLAN配置信息的命令是（）。",
     "options": [
@@ -11379,7 +11379,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2286,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2017a",
     "question": "运行 RIPv2协议的 3 台路由器按照如下图所示的方式连接，路由表项最少需经过（）可达到收敛状态。",
     "options": [
@@ -11394,7 +11394,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2287,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2017a",
     "question": "运行 OSPF协议的路由器在选举 DR/BDR之前，DR是（）。",
     "options": [
@@ -11409,7 +11409,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2288,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2017a",
     "question": "关于 OSPF 路由协议的说法中，正确的是（）",
     "options": [
@@ -11424,7 +11424,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2289,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2017a",
     "question": "在以太网中出于对（）的考虑，需设置数据帧的最小帧。",
     "options": [
@@ -11439,7 +11439,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2290,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2017a",
     "question": "在中国区域内， 2.4GHz 无线频段分为（）个信道。",
     "options": [
@@ -11454,7 +11454,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2291,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2017a",
     "question": "802.11g 的最高数据传输速率为（）Mbps。",
     "options": [
@@ -11469,7 +11469,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2292,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2017a",
     "question": "下图为某公司网络管理员规划的新办公大楼网络拓扑图，针对该网络规划，以下说法中不合理的是（）",
     "options": [
@@ -11625,7 +11625,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2302,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "能隔离局域网中广播风暴、提高带宽利用率的设备是（11） 。",
     "options": [
@@ -11640,7 +11640,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2303,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "点对点协议ppp中lcp的作用是（12）。",
     "options": [
@@ -11655,7 +11655,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2304,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2016b",
     "question": "tvp/ip网络中的（13）实现应答、排序和流控功能。",
     "options": [
@@ -11670,7 +11670,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2305,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "ipv6的链路本地地址是在地址前缀1111 1110 10之后附加（18）形成的。",
     "options": [
@@ -11685,7 +11685,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2306,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "连接终端和数字专线的设备csu/dsu被集成在路由器的（19）端口中。",
     "options": [
@@ -11700,7 +11700,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2307,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "下面哪个协议可通过主机的逻辑地址查找对应的物理地址？ （20） 。",
     "options": [
@@ -11715,7 +11715,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2308,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2016b",
     "question": "下面的应用层协议中通过udp传送的是（21） 。",
     "options": [
@@ -11730,7 +11730,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2309,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "代理arp是指（22） 。",
     "options": [
@@ -11745,7 +11745,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2310,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "如果路由器收到了多个路由协议转发的、关于某个目标的多条路由，它如何决定采用哪个路由？（23） 。",
     "options": [
@@ -11760,7 +11760,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2311,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "下面的选项中属于链路状态路由选择协议的是（24） 。",
     "options": [
@@ -11775,7 +11775,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2312,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "ripv2与ripvl相比，它改进了什么？（27） 。",
     "options": [
@@ -11805,7 +11805,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2314,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2016b",
     "question": "在linux系统中，要查看如下输出，可使用命令（32）。",
     "options": [
@@ -11820,7 +11820,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2315,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "当dhcp服务器拒绝客户端的ip地址请求对发送（33）报文。",
     "options": [
@@ -11835,7 +11835,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2316,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "在进行域名解析过程中，当主域名服务器查找不到口地址时，由（34）负责域名解析。",
     "options": [
@@ -11850,7 +11850,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2317,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2016b",
     "question": "在建立tcp连接过程中，出现错误连接时，（35）标志字段置“l”。",
     "options": [
@@ -11865,7 +11865,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2318,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "当客户端收到多个dhcp服务器的响应时，客户端会选择（38）地址作为自己的ip地址。",
     "options": [
@@ -11880,7 +11880,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2319,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "在windows的dos窗口中键入命令",
     "options": [
@@ -11895,7 +11895,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2320,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "下面是dhcp协议工作的4种消息，正确的顺序应该是（40） 。 ①dhcp discovery②dhcp offer③dhcp request④dhcp ack",
     "options": [
@@ -11910,7 +11910,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2321,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2016b",
     "question": "在linux中，（41） 命令可将文件以惨改时间顺序显示。",
     "options": [
@@ -11925,7 +11925,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2322,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2016b",
     "question": "要在一台主机上建立多个独立域名的站点，下面的方法中（42） 是错误的。",
     "options": [
@@ -11985,7 +11985,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2326,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2016b",
     "question": "在windows 'server 2003中，（46） 组成员用户具有完全控制权限。",
     "options": [
@@ -12030,7 +12030,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2329,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2016b",
     "question": "从ftp服务器下载文件的命令是（49） 。",
     "options": [
@@ -12045,7 +12045,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2330,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2016b",
     "question": "由于内网p2p、视频／流媒体、网络游戏等流量占用过大，影响网络性能，可以采用（50） 来保障正常的web及邮件流量需求。",
     "options": [
@@ -12060,7 +12060,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2331,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "isp分配给某公司的地址块为199.34.76.64/28，则该公司得到的ip地址数是（51） 。",
     "options": [
@@ -12075,7 +12075,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2332,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "下面是路由表的4个表项，与地址220.112.179.92匹配的表项是（52） 。",
     "options": [
@@ -12090,7 +12090,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2333,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "下面4个主机地址中属于网络110.17.200.0/21的地址是（53） 。",
     "options": [
@@ -12105,7 +12105,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2334,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2016b",
     "question": "下面的提示符（56） 表示特权模式。",
     "options": [
@@ -12120,7 +12120,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2335,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2016b",
     "question": "把路由器当前配置文件存储到nvram中的命令是（57） 。",
     "options": [
@@ -12135,7 +12135,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2336,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016b",
     "question": "如果路由器显示“serial 1 is down，line protocol is down”故障信息，则问题出在osi参考模型的（58） 。",
     "options": [
@@ -12150,7 +12150,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2337,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2016b",
     "question": "下面的交换机命令中（59） 为端口指定vlan。",
     "options": [
@@ -12165,7 +12165,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2338,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2016b",
     "question": "stp协议的作用是（60） 。",
     "options": [
@@ -12180,7 +12180,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2339,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2016b",
     "question": "vlan之间通信需要（61）上的支持。",
     "options": [
@@ -12195,7 +12195,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2340,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2016b",
     "question": "以太网中出现冲突后，发送方什么时候可以再次尝试发送？（62） 。",
     "options": [
@@ -12210,7 +12210,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2341,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2016b",
     "question": "ieee802.11标准采用的工作频段是（65） 。",
     "options": [
@@ -12225,7 +12225,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2342,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2016b",
     "question": "ieee802.11mac子层定义的竞争性访问控制协议是（66） 。",
     "options": [
@@ -12240,7 +12240,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2343,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2016b",
     "question": "无线局域网的新标准ieee802.lln提供的最高数据速率可达到（67）mb/s。",
     "options": [
@@ -12270,7 +12270,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2345,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2016b",
     "question": "在网络的分层设计模型中，对核心层工作规程的建议是（69） 。",
     "options": [
@@ -12285,7 +12285,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2346,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2016b",
     "question": "在网络规划和设计过程中，选择网络技术时要考虑多种因素。下面的各种考虑中不正确的是（70） 。",
     "options": [
@@ -12411,7 +12411,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2354,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2016a",
     "question": "在 windows 操作系统中，当用户双击“img_20160122_103.jpg”文件名时，系统会自 动通过建立的（ ）来决定使用什么程序打开该图像文件。",
     "options": [
@@ -12426,7 +12426,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2355,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2016a",
     "question": "用于连接以太网的网桥类型是（ ）。",
     "options": [
@@ -12441,7 +12441,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2356,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2016a",
     "question": "以下关于以太网交换机地址学习机制的说法中，错误的（ ）。",
     "options": [
@@ -12456,7 +12456,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2357,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2016a",
     "question": "路由器包含多种端口以连接不同类型的网络设备，其中能够连接 ddn、帧中继、x.25 和 pstn 等广域网络的是（ ）。",
     "options": [
@@ -12486,7 +12486,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2359,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2016a",
     "question": "t1 载波的数据速率是（ ）。",
     "options": [
@@ -12501,7 +12501,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2360,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2016a",
     "question": "在 xdsl 技术中，能提供上下行信道非对称传输的技术是（ ）。",
     "options": [
@@ -12516,7 +12516,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2361,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016a",
     "question": "ietf 开发的多协议标记交换（mpls）改进了第 3 层分组的交换过程。mpls 包头的位置 在（ ）。",
     "options": [
@@ -12531,7 +12531,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2362,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2016a",
     "question": "建立组播树是实现组播传输的关键技术，利用组播路由协议生成的组播树是（ ）。",
     "options": [
@@ -12561,7 +12561,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2364,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2016a",
     "question": "ospf 网络被划分为各种区域，其中作为区域之间交换路由信息的是（ ）。",
     "options": [
@@ -12576,7 +12576,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2365,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016a",
     "question": "采用 dhcp 动态分配 ip 地址，如果某主机开机后没有得到 dhcp 服务器的响应，则该主 机获取的 ip 地址属于网络（ ）。",
     "options": [
@@ -12591,7 +12591,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2366,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2016a",
     "question": "在 linux 系统中，使用 apache 服务器时默认的 web 根目录是（ ）。",
     "options": [
@@ -12606,7 +12606,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2367,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2016a",
     "question": "下面关于 linux 系统文件挂载的叙述中，正确的是（ ）。",
     "options": [
@@ -12621,7 +12621,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2368,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2016a",
     "question": "在浏览器的地址栏中输入 xxxyftp.abc.com.cn，该 url 中（ ）是要访问的主机名。",
     "options": [
@@ -12756,7 +12756,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2377,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016a",
     "question": "下面 4 个主机地址中属于网络 220.115.200.0/21 的地址是（ ）。",
     "options": [
@@ -12771,7 +12771,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2378,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2016a",
     "question": "路由器 console 端口默认的数据速率为（ ）。",
     "options": [
@@ -12786,7 +12786,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2379,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2016a",
     "question": "路由器命令 r1(config)#in prouting 的作用是（ ）。",
     "options": [
@@ -12801,7 +12801,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2380,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2016a",
     "question": "在路由器的特权模式下键入命令 setup，则路由器进入（ ）。",
     "options": [
@@ -12816,7 +12816,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2381,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2016a",
     "question": "使用 ieee 802.1q 协议，最多可以配置（ ）个 vlan。",
     "options": [
@@ -12831,7 +12831,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2382,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2016a",
     "question": "vlan 中继协议(vtp)有不同的工作模式，其中能够对交换机的 vlan 信息进行添加、删除、修改等操作，并把配置信息广播到其他交换机上的工作模式是（ ）。",
     "options": [
@@ -12846,7 +12846,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2383,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2016a",
     "question": "下面关于 vtp 的论述中，错误的是（ ）。",
     "options": [
@@ -12861,7 +12861,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2384,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2016a",
     "question": "ieee 802.3ae 10gb/s 以太网标准支持的工作模式是（ ）。",
     "options": [
@@ -12876,7 +12876,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2385,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2016a",
     "question": "如下图所示，网桥 a、b、c 连接多个以太网。已知网桥 a 为根网桥，各个网桥的 a、b、 f 端口为指定端口。那么按照快速生成树协议标准 ieee 802.1d-2004，网桥 b 的 c 端口为（ ）。",
     "options": [
@@ -12891,7 +12891,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2386,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016a",
     "question": "使用 tracert 命令进行网络检测，结果如下图所示，那么本地默认网关地址是（ ）。",
     "options": [
@@ -12906,7 +12906,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2387,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2016a",
     "question": "使用 adsl 拨号上网，需要在用户端安装（ ）协议。",
     "options": [
@@ -12921,7 +12921,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2388,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2016a",
     "question": "在网络中分配 ip 地址可以采用静态地址或动态地址方案。下面关于两种地址分配方案的 论述中错误的是（ ）。",
     "options": [
@@ -13032,7 +13032,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2395,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2015b",
     "question": "集线器与网桥的区别是（） 。",
     "options": [
@@ -13047,7 +13047,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2396,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015b",
     "question": "关于icmp协议，下面的论述中正确的是（） 。",
     "options": [
@@ -13077,7 +13077,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2398,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2015b",
     "question": "tcp使用的流量控制协议是 （）。",
     "options": [
@@ -13092,7 +13092,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2399,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2015b",
     "question": "下面4种路由中，哪一种路由的子网掩码是255.255.255.255?（） 。",
     "options": [
@@ -13107,7 +13107,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2400,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2015b",
     "question": "在广播网络中，ospf协议要选定一个指定路由器(dr)，指定路由器的功能是（） 。",
     "options": [
@@ -13122,7 +13122,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2401,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015b",
     "question": "如果要将目标网络为202.117.112.0/24的分组经102.217.115.1接口发出，需增加一条静态路由，正确的命令是（） 。",
     "options": [
@@ -13137,7 +13137,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2402,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2015b",
     "question": "在linux系统中，使用ifconfig设置接口的ip地址并启动该接口的命令是（） 。",
     "options": [
@@ -13152,7 +13152,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2403,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2015b",
     "question": "在linux系统中，在 （）文件中查看二台主机的名称和完整域名。",
     "options": [
@@ -13212,7 +13212,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2407,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015b",
     "question": "下列地址中, （）不是dhcp服务器分配的ip地址。",
     "options": [
@@ -13347,7 +13347,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2416,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015b",
     "question": "通过cidr技术，把4个主机地址220.78.169.5、220.78.172.10、220.78.174.15和 220.78.168.254组织成一个地址块，则这个超级地址块的地址是 （）。",
     "options": [
@@ -13362,7 +13362,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2417,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015b",
     "question": "采用可变长子网掩码可以把大的网络分成小的子网，例如把a类网络60.15.0.0/16分为两个子网，假设第一个子网为60.1.5.0.0/17，则另一个子网为（） 。",
     "options": [
@@ -13377,7 +13377,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2418,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2015b",
     "question": "配置路由器接口的提示符是 （）。",
     "options": [
@@ -13392,7 +13392,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2419,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2015b",
     "question": "如果想知道配置了哪种路由协议，应使用的命令是（） 。",
     "options": [
@@ -13407,7 +13407,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2420,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2015b",
     "question": "如果在互联网中添加了一个局域网，要用手工方式将该局域网添加到路由表中，应使用的命令是 （）。",
     "options": [
@@ -13422,7 +13422,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2421,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2015b",
     "question": "以下关于csma/cd协议的叙述中，正确的是（） 。",
     "options": [
@@ -13437,7 +13437,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2422,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2015b",
     "question": "以下关于交换机获取与其端口连接设备的mac地址的叙述中，正确的是（） 。",
     "options": [
@@ -13452,7 +13452,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2423,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2015b",
     "question": "用来承载多个vlan流量的协议组是（） 。",
     "options": [
@@ -13467,7 +13467,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2424,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2015b",
     "question": "多协议标记交换(mpls)是ietf提出的第三层交换标准弦以下关于mpls的叙述中，正确的是 （）。",
     "options": [
@@ -13482,7 +13482,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2425,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2015b",
     "question": "在层次化局域网模型中，以下关于核心层的叙述，正确的是（） 。",
     "options": [
@@ -13668,7 +13668,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2437,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "cisco路由器高速同步串口默认的封装协议是（）。",
     "options": [
@@ -13683,7 +13683,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2438,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2015a",
     "question": "以下关于网桥和交换机的区别叙述中，正确的是（）。",
     "options": [
@@ -13728,7 +13728,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2441,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "当一个帧离开路由器接口时，其第二层封装信息中（）。",
     "options": [
@@ -13743,7 +13743,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2442,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "（）时使用默认路由。",
     "options": [
@@ -13758,7 +13758,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2443,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "以下关于ospf的区域（area）的叙述中，正确的是（）。",
     "options": [
@@ -13773,7 +13773,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2444,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "运行ospf协议的路由器用（）报文来建立和更新它的拓扑数据库。",
     "options": [
@@ -13788,7 +13788,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2445,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "链路状态路由协议的主要特点是（）。",
     "options": [
@@ -13803,7 +13803,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2446,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "从下面一条rip路由信息中可以得到的结论是（）。",
     "options": [
@@ -13818,7 +13818,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2447,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "运行距离矢量路由协议的路由器（）。",
     "options": [
@@ -13833,7 +13833,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2448,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2015a",
     "question": "以下关于vlan的叙述中，正确的是（）。",
     "options": [
@@ -13848,7 +13848,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2449,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2015a",
     "question": "当局域网中更换交换机时，怎样保证新交换机成为网络中的根交换机？（）。",
     "options": [
@@ -13878,7 +13878,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2451,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "参加下图的网络配置，发现工作站b无法与服务器a通信，什么故障影响了两者互通？（）。",
     "options": [
@@ -13893,7 +13893,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2452,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "某网络拓扑图如下所示，若采用rip协议，在路由器rounter2上需要进行rip声明的网络是（）。",
     "options": [
@@ -13908,7 +13908,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2453,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2015a",
     "question": "iis服务身份验证方式中，安全级别最低的是（）。",
     "options": [
@@ -13923,7 +13923,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2454,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2015a",
     "question": "有较高实时性要求的应用（）。",
     "options": [
@@ -13938,7 +13938,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2455,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2015a",
     "question": "在linux中，文件（）解析主机域名。",
     "options": [
@@ -13953,7 +13953,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2456,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2015a",
     "question": "在linux中，要删除用户组group l应使用（）命令。",
     "options": [
@@ -13983,7 +13983,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2458,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2015a",
     "question": "在windows用户管理中，使用组策略a-g-dl-p,其中p表示（）。",
     "options": [
@@ -13998,7 +13998,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2459,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "以下叙述中，不属于无源光网络优势的是（）。",
     "options": [
@@ -14013,7 +14013,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2460,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2015a",
     "question": "查看dns缓存记录的命令是（）。",
     "options": [
@@ -14028,7 +14028,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2461,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2015a",
     "question": "在windows操作系统中，（）文件可以帮助域名解析。",
     "options": [
@@ -14043,7 +14043,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2462,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "dhcp（）报文的目的ip地址为255．255．255．255。",
     "options": [
@@ -14058,7 +14058,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2463,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "客户端采用（）报文来拒绝dhcp服务器提供的ip地址。",
     "options": [
@@ -14073,7 +14073,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2464,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "若一直得不到回应，dhcp客户端总共会广播（）次请求。",
     "options": [
@@ -14253,7 +14253,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2476,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2015a",
     "question": "为了弥补wep协议的安全缺陷，wpa安全认证方案增加的机制是（）。",
     "options": [
@@ -14268,7 +14268,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2477,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "由dhcp服务器分配的默认网关地址是192.168.5.33/28，（）是本地主机的有效地址。",
     "options": [
@@ -14283,7 +14283,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2478,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "如果指定的地址掩码是255.255.254.0，则有效的主机地址是（）。",
     "options": [
@@ -14298,7 +14298,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2479,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "如果要检查本机的ip协议是否工作正常，则应该ping的地址是（）。",
     "options": [
@@ -14313,7 +14313,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2480,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "工作站a的ip地址是202.117.17.24/28,而工作站b的ip地址是202.117.17.100/28,当两个工作站直接相连时不能通信，怎样修改地址才能使得这两个工作站可以互相通信？（）。",
     "options": [
@@ -14328,7 +14328,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2481,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "运营商指定本地路由器接口的地址是200.15.10.6/29,路由器连接的默认网关的地址是200.15.10.7，这样配置后发现路由器无法ping通任何远程设备，原因是（）。",
     "options": [
@@ -14358,7 +14358,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2483,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "下面的4个ipv6地址中，无效地址是（）。",
     "options": [
@@ -14373,7 +14373,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2484,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "ipv6站点通过ipv4网络通信需要使用隧道技术，常用的3种自动隧道技术是（）。",
     "options": [
@@ -14403,7 +14403,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2486,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2015a",
     "question": "以太网采用物理地址的目的是（）。",
     "options": [
@@ -14418,7 +14418,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2487,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2015a",
     "question": "4g移动通信标准td-lte与fdd-lte的区别是（）。",
     "options": [
@@ -14433,7 +14433,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2488,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2015a",
     "question": "关于移动ad hoc网络manet，（）不是manet的特点。",
     "options": [
@@ -14463,7 +14463,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2490,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2015a",
     "question": "一个中等规模的公司，3个不同品牌的路由器都配置了ripv1协议。isp为公司分配的地址块为201.113.210.0/24。公司希望通过vlsm技术把网络划分为3个子网，每个子网中有40台主机，下面的配置方案中最优的是（）。",
     "options": [
@@ -14478,7 +14478,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2491,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2015a",
     "question": "如果发现网络的数据传输很慢，服务质量也达不到要求，应该首先检查哪一个协议层工作情况？（）。",
     "options": [
@@ -14619,7 +14619,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2500,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2014b",
     "question": "下面的广域网络中属于电路交换网络的是（ ）。",
     "options": [
@@ -14679,7 +14679,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2504,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2014b",
     "question": "ppp是连接广域网的一种封装协议，下面关于ppp的描述错误的是（ ）。",
     "options": [
@@ -14694,7 +14694,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2505,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2014b",
     "question": "与ripv2相比，igrp协议增加了一些新的特性，下面的描述中错误的是（ ）。",
     "options": [
@@ -14709,7 +14709,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2506,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2014b",
     "question": "为了解决rip协议形成路由环路的问题可以采用多种方法，下面列出的方法中效果最好的是（ ）。",
     "options": [
@@ -14739,7 +14739,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2508,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2014b",
     "question": "管理员为某台linux系统中的/etc/hosts文件添加了如下记录，下列说法正确的是（ ）。127.0.0.1 localhostlocaldomain localhost 192.168.1.100 linumu100.com web80 192.168.1.120 emailserver",
     "options": [
@@ -14754,7 +14754,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2509,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2014b",
     "question": "下列关于linux文件组织方式的说法中，（ ）是错误的。",
     "options": [
@@ -14784,7 +14784,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2511,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2014b",
     "question": "搭建试验平台、进行网络仿真是网络生命周期中（ ）阶段的任务。",
     "options": [
@@ -14799,7 +14799,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2512,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2014b",
     "question": "在windows系统中可通过停止（ ）服务来阻止对域名解释cache的访问。",
     "options": [
@@ -14814,7 +14814,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2513,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2014b",
     "question": "在linux操作系统中，采用（ ）来搭建dns服务器。",
     "options": [
@@ -14829,7 +14829,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2514,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2014b",
     "question": "dns服务器的默认端口号是（ ）端口。",
     "options": [
@@ -14844,7 +14844,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2515,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2014b",
     "question": "使用（ ）命令可以向ftp服务器上传文件。",
     "options": [
@@ -14889,7 +14889,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2518,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2014b",
     "question": "把交换机由特权模式转换到全局模式使用的命令是（ ）。",
     "options": [
@@ -14904,7 +14904,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2519,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2014b",
     "question": "在无线局域网中，ap（无线接入点）工作在osi模型的（ ）。",
     "options": [
@@ -14934,7 +14934,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2521,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2014b",
     "question": "以下关于windows server 2003域管理模式的描述中，正确的是（ ）。",
     "options": [
@@ -14964,7 +14964,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2523,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2014b",
     "question": "以下地址属于自动专用ip地址（apipa）的是（ ）。",
     "options": [
@@ -14979,7 +14979,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2524,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2014b",
     "question": "公司得到一个b类网络地址块，需要划分成若干个包含1000台主机的子网，则可以划分成（ ）个子网。",
     "options": [
@@ -14994,7 +14994,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2525,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2014b",
     "question": "ip地址202.117.17.254/22是什么地址？（ ）。",
     "options": [
@@ -15009,7 +15009,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2526,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2014b",
     "question": "把下列8个地址块20.15.0.0～20.15.7.0聚合成一个超级地址块，则得到的网络地址是（ ）。",
     "options": [
@@ -15054,7 +15054,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2529,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2014b",
     "question": "如果一个tcp连接处于established状态，这是表示（ ）。",
     "options": [
@@ -15069,7 +15069,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2530,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2014b",
     "question": "以太网采用的csma/cd协议。当冲突发生时要通过二进制指数后退算法计算，关于这个算法，以下论述中错误的是（ ）。",
     "options": [
@@ -15084,7 +15084,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2531,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2014b",
     "question": "在局域网中可动态或静态划分vlan,静态划分vlan是根据（ ）划分。",
     "options": [
@@ -15099,7 +15099,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2532,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2014b",
     "question": "以下通信技术中，未在ieee802.11无线局域网中使用的是（ ）。",
     "options": [
@@ -15114,7 +15114,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2533,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2014b",
     "question": "zigbee网络是ieee802.15.4定义的低速无线个人网。其中包含全功能和简单功能两类设备，以下关于这两类设备的描述中，错误的是（ ）。",
     "options": [
@@ -15129,7 +15129,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2534,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2014b",
     "question": "网络系统设计过程中，逻辑网络设计阶段的任务是（ ）。",
     "options": [
@@ -15144,7 +15144,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2535,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2014b",
     "question": "下列关于网络汇聚层的描述中，正确的是（ ）",
     "options": [
@@ -15285,7 +15285,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2544,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2014a",
     "question": "动态划分vlan的方法中不包括（ ）。",
     "options": [
@@ -15300,7 +15300,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2545,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2014a",
     "question": "与http1.0相比，http1.1的优点不包括（ ）。",
     "options": [
@@ -15315,7 +15315,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2546,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2014a",
     "question": "在运行linux系统的服务器中，使用bind配置域名服务器，主配置文件存放在（ ）。",
     "options": [
@@ -15330,7 +15330,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2547,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2014a",
     "question": "在linux系统中，root用户执行shutdown–rnow命令，系统将会（ ）。",
     "options": [
@@ -15345,7 +15345,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2548,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2014a",
     "question": "结构化综合布线系统中的干线子系统是指（ ）。",
     "options": [
@@ -15360,7 +15360,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2549,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2014a",
     "question": "假设网络的生产管理系统采用b/s工作方式，经常上网的用户数为100个，每个用户每分钟平均产生11个事务，平均事务量大小为0.06mb，则这个系统需要的传输速率为（ ）。",
     "options": [
@@ -15390,7 +15390,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2551,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2014a",
     "question": "ftp提供了丰富的命令，用来更改本地计算机工作目录的命令是（ ）。",
     "options": [
@@ -15405,7 +15405,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2552,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2014a",
     "question": "在进行域名解析过程中，由（ ）获取的解析结果耗时最短。",
     "options": [
@@ -15420,7 +15420,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2553,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2014a",
     "question": "dns通知是一种推进机制，其作用是使得（ ）。",
     "options": [
@@ -15435,7 +15435,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2554,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2014a",
     "question": "在dns资源记录中，（ ）记录类型的功能是把ip地址解析为主机名。",
     "options": [
@@ -15450,7 +15450,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2555,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2014a",
     "question": "以下关于dhcp的描述中，正确的是（ ）。",
     "options": [
@@ -15540,7 +15540,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2561,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2014a",
     "question": "在windowsserver2003环境中有本地用户和域用户两种用户，其中本地用户信息存储在（ ）。",
     "options": [
@@ -15600,7 +15600,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2565,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2014a",
     "question": "某实验室使用无线路由器提供内部上网，无线路由器采用固定ip地址连接至校园网，实验室用户使用一段时间后，不定期出现不能访问互联网的现象，经测试无线路由器工作正常，同时有线接入的用户可以访问互联网，分析以上情况，导致这一故障产生的最可能的原因是（ ）。",
     "options": [
@@ -15615,7 +15615,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2566,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2014a",
     "question": "校园网连接运营商的ip地址为202.117.113.3/30，本地网关的地址为192.168.1.254/24，如果本地计算机采用动态地址分配，在下图中应如何配置？（ ）。",
     "options": [
@@ -15630,7 +15630,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2567,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2014a",
     "question": "下面的选项中，不属于网络202.113.100.0/21的地址是（ ）。",
     "options": [
@@ -15645,7 +15645,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2568,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2014a",
     "question": "下面的地址中属于单播地址的是（ ）。",
     "options": [
@@ -15660,7 +15660,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2569,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2014a",
     "question": "ipv6地址的格式前缀用于表达地址类型或子网地址，例如60位地址12ab00000000cd3有多种合法的表示形式，下面的选项中，不合法的是（ ）。",
     "options": [
@@ -15675,7 +15675,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2570,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2014a",
     "question": "ipv6新增加了一种任意播地址，这种地址（ ）。",
     "options": [
@@ -15690,7 +15690,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2571,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2014a",
     "question": "中国自主研发的3g通信标准是（ ）。",
     "options": [
@@ -15705,7 +15705,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2572,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2014a",
     "question": "ieee802.11规定了多种wlan通信标准，其中（ ）与其他标准采用的频段不同，因而不能兼容。",
     "options": [
@@ -15720,7 +15720,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2573,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2014a",
     "question": "网络系统设计过程中，物理网络设计阶段的任务是（ ）。",
     "options": [
@@ -15876,7 +15876,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2583,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2013b",
     "question": "下面哪个字段包含在tcp头部和udp头部？ （ ）。",
     "options": [
@@ -15891,7 +15891,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2584,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2013b",
     "question": "在linux操作系统中把外部设备当作文件统一管理，外部设备文件通常放在 （ ） 目录中。",
     "options": [
@@ -15906,7 +15906,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2585,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2013b",
     "question": "linux中，下列（ ）命令可以更改一个文件的权限设置。",
     "options": [
@@ -15951,7 +15951,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2588,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2013b",
     "question": "计算机网络机房建设中，为了屏蔽外界干扰、漏电及电火花等，要求所有计算机网络设备的机箱、机柜、机壳等都需接地，该接地系统称为安全地，安全地接地电阻要求小于（ ）。",
     "options": [
@@ -15966,7 +15966,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2589,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013b",
     "question": "某单位局域网配置如下图所示，pc2发送到internet上的报文源ip地址为 （ ） 。",
     "options": [
@@ -16041,7 +16041,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2594,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013b",
     "question": "属于网络202.115.200.0/21的地址是 （ ） 。",
     "options": [
@@ -16056,7 +16056,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2595,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2013b",
     "question": "4条路由：220.117.129.0/24、220.117.130.0/24、220.117.132.0/24和220.117.133.0/24经过汇聚后得到的网络地址是（ ）。",
     "options": [
@@ -16152,7 +16152,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2601,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2013a",
     "question": "假设某分时系统采用简单时间片轮转法，当系统中的用户数为n,时间片为q时，系统对每个用户的响应时间t=（ ）。",
     "options": [
@@ -16167,7 +16167,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2602,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "各种联网设备的功能不同，路由器的主要功能是（ ）。",
     "options": [
@@ -16197,7 +16197,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2604,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "如下图所示，若路由器c的e0端口状态为down,则当主机a向主机c发送数据时，路由器c发送（ ）。",
     "options": [
@@ -16212,7 +16212,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2605,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "当一个主机要获取通信目标的mac地址时，（ ）。",
     "options": [
@@ -16227,7 +16227,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2606,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "路由器出厂时，默认的串口封装协议是（ ）。",
     "options": [
@@ -16257,7 +16257,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2608,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "下列选项中，不采用虚电路通信的网络是（ ）网。",
     "options": [
@@ -16272,7 +16272,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2609,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "在网络层采用分层编址方案的好处是（ ）。",
     "options": [
@@ -16287,7 +16287,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2610,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2013a",
     "question": "在交换网络中，vtp协议作用是什么？（ ）。",
     "options": [
@@ -16302,7 +16302,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2611,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "参见下图，主机aping主机 b，当数据帧到达主机b时，其中包含的源mac地址和源ip地址是（ ）。",
     "options": [
@@ -16317,7 +16317,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2612,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "下面描述中，不属于链路状态协议特点的是（ ）。",
     "options": [
@@ -16332,7 +16332,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2613,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2013a",
     "question": "关于网桥和交换机，下面的描述中正确的是（ ）。",
     "options": [
@@ -16347,7 +16347,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2614,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "使用路由器对局域网进行分段的好处是（ ）。",
     "options": [
@@ -16362,7 +16362,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2615,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "ospf网络可以划分为多个区域（area），下面关于区域的描述中错误的是（ ）。",
     "options": [
@@ -16377,7 +16377,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2616,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "与ripv1相比，ripv2的改进是（ ）。",
     "options": [
@@ -16392,7 +16392,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2617,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2013a",
     "question": "有多种方案可以在一台服务器中安装windows和linux两种网络操作系统，其中可以同时运行windows和linux系统的方案是（ ）。",
     "options": [
@@ -16407,7 +16407,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2618,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2013a",
     "question": "linux系统中的文件操作命令grep用于（ ）。",
     "options": [
@@ -16482,7 +16482,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2623,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2013a",
     "question": "主机host1对host2进行域名查询的过程如下图所示，下列说法中正确的是（ ）",
     "options": [
@@ -16512,7 +16512,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2625,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2013a",
     "question": "在接收邮件时，客户端代理软件与pop3服务器通过建立（ ）连接来传送报文。",
     "options": [
@@ -16587,7 +16587,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2630,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2013a",
     "question": "在windowsserver2003中，创建用户组时，可选择的组类型中，仅用于分发电子邮件且没有启用安全性的是（ ）。",
     "options": [
@@ -16602,7 +16602,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2631,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2013a",
     "question": "在windowserver2003中，与windowserver2000终端服务对应的是（ ）。",
     "options": [
@@ -16662,7 +16662,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2635,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "一台电脑的本地连接设置如下图所示，结果发现不能拼通任何远程设备，该故障的原因是什么？（ ）。",
     "options": [
@@ -16677,7 +16677,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2636,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "如果指定子网掩码为255.255.254.0，则地址（ ）可以被赋予一个主机。",
     "options": [
@@ -16692,7 +16692,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2637,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "某个网络中包含320台主机，采用什么子网掩码可以把这些主机置于同一个子网中而且不浪费地址？（ ）。",
     "options": [
@@ -16707,7 +16707,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2638,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "如果dhcp服务器分配的默认网关地址是192.168.5.33/28，则主机的有效地址应该是（ ）。",
     "options": [
@@ -16722,7 +16722,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2639,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "4条路由：124.23.129.0/24,124.23.130.0/24,124.23.132.0/24和124.23.133.0/24经过汇聚后得到的网络地址是（ ）。",
     "options": [
@@ -16737,7 +16737,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2640,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "下面哪一个ip地址属于cidr地址块120.64.4.0/22？ （ ）。",
     "options": [
@@ -16752,7 +16752,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2641,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "两个主机通过电缆直接相连，主机a的ip地址为220.17.33.24/28，而主机b的ip地址为220.17.33.100/28，两个主机互相ping不能，这时应该（ ）。",
     "options": [
@@ -16767,7 +16767,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2642,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "下面哪个地址可以应用于公共互联网中？（ ）。",
     "options": [
@@ -16782,7 +16782,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2643,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "下面关于ipv6单播地址的描述中，正确的是（ ）?",
     "options": [
@@ -16797,7 +16797,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2644,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2013a",
     "question": "在wi-fi安全协议中，wpa与wep相比，采用了（ ）。",
     "options": [
@@ -16812,7 +16812,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2645,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2013a",
     "question": "生成树协议stp使用了哪两人个参数来选举根网桥（ ）",
     "options": [
@@ -16827,7 +16827,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2646,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2013a",
     "question": "关于vlan，下面的描述中正确的是（ ）。",
     "options": [
@@ -16842,7 +16842,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2647,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2013a",
     "question": "下面哪个协议用于承载多个vlan信息？（ ）。",
     "options": [
@@ -16857,7 +16857,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2648,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2013a",
     "question": "以太网协议中使用物理地址作用是什么？（ ）。",
     "options": [
@@ -16872,7 +16872,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2649,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2013a",
     "question": "下面的光纤以太网标准中，支持1000m以上传输距离的是（ ）。",
     "options": [
@@ -16887,7 +16887,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2650,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2013a",
     "question": "ieee802.11采用了csma/ca协议，采用这个协议的原因是（ ）。",
     "options": [
@@ -16902,7 +16902,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2651,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "配置路由器默认路由的命令是（ ）。",
     "options": [
@@ -16917,7 +16917,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2652,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "路由表如下图所示，如果一个分组的目标地址是220.117.5.65，则会发送给那个端口？（ ）。",
     "options": [
@@ -16932,7 +16932,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2653,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2013a",
     "question": "一家连锁店需要设计一种编址方案来支持全国各个门店销售网络，门店有300家左右，每个门店一个子网，每个子网终端最多50台电脑，该连锁店从isp处得到一个b类地址，应该采用的子网掩码是（ ）。",
     "options": [
@@ -16947,7 +16947,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2654,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2013a",
     "question": "网络系统设计过程中，物理网络设计阶段的任务是（ ）。",
     "options": [
@@ -17118,7 +17118,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2665,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2012b",
     "question": "以下关于icmp协议的说法中，正确的是（ ）。",
     "options": [
@@ -17133,7 +17133,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2666,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2012b",
     "question": "以下关于rarp协议的说法中，正确的是（ ）。",
     "options": [
@@ -17148,7 +17148,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2667,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2012b",
     "question": "所谓“代理arp”是指由（ ）假装目标主机回答源主机的arp请求。",
     "options": [
@@ -17163,7 +17163,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2668,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2012b",
     "question": "在距离矢量路由协议中，每一个路由器接收的路由信息来源于（ ）。",
     "options": [
@@ -17178,7 +17178,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2669,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2012b",
     "question": "在ospf协议中，链路状态算法用于（ ）。",
     "options": [
@@ -17193,7 +17193,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2670,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2012b",
     "question": "以下关于两种路由协议的叙述中，错误的是（ ）。",
     "options": [
@@ -17238,7 +17238,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2673,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2012b",
     "question": "在windows server 2003操作系统中，www服务包含在（ ）组件下。",
     "options": [
@@ -17253,7 +17253,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2674,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2012b",
     "question": "dns正向搜索区的功能是将域名解析为ip地址，windows xp系统中用于测试该功能的命令是（ ）。",
     "options": [
@@ -17268,7 +17268,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2675,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2012b",
     "question": "在windows环境下，dhcp客户端可以使用（ ）命令重新获得ip地址，这时客户机向dhcp服务器发送一个dhcpdiscover数据包来请求重新租用ip地址。",
     "options": [
@@ -17283,7 +17283,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2676,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2012b",
     "question": "匿名ftp访问通常使用（ ）作为用户名。",
     "options": [
@@ -17298,7 +17298,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2677,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2012b",
     "question": "下列不属于电子邮件协议的是（ ）。",
     "options": [
@@ -17433,7 +17433,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2686,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2012b",
     "question": "有一种nat技术叫做“地址伪装”（masquerading），下面关于地址伪装的描述中正确的是（ ）。",
     "options": [
@@ -17448,7 +17448,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2687,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2012b",
     "question": "把网络10.1.0.0/16进一步划分为子网10.1.0.0/18，则原网络被划分为（ ）个子网。",
     "options": [
@@ -17463,7 +17463,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2688,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2012b",
     "question": "ip地址202.117.17.255/22是（ ）地址。",
     "options": [
@@ -17478,7 +17478,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2689,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2012b",
     "question": "对下面4条路由：202.115.129.0/24、202.115.130.0/24、202.115.132.0/24和202.115.133.0/24进行路由汇聚，能覆盖这4条路由的地址是（ ）。",
     "options": [
@@ -17493,7 +17493,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2690,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2012b",
     "question": "下面关于ipv6的描述中，最准确的是（ ）。",
     "options": [
@@ -17508,7 +17508,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2691,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2012b",
     "question": "下面（ ）字段的信息出现在tcp头部而不出现在udp头部。",
     "options": [
@@ -17523,7 +17523,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2692,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2012b",
     "question": "当一个tcp连接处于（ ）状态时等待应用程序关闭端口。",
     "options": [
@@ -17538,7 +17538,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2693,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2012b",
     "question": "一个运行csma/cd协议的以太网，数据速率为1gb/s，网段长1km，信号速率为200，000km/sec，则最小帧长是（ ）比特。",
     "options": [
@@ -17553,7 +17553,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2694,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2012b",
     "question": "以太网帧结构中“填充”字段的作用是（ ）。",
     "options": [
@@ -17568,7 +17568,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2695,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2012b",
     "question": "关于无线网络中使用的扩频技术，下面描述中错误的是（ ）。",
     "options": [
@@ -17583,7 +17583,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2696,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2012b",
     "question": "物联网中使用的无线传感网络技术是（ ）。",
     "options": [
@@ -17598,7 +17598,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2697,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2012b",
     "question": "正在发展的第四代无线通信技术推出了多个标准，下面的选项中不属于4g标准的是（ ）。",
     "options": [
@@ -17613,7 +17613,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2698,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2012b",
     "question": "网络系统设计过程中，物理网络设计阶段的仟务是（ ）。",
     "options": [
@@ -17628,7 +17628,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2699,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2012b",
     "question": "下列关于网络核心层的描述中，正确的是（ ）。",
     "options": [
@@ -17799,7 +17799,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2710,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2012a",
     "question": "网络中存在各种交换设备，下面的说法中错误的是( )。",
     "options": [
@@ -17814,7 +17814,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2711,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2012a",
     "question": "通过以太网交换机连接的一组工作站( )。",
     "options": [
@@ -17844,7 +17844,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2713,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2012a",
     "question": "客户端登陆ftp服务器后使用( )命令来上传文件。",
     "options": [
@@ -17859,7 +17859,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2714,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2012a",
     "question": "smtp传输的邮件报文采用 ( )格式表示。",
     "options": [
@@ -17874,7 +17874,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2715,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2012a",
     "question": "在下列选项中，属于iis 6.0提供的服务组件是( ) 。",
     "options": [
@@ -17889,7 +17889,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2716,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2012a",
     "question": "与route print具有相同功能的命令是( )。",
     "options": [
@@ -17904,7 +17904,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2717,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2012a",
     "question": "下面的linux命令中，能关闭系统的命令是( )。",
     "options": [
@@ -17919,7 +17919,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2718,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2012a",
     "question": "在linux中，dns服务器的配置文件是( )。",
     "options": [
@@ -17934,7 +17934,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2719,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2012a",
     "question": "在linux中，可以利用( )命令来终止某个进程。",
     "options": [
@@ -17964,7 +17964,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2721,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2012a",
     "question": "在windows系统中，默认权限最低的用户组是( )。",
     "options": [
@@ -18114,7 +18114,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2731,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2012a",
     "question": "lp地址分为公网地址和私网地址，以下地址中属于私网地址的是( )。",
     "options": [
@@ -18129,7 +18129,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2732,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2012a",
     "question": "如果子网172.6.32.0/20被划分为子网172.6.32.0/26，则下面的结论中正确的是( )。",
     "options": [
@@ -18144,7 +18144,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2733,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2012a",
     "question": "以下给出的地址中，属于子网172.112.15.19/28的主机地址是( ) 。",
     "options": [
@@ -18159,7 +18159,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2734,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2012a",
     "question": "ipv6地址分为3种类型，它们是( )。",
     "options": [
@@ -18174,7 +18174,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2735,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2012a",
     "question": "ftp默认的控制连接端口是( )。",
     "options": [
@@ -18204,7 +18204,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2737,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2012a",
     "question": "局域网冲突时槽的计算方法如下。假设tphy表示工作站的物理层时延，c表示光速，s表示网段长度，tr表示中继器的时延，在局域网最大配置的情况下，冲突时槽等于 ( )。",
     "options": [
@@ -18219,7 +18219,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2738,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2012a",
     "question": "在局域网标准中，100base-t规定从收发器到集线器的距离不超过( )米。",
     "options": [
@@ -18234,7 +18234,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2739,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2012a",
     "question": "802.11在mac层采用了( )协议。",
     "options": [
@@ -18249,7 +18249,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2740,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2012a",
     "question": "ieee 802.16工作组提出的无线接入系统空中接口标准是( )。",
     "options": [
@@ -18279,7 +18279,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2742,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2012a",
     "question": "建筑物综合布线系统中的园区子系统是指( )。",
     "options": [
@@ -18435,7 +18435,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2752,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2011b",
     "question": "两个自治系统(as)之间使用的路由协议是（ ）：",
     "options": [
@@ -18450,7 +18450,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2753,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2011b",
     "question": "一个以太网交换机，读取整个数据帧，对数据帧进行差错校验后再转发出去，这种交换方式称为（ ）",
     "options": [
@@ -18510,7 +18510,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2757,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2011b",
     "question": "在各种xdsl技术中，能提供上下行信道非对称传输的是（ ）",
     "options": [
@@ -18525,7 +18525,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2758,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2011b",
     "question": "使用adsl虚拟拨号接入方式中，需要在用户端安装（ ）软件。",
     "options": [
@@ -18540,7 +18540,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2759,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2011b",
     "question": "arp表用于缓存设备的ip地址与mac地址的对应关系，采用arp表的好处是（ ）",
     "options": [
@@ -18555,7 +18555,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2760,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2011b",
     "question": "smtp服务器端使用的端口号默认为（ ）",
     "options": [
@@ -18570,7 +18570,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2761,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2011b",
     "question": "下图为web站点的默认网站属性窗口，如果要设置用户对主页文件的读取权限，需要在（ ）选项卡中进行配置。",
     "options": [
@@ -18585,7 +18585,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2762,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2011b",
     "question": "dhcp客户端启动时会向网络发出一个 dhcpdiscover包来请求ip地址，其源ip地址为（ ）",
     "options": [
@@ -18600,7 +18600,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2763,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2011b",
     "question": "当使用时间到过达租约期的（ ）时，dhcp客户端和dhcp服务器将更新租约。",
     "options": [
@@ -18615,7 +18615,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2764,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2011b",
     "question": "在linux中，某文件的访问权限信息为“-rwxr--r--”，以下对该文件的说明中，正确的是（ ）",
     "options": [
@@ -18630,7 +18630,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2765,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2011b",
     "question": "在linux中，更改用户口令的命令是（ ）",
     "options": [
@@ -18645,7 +18645,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2766,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2011b",
     "question": "在linux中，目录“/proc”主要用于存放（ ）。",
     "options": [
@@ -18675,7 +18675,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2768,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2011b",
     "question": "配置ftp服务器的属性窗口如下图所示，默认情况下“本地路径”文本框中的值为（ ）",
     "options": [
@@ -18780,7 +18780,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2775,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2011b",
     "question": "建筑物综合布线系统中工作区子系统是指（ ）",
     "options": [
@@ -18795,7 +18795,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2776,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2011b",
     "question": "设有下面4条路由：196.34.129.0/24、196.34.130.0/24、196.34.132.0/24和196.34.133.0/24，如果进行路由汇聚，能覆盖这4条路由的地址是（ ）",
     "options": [
@@ -18810,7 +18810,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2777,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2011b",
     "question": "ipv6地址33ab：0000：0000：cd30：0000：0000：0000：0000/60可以表示成各种简写形式，以下写法中正确的是（ ）",
     "options": [
@@ -18825,7 +18825,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2778,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2011b",
     "question": "采用csma/cd协议的基带总线，其段长为1000m，中间没有中继器，数据速率为10mb/s，信号传播速度为200m/µs，为了保证在发送期间能够检测到冲突，则该网络上的最小帧长应为（ ）比特。",
     "options": [
@@ -18840,7 +18840,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2779,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2011b",
     "question": "以下属于万兆以太网物理层标准的是（ ）。",
     "options": [
@@ -18855,7 +18855,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2780,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2011b",
     "question": "ieee802.11采用了类似于802.3csma/cd协议，之所以不采用csma/cd协议的原因是（ ）。",
     "options": [
@@ -18870,7 +18870,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2781,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2011b",
     "question": "无线局域网（wlan）标准ieee802.llg规定的最大数据速率是（ ）。",
     "options": [
@@ -18885,7 +18885,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2782,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2011b",
     "question": "大型局域网通常组织成分层结构（核心层、汇聚层和接入层），以下关于网络核心层的叙述中，正确的是（ ）。",
     "options": [
@@ -19086,7 +19086,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2795,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2011a",
     "question": "快速以太网标准100BASE-TX规定的传输介质是 ( ) 。",
     "options": [
@@ -19101,7 +19101,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2796,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2011a",
     "question": "以太网交换机的交换方式有三种，这种交换方式不包括 ( ) 。",
     "options": [
@@ -19116,7 +19116,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2797,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2011a",
     "question": "CISCO路由器操作系统IOS有三种命令模式，其中不包括 ( ) 。",
     "options": [
@@ -19131,7 +19131,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2798,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2011a",
     "question": "通过CATV电缆访问因特网，在用户端必须安装的设备是 ( ) 。",
     "options": [
@@ -19146,7 +19146,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2799,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2011a",
     "question": "在互联网中可以采用不同的路由选择算法，所谓松散源路由是指IP分组 ( ) 。",
     "options": [
@@ -19161,7 +19161,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2800,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2011a",
     "question": "下面关于边界网关协议BGP4的描述中，不正确的是 ( ) 。",
     "options": [
@@ -19176,7 +19176,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2801,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2011a",
     "question": "RIP协议中可以使用多种方法防止路由循环，在以下选项中不属于这些方法的是 ( ) 。",
     "options": [
@@ -19191,7 +19191,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2802,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2011a",
     "question": "RIP协议默认的路由更新周期是 ( ) 秒。",
     "options": [
@@ -19206,7 +19206,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2803,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2011a",
     "question": "MPLS（多协议标记交换）根据标记对分组进行交换，MPLS包头的位置应插入在 ( ) 。",
     "options": [
@@ -19221,7 +19221,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2804,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2011a",
     "question": "IGRP协议的路由度量包括多种因素，但是一般情况下可以简化为 ( ) 。",
     "options": [
@@ -19236,7 +19236,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2805,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2011a",
     "question": "采用Windows Server 2003创建一个Web站点，主目录中添加主页文件index.asp，在客户机的浏览器地址栏内输入该网站的域名后不能正常访问，则不可能的原因是 ( ) 。",
     "options": [
@@ -19296,7 +19296,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2809,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2011a",
     "question": "在Linux系统中，命令 ( ) 用于管理各项软件包。",
     "options": [
@@ -19311,7 +19311,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2810,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2011a",
     "question": "在Linux系统中，为某一个文件在另外一个位置建立文件连接的命令为 ( ) 。",
     "options": [
@@ -19326,7 +19326,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2811,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2011a",
     "question": "默认情况下，Linux系统中用户登录密码信息存放在 ( ) 文件中。",
     "options": [
@@ -19401,7 +19401,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2816,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2011a",
     "question": "下面关于域本地组的说法中，正确的是 ( ) 。",
     "options": [
@@ -19431,7 +19431,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2818,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2011a",
     "question": "互联网规定的B类私网地址为 ( ) 。",
     "options": [
@@ -19446,7 +19446,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2819,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2011a",
     "question": "ISP分配给某公司的地址块为199.34.76.64/28，则该公司得到的地址数是 ( )",
     "options": [
@@ -19461,7 +19461,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2820,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2011a",
     "question": "由16个C类网络组成一个超网（Supernet），其子网掩码（mask）应为 ( )",
     "options": [
@@ -19476,7 +19476,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2821,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2011a",
     "question": "设IP地址为18.250.31.14，子网掩码为255.240.0.0，则子网地址是 ( )",
     "options": [
@@ -19491,7 +19491,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2822,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2011a",
     "question": "IPv6“链路本地地址”是将主机 ( ) 附加在地址前缀1111 1110 10之后产生的。",
     "options": [
@@ -19506,7 +19506,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2823,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2011a",
     "question": "如果要设置交换机的IP地址，则命令提示符应该是 ( ) 。",
     "options": [
@@ -19521,7 +19521,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2824,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2011a",
     "question": "路由器命令“Router(config-subif)#encapsulation dotlq 1”的作用是 ( ) 。",
     "options": [
@@ -19536,7 +19536,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2825,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2011a",
     "question": "若路由器的路由信息如下，则最后一行路由信息怎样得到的 ( ) 。R3#show ip routeGateway of last resort is not set192.168.0.0/24 is subnetted,6 subnetsC 192.168.1.0 is directly connected,Ethernet0C 192.168.65.0 is directly connected,Serial0C 192.168.67.0 is directly connected,Serial1R 192.168.69.0[120/1]via 192.168.67.2,00:00:15,Serial1[120/1]via 192.168.65.2,00:00:24,Serial0R 192.168.69.0[120/1]via 192.168.67.2,00:00:15,Serial1R 192.168.69.0[120/1]via 192.168.652,00:00:24,Serial0",
     "options": [
@@ -19551,7 +19551,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2826,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2011a",
     "question": "按802.1d生成树协议（STP），在交换机互联的局域网中， ( ) 的交换机被选为根交换机。",
     "options": [
@@ -19566,7 +19566,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2827,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2011a",
     "question": "以太网中采用了二进制指数后退算法，这个算法的特点是 ( ) 。",
     "options": [
@@ -19581,7 +19581,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2828,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2011a",
     "question": "以太网帧格式如下图所示，其中“填充”字段的作用是 ( ) 。",
     "options": [
@@ -19596,7 +19596,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2829,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2011a",
     "question": "IEEE 802.11采用了CSMA/CA协议，下面关于这个协议的描述中错误的是 ( ) 。",
     "options": [
@@ -19611,7 +19611,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2830,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2011a",
     "question": "在IEEE 802.11标准中使用了扩频通信技术，下面选项中有关扩频通信技术说法正确的是 ( ) 。",
     "options": [
@@ -19626,7 +19626,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2831,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2011a",
     "question": "Wi-Fi联盟制定的安全认证方案WPA（Wi-Fi Protected Access）是 ( ) 标准的子集。",
     "options": [
@@ -19641,7 +19641,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2832,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2011a",
     "question": "为了确定一个网络是否可以连通，主机应该发送ICMP ( ) 报文。",
     "options": [
@@ -19656,7 +19656,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2833,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2011a",
     "question": "在域名系统中，根域下面是顶级域（TLD）。在下面的选项中 ( ) 属于全世界通用的顶级域。",
     "options": [
@@ -19671,7 +19671,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2834,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2011a",
     "question": "在网络设计阶段进行通信流量分析时可以采用简单的80/20规则，下面关于这种规则的说明中，正确的是 ( ) 。",
     "options": [
@@ -19686,7 +19686,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2835,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2011a",
     "question": "根据用户需求选择正确的网络技术是保证网络建设成功的关键，在选择网络技术时应考虑多种因素，下面的各种考虑中，不正确的是 ( ) 。",
     "options": [
@@ -19782,7 +19782,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2841,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010b",
     "question": "在操作系统文件管理中，通常采用 （ ） 来组织和管理外存中的信息。",
     "options": [
@@ -19797,7 +19797,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2842,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010b",
     "question": "假设系统中进程的三态模型如下图所示，图中的a、b和c的状态分别为 （ ） 。",
     "options": [
@@ -19842,7 +19842,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2845,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2010b",
     "question": "下面关于交换机的说法中，正确的是 （ ） 。",
     "options": [
@@ -19857,7 +19857,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2846,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2010b",
     "question": "路由器通过光纤连接广域网的是 （ ） 。",
     "options": [
@@ -19932,7 +19932,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2851,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2010b",
     "question": "ipv4协议头中标识符字段的作用是 （ ） 。",
     "options": [
@@ -19947,7 +19947,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2852,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2010b",
     "question": "当tcp实体要建立连接时，其段头中的 （ ） 标志置1。",
     "options": [
@@ -19962,7 +19962,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2853,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2010b",
     "question": "udp协议在ip层之上提供了 （ ） 能力。",
     "options": [
@@ -19977,7 +19977,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2854,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2010b",
     "question": "ripvl不支持cidr，对于运行ripvl协议的路由器，不能设置的网络地址是 （ ） 。",
     "options": [
@@ -19992,7 +19992,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2855,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2010b",
     "question": "ripv2相对ripvl主要有三方面的改进，其中不包括 （ ） 。",
     "options": [
@@ -20007,7 +20007,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2856,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2010b",
     "question": "igrp和eigrp是cisco公司开发的路由协议，它们采用的路由度量方法是 （ ） 。",
     "options": [
@@ -20022,7 +20022,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2857,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010b",
     "question": "在进行域名解析过程中，由 （ ） 获取的解析结果耗时最短。",
     "options": [
@@ -20037,7 +20037,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2858,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010b",
     "question": "ftp命令中用来设置客户端当前工作目录的命令是 （ ） 。",
     "options": [
@@ -20052,7 +20052,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2859,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2010b",
     "question": "http协议中，用于读取一个网页的操作方法为 （ ） 。",
     "options": [
@@ -20067,7 +20067,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2860,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010b",
     "question": "在linux系统中可用ls -al命令列出文件列表， （ ） 列出的是一个符号连接文件。",
     "options": [
@@ -20082,7 +20082,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2861,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010b",
     "question": "linux系统中，下列关于文件管理命令cp与mv说法正确的是 （ ） 。",
     "options": [
@@ -20097,7 +20097,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2862,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010b",
     "question": "linux系统中，默认安装dhcp服务的配置文件为 （ ） 。",
     "options": [
@@ -20112,7 +20112,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2863,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010b",
     "question": "默认情况下，远程桌面用户组（remote desktop users）成员对终端服务器 （ ） 。",
     "options": [
@@ -20127,7 +20127,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2864,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010b",
     "question": "windows server 2003采用了活动目录（active directory）对网络资源进行管理，活动目录需安装在 （ ） 分区。",
     "options": [
@@ -20142,7 +20142,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2865,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010b",
     "question": "linux系统中， （ ） 服务的作用与windows的共享文件服务作用相似，提供基于网络的共享文件/打印服务。",
     "options": [
@@ -20187,7 +20187,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2868,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010b",
     "question": "在windows系统中需要重新从dhcp服务器获取ip地址时，可以使用 （ ） 命令。",
     "options": [
@@ -20202,7 +20202,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2869,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010b",
     "question": "iis 6.0将多个协议结合起来组成一个组件，其中不包括 （ ） 。",
     "options": [
@@ -20232,7 +20232,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2871,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010b",
     "question": "windows系统中，路由跟踪命令是 （ ） 。",
     "options": [
@@ -20262,7 +20262,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2873,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2010b",
     "question": "ieee 802.11i所采用的加密算法为 （ ） 。",
     "options": [
@@ -20277,7 +20277,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2874,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2010b",
     "question": "网络172.21.136.0/24和172.21.143.0/24汇聚后的地址是 （ ） 。",
     "options": [
@@ -20292,7 +20292,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2875,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2010b",
     "question": "如果子网172.6.32.0/20再划分为172.6.32.0/26，则下面的结论中正确的是 （ ） 。",
     "options": [
@@ -20307,7 +20307,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2876,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2010b",
     "question": "下面给出的网络地址中，属于私网地址的是 （ ） 。",
     "options": [
@@ -20322,7 +20322,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2877,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2010b",
     "question": "ip地址172.17.16.255/23是一个 （ ） 。",
     "options": [
@@ -20337,7 +20337,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2878,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2010b",
     "question": "给定一个c类网络192.168.1.0/24，要在其中划分出3个60台主机的网段和2个30台主机的网段，则采用的子网掩码应该分别为（ ）。",
     "options": [
@@ -20352,7 +20352,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2879,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2010b",
     "question": "在交换机上同时配置了使能口令（enable password）和使能密码（enable secret），起作用的是 （ ） 。",
     "options": [
@@ -20367,7 +20367,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2880,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2010b",
     "question": "以下的命令中，可以为交换机配置默认网关地址的是 （ ） 。",
     "options": [
@@ -20397,7 +20397,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2882,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2010b",
     "question": "在交换机之间的链路中，能够传送多个vlan数据包的是 （ ） 。",
     "options": [
@@ -20412,7 +20412,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2883,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2010b",
     "question": "要实现vtp动态修剪，在vtp域中的所有交换机都必须配置成 （ ） 。",
     "options": [
@@ -20427,7 +20427,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2884,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2010b",
     "question": "能进入vlan配置状态的交换机命令是 （ ） 。",
     "options": [
@@ -20442,7 +20442,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2885,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2010b",
     "question": "以太网协议可以采用非坚持型、坚持型和p坚持型3种监听算法。下面关于这3种算法的描述中，正确的是 （ ） 。",
     "options": [
@@ -20457,7 +20457,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2886,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2010b",
     "question": "以太网帧格式如下图所示，其中的“长度”字段的作用是 （ ） 。",
     "options": [
@@ -20472,7 +20472,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2887,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2010b",
     "question": "下面列出的4种快速以太网物理层标准中，使用两对5类无屏蔽双绞线作为传输介质的是 （ ） 。",
     "options": [
@@ -20487,7 +20487,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2888,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2010b",
     "question": "用于工业、科学和医疗方面的免许可证的微波频段有多个，其中世界各国通用的ism频段是 （ ） 。",
     "options": [
@@ -20502,7 +20502,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2889,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2010b",
     "question": "2009年发布的 （ ） 标准可以将wlan的传输速率邮4mb/s提高到300~600mb/s。",
     "options": [
@@ -20517,7 +20517,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2890,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2010b",
     "question": "网络系统生命周期可以划分为5个阶段，实施这5个阶段的合理顺序是 （ ） 。",
     "options": [
@@ -20532,7 +20532,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2891,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2010b",
     "question": "大型局域网通常划分为核心层、汇聚层和接入层，以下关于各个网络层次的描述中，不正确的是 （ ） 。",
     "options": [
@@ -20547,7 +20547,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2892,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2010b",
     "question": "网络系统设计过程中，逻辑网络设计阶段的任务是 （ ） 。",
     "options": [
@@ -20562,7 +20562,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2893,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2010b",
     "question": "利用sdh实现广域网互联，如果用户需要的数据传输速率较小，可以用准同步数字系列（pdh）兼容的传输方式在每个stm-1帧中封装 （ ） 个e1信道。",
     "options": [
@@ -20703,7 +20703,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2902,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2010a",
     "question": "第三层交换根据 （ ） 对数据包进行转发。",
     "options": [
@@ -20718,7 +20718,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2903,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2010a",
     "question": "按照ieee 802.1d协议，当交换机端口处于 （ ） 状态时，既可以学习mac帧中的源地址，又可以把接收到的mac帧转发到适当的端口。",
     "options": [
@@ -20733,7 +20733,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2904,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2010a",
     "question": "以下关于帧中继网的叙述中，错误的是 （ ） 。",
     "options": [
@@ -20778,7 +20778,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2907,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2010a",
     "question": "数字用户线（dsl）是基于普通电话线的宽带接入技术，可以在铜质双绞线上同时传送数据和话音信号。下列选项中，数据速率最高的dsl标准是 （ ） 。",
     "options": [
@@ -20793,7 +20793,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2908,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2010a",
     "question": "下列fttx组网方案中，光纤覆盖面最广的是 （ ） 。",
     "options": [
@@ -20808,7 +20808,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2909,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2010a",
     "question": "在ipv6中，地址类型是由格式前缀来区分的。ipv6可聚合全球单播地址的格式前缀是 （ ） 。",
     "options": [
@@ -20823,7 +20823,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2910,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2010a",
     "question": "telnet采用客户端/服务器工作方式，采用 （ ） 格式实现客户端和服务器的数据传输。",
     "options": [
@@ -20868,7 +20868,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2913,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010a",
     "question": "通过“internet信息服务（iis）管理器”管理单元可以配置ftp服务器，若将控制端口设置为2222，则数据端口自动设置为 （ ） 。",
     "options": [
@@ -20883,7 +20883,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2914,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2010a",
     "question": "atm高层定义了4类业务，压缩视频信号的传送属于 （ ） 类业务。",
     "options": [
@@ -20898,7 +20898,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2915,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010a",
     "question": "某linux dhcp服务器dhcpd.conf的配置文件如下：ddns-update-style none;subnet 192.168.0.0 netmask 255.255.255.0 {range 192.168.0.200 192.168.0.254;ignore client-updates;default-lease-time 3600;max-lease-time 7200;option routers 192.168.0.1;option domain-name “test.org”;option domain-name-servers 192.168.0.2;}host test1 {hardware ethernet 00:e0:4c:70:33:65; fixed-address 192.168.0.8;}客户端ip地址的默认租用期为 （ ） 小时。",
     "options": [
@@ -20913,7 +20913,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2916,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2010a",
     "question": "dhcp客户端不能从dhcp服务器获得 （ ） 。",
     "options": [
@@ -20928,7 +20928,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2917,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010a",
     "question": "配置pop3服务器时，邮件服务器的属性对话框如下图所示，其中默认情况下“服务器端口”文本框应输入 （ ） 。",
     "options": [
@@ -21003,7 +21003,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2922,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2010a",
     "question": "iis 服务支持的身份验证方法中，需要利用明文在网络上传递用户名和密码的是 （ ） 。",
     "options": [
@@ -21048,7 +21048,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2925,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2010a",
     "question": "某局域网访问internet 速度很慢，经检测发现局域网内有大量的广播包，采用 （ ） 方法可能有效的解决该网络问题。",
     "options": [
@@ -21063,7 +21063,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2926,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2010a",
     "question": "下列ip地址中，属于私网地址的是 （ ） 。",
     "options": [
@@ -21078,7 +21078,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2927,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2010a",
     "question": "网络200.105.140.0/20中可分配的主机地址数是 （ ） 。",
     "options": [
@@ -21093,7 +21093,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2928,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2010a",
     "question": "下列地址中，属于154.100.80.128/26的可用主机地址是 （ ） 。",
     "options": [
@@ -21108,7 +21108,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2929,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2010a",
     "question": "无类别域间路由（cidr）技术有效的解决了路由缩放问题。使用cidr技术把4个网络c1：192.24.0.0/21c2：192.24.16.0/20c3：192.24.8.0/22c4：192.24.34.0/23汇聚成一条路由信息，得到的网络地址是 （ ） 。",
     "options": [
@@ -21123,7 +21123,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2930,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2010a",
     "question": "按照cisco公司的vlan中继协议（vtp），当交换机处于 （ ） 模式时可以改变vlan配置，并把配置信息分发到管理域中的所有交换机。",
     "options": [
@@ -21138,7 +21138,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2931,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2010a",
     "question": "交换机命令switch（config）#vtp pruning的作用是 （ ） 。",
     "options": [
@@ -21153,7 +21153,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2932,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2010a",
     "question": "ieee802.3规定的最小帧长为64字节，这个帧长是指 （ ） 。",
     "options": [
@@ -21168,7 +21168,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2933,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2010a",
     "question": "千兆以太网标准802.3z定义了一种帧突发方式（frame bursting），这种方式是指 （ ） 。",
     "options": [
@@ -21183,7 +21183,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2934,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2010a",
     "question": "ieee 802.11标准定义的peer to peer网络是 （ ） 。",
     "options": [
@@ -21198,7 +21198,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2935,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2010a",
     "question": "ieee802.11g标准支持最高数据速率可达 （ ） mb/s。",
     "options": [
@@ -21213,7 +21213,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2936,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2010a",
     "question": "假设生产管理网络系统采用b/s工作方式，经常上网用户数为150个，每用户每分钟产生8个事务处理任务，平均事务量大小为0.05mb，则这个系统需要的信息传输速率为 （ ） 。",
     "options": [
@@ -21354,7 +21354,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2945,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2009b",
     "question": "mpls根据标记对分组进行交换，其标记中包含 （ ） 。",
     "options": [
@@ -21369,7 +21369,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2946,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2009b",
     "question": "linux操作系统中，网络管理员可以通过修改 （ ） 文件对web服务器端口进行配置。",
     "options": [
@@ -21384,7 +21384,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2947,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2009b",
     "question": "在linux操作系统中，存放用户账号加密口令的文件是 （ ） 。",
     "options": [
@@ -21399,7 +21399,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2948,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2009b",
     "question": "下列关于microsoft管理控制台（mmc）的说法中，错误的是 （ ） 。",
     "options": [
@@ -21429,7 +21429,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2950,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2009b",
     "question": "xdsl技术中，能提供上下行信道非对称传输的是 （ ） 。",
     "options": [
@@ -21534,7 +21534,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2957,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2009b",
     "question": "使用cidr技术把4个c类网络220.117.12.0/24、220.117.13.0/24、220.117.14.0/24和220.117.15.0/24汇聚成一个超网，得到的地址是 （ ） 。",
     "options": [
@@ -21549,7 +21549,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2958,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2009b",
     "question": "某公司网络的地址是200.16.192.0/18，划分成16个子网，下面的选项中，不属于这16个子网网址的是 （ ） 。",
     "options": [
@@ -21564,7 +21564,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2959,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2009b",
     "question": "ipv6地址12ab:0000:0000:cd30:0000:0000:0000:0000/60可以表示成各种简写形式，下面的选项中，写法正确的是 （ ） 。",
     "options": [
@@ -21579,7 +21579,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2960,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2009b",
     "question": "下面关于帧中继网络的描述中，错误的是 （ ） 。",
     "options": [
@@ -21609,7 +21609,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2962,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2009b",
     "question": "汇聚层交换机应该实现多种功能，下面选项中，不属于汇聚层功能的是 （ ） 。",
     "options": [
@@ -21624,7 +21624,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2963,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2009b",
     "question": "交换机命令switch&gt;enable的作用是 （ ） 。",
     "options": [
@@ -21639,7 +21639,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2964,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2009b",
     "question": "ieee 802.1q协议的作用是 （ ） 。",
     "options": [
@@ -21654,7 +21654,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2965,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2009b",
     "question": "csma/cd协议可以利用多种监听算法来减小发送冲突的概率，下面关于各种监听算法的描述中，正确的是 （ ） 。",
     "options": [
@@ -21699,7 +21699,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2968,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2009b",
     "question": "开放系统的数据存储有多种方式，属于网络化存储的是 （ ） 。",
     "options": [
@@ -21714,7 +21714,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2969,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2009b",
     "question": "ieee 802.11采用了类似于802.3 csma/cd协议的csma/ca协议，之所以不采用csma/cd协议的原因是 （ ） 。",
     "options": [
@@ -21729,7 +21729,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2970,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2009b",
     "question": "建筑物综合布线系统中的工作区子系统是指 （ ） 。",
     "options": [
@@ -21744,7 +21744,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2971,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2009b",
     "question": "eia/tia-568标准规定，在综合布线时，如果信息插座到网卡之间使用无屏蔽双绞线，布线距离最大为 （ ） 米。",
     "options": [
@@ -21774,7 +21774,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2973,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2009b",
     "question": "下列关于网络核心层的描述中，正确的是 （ ） 。",
     "options": [
@@ -21789,7 +21789,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2974,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2009b",
     "question": "网络系统设计过程中，物理网络设计阶段的任务是 （ ） 。",
     "options": [
@@ -21915,7 +21915,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2982,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2009a",
     "question": "可以把所有使用dhcp协议获取ip地址的主机划分为不同的类别进行管理。下面的选项列出了划分类别的原则，其中合理的是 （ ） 。",
     "options": [
@@ -21930,7 +21930,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2983,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2009a",
     "question": "tcp协议在建立连接的过程中可能处于不同的状态，用netstat命令显示出tcp连接的状态为syn_send，则这个连接正处于 b（ ） 。",
     "options": [
@@ -21945,7 +21945,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2984,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2009a",
     "question": "ripv2是增强的rip协议，下面关于ripv2的描述中，错误的是 （ ） 。",
     "options": [
@@ -21960,7 +21960,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2985,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2009a",
     "question": "下列关于windows 2003中域的描述正确的是 （ ） 。",
     "options": [
@@ -21975,7 +21975,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2986,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2009a",
     "question": "在windows命令窗口中输入 （ ） 命令，可见到如下图所示的结果。===========================================================interface list0x1………..ms tcp loopback interface0x2...00 16 36 33 9b be……realtek rtl8139 family pci fast ethemet nic-数据包计划程序微型端口======================================================================================================================active routesnetwork destination netmask gateway interface metric",
     "options": [
@@ -21990,7 +21990,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2987,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2009a",
     "question": "linux操作系统中，建立动态路由需要用到文件 d（ ） 。",
     "options": [
@@ -22005,7 +22005,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2988,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2009a",
     "question": "linux操作系统中，网络管理员可以通过修改 c（ ） 文件对web服务器的端口进行配置。",
     "options": [
@@ -22020,7 +22020,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2989,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2009a",
     "question": "linux有三个查看文件的命令，若希望能够用光标上下移动来查看文件内容，应使用 （ ） 命令。",
     "options": [
@@ -22035,7 +22035,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2990,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2009a",
     "question": "windows server 2003操作系统中，iis6.0不提供下列 （ ） 服务。",
     "options": [
@@ -22050,7 +22050,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2991,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2009a",
     "question": "windows server 2003操作系统中， （ ） 提供了远程桌面访问。",
     "options": [
@@ -22065,7 +22065,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 2992,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2009a",
     "question": "若在windows“运行”窗口中键入 （ ） 命令，可以查看和修改注册表。",
     "options": [
@@ -22200,7 +22200,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3001,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2009a",
     "question": "一个网络的地址为172.16.7.128/26，则该网络的广播地址是 （ ） 。",
     "options": [
@@ -22215,7 +22215,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3002,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2009a",
     "question": "使用cidr技术把4个c类网络192.24.12.0/24、192.24.13.0/24、192.24.14.0/24和192.24.15.0/24 汇聚成一个超网，得到的地址是 （ ） 。",
     "options": [
@@ -22230,7 +22230,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3003,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2009a",
     "question": "某公司网络的地址是133.10.128.0/17，被划分成16个子网，下面的选项中不属于这16个子网的地址是 （ ） 。",
     "options": [
@@ -22245,7 +22245,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3004,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2009a",
     "question": "以下地址中不属于网络100.10.96.0/20的主机地址是 （ ） 。",
     "options": [
@@ -22260,7 +22260,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3005,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2009a",
     "question": "vlan中继协议（vtp）用于在大型交换网络中简化vlan的管理。按照vtp协议，交换机的运行模式分为3种：服务器、客户机和透明模式。下面关于vtp协议的描述中，错误的是 （ ） 。",
     "options": [
@@ -22275,7 +22275,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3006,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2009a",
     "question": "新交换机出厂时的默认配置是是 （ ） 。",
     "options": [
@@ -22290,7 +22290,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3007,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2009a",
     "question": "在生成树协议（stp）ieee 802.1d中，根据 （ ） 来选择根交换机。",
     "options": [
@@ -22305,7 +22305,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3008,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2009a",
     "question": "在快速以太网物理层标准中，使用两对5类无屏蔽双绞线的是 （ ） 。",
     "options": [
@@ -22350,7 +22350,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3011,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2009a",
     "question": "在ieee 802.11标准中使用了扩频通信技术，下面选项中有关扩频通信技术说法正确的是 （ ） 。",
     "options": [
@@ -22365,7 +22365,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3012,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2009a",
     "question": "下面关于wlan安全标准ieee 802.11i的描述中，错误的是 （ ） 。",
     "options": [
@@ -22410,7 +22410,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3015,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2009a",
     "question": "下列有关网络设备选型原则中，不正确的是 （ ） 。",
     "options": [
@@ -22425,7 +22425,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3016,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2009a",
     "question": "在层次化网络设计中， （ ） 不是分布层/接入层交换机的选型策略。",
     "options": [
@@ -22581,7 +22581,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3026,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2008b",
     "question": "在光纤通信标准中，oc-3的数据速率是 （ ） 。",
     "options": [
@@ -22671,7 +22671,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3032,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2008b",
     "question": "在ospf网络中，路由器定时发出hello分组与特定的邻居进行联系，在默认情况下，如果 （ ） 没有收到这种分组，就认为对方不存在了。",
     "options": [
@@ -22686,7 +22686,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3033,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2008b",
     "question": "icmp协议有多种控制报文。当网络中出现拥塞时，路由器发出 （ ） 报文。",
     "options": [
@@ -22701,7 +22701,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3034,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2008b",
     "question": "在windows server 2003上启用iis 6.0提供web服务，创建一个web站点并将主页文件index.asp拷贝到该web站点的主目录下。在客户机的浏览器地址栏内输入网站的域名后提示没有权限访问网站，则可能的原因是 （ ） 。",
     "options": [
@@ -22716,7 +22716,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3035,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2008b",
     "question": "某ip网络连接如下图所示，主机pc1发出的一个全局广播消息，无法收到该广播消息的是 （ ） 。",
     "options": [
@@ -22731,7 +22731,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3036,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2008b",
     "question": "用linux ls –al 命令列出下面的文件列表， （ ） 是块设备文件。",
     "options": [
@@ -22746,7 +22746,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3037,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2008b",
     "question": "为保证在启动linux服务器时自动启动dhcp进程，应在 （ ） 文件中将配置项dhcpd=no改为dhcpd=yes。",
     "options": [
@@ -22761,7 +22761,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3038,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2008b",
     "question": "在linux操作系统中，存放有主机名及对应ip地址的文件是 （ ） 。",
     "options": [
@@ -22776,7 +22776,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3039,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2008b",
     "question": "windows操作系统下可以通过安装 （ ） 组件来提供ftp服务。",
     "options": [
@@ -22791,7 +22791,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3040,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2008b",
     "question": "windows系统下，通过运行 （ ） 命令可以打开windows管理控制台。",
     "options": [
@@ -22806,7 +22806,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3041,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2008b",
     "question": "在windows server 2003下若选择安全登录，则首先需要按 （ ） 组合键。",
     "options": [
@@ -22956,7 +22956,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3051,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2008b",
     "question": "windows server 2003中的iis为web服务提供了许多选项，利用这些选项可以更好第配置web服务的性能、行为和安全等。如下图所示属性页中，“限制网络带宽”选项属于 （ ） 选项卡。",
     "options": [
@@ -22971,7 +22971,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3052,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2008b",
     "question": "使用 （ ） 协议远程配置交换机。",
     "options": [
@@ -22986,7 +22986,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3053,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2008b",
     "question": "一个b类网络的子网掩码为255.255.192.0，则这个网络被划分成了 （ ） 个子网。",
     "options": [
@@ -23001,7 +23001,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3054,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2008b",
     "question": "使用cidr技术把4个网络100.100.0.0/18、100.100.64.0/18、100.100.128.0/18和100.100.192.0/18汇聚成一个超网，得到的地址是 （ ） 。",
     "options": [
@@ -23016,7 +23016,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3055,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2008b",
     "question": "某公司网络的地址是202.110.128.0/17，下面的选项中， （ ） 属于这个网络。",
     "options": [
@@ -23031,7 +23031,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3056,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2008b",
     "question": "私网地址用于配置公司内部网络，下面选项中， （ ） 属于私网地址。",
     "options": [
@@ -23046,7 +23046,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3057,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2008b",
     "question": "以下给出的地址中，不属于网络222.15.64.0/20的主机地址是 （ ） 。",
     "options": [
@@ -23061,7 +23061,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3058,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2008b",
     "question": "通过交换机连接的一组工作站 （ ） 。",
     "options": [
@@ -23076,7 +23076,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3059,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2008b",
     "question": "利用交换机可以把网络划分成多个虚拟局域网（vlan）。一般情况下，交换机默认的vlan是 （ ） 。",
     "options": [
@@ -23091,7 +23091,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3060,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2008b",
     "question": "在tcp/ip网络中，为各种公共服务保留的端口号范围是 （ ） 。",
     "options": [
@@ -23106,7 +23106,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3061,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2008b",
     "question": "交换机命令switcha(vlan)#vtp pruning的作用是 （ ） 。",
     "options": [
@@ -23121,7 +23121,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3062,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2008b",
     "question": "路由器命令r1(config)#ip routing的作用是 （ ） 。",
     "options": [
@@ -23136,7 +23136,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3063,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2008b",
     "question": "关于ieee 802.3的csma/cd协议，下面结论中错误的是 （ ） 。",
     "options": [
@@ -23151,7 +23151,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3064,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2008b",
     "question": "以下关于ieee 802.3ae标准的描述中，错误的是 （ ） 。",
     "options": [
@@ -23166,7 +23166,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3065,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2008b",
     "question": "关于无线局域网，下面叙述中正确的是 （ ） 。",
     "options": [
@@ -23196,7 +23196,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3067,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2008b",
     "question": "adsl是一种宽带接入技术，这种技术使用的传输介质是 （ ） 。",
     "options": [
@@ -23211,7 +23211,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3068,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2008b",
     "question": "文档的编制在网络项目开发工作中占有突出的地位。下列有关网络工程文档的叙述中，不正确的是 （ ） 。",
     "options": [
@@ -23226,7 +23226,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3069,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2008b",
     "question": "在层次化网络设计中， （ ） 不是核心层交换机的设备选型策略。",
     "options": [
@@ -23241,7 +23241,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3070,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2008b",
     "question": "下面关于网络系统设计原则的说法中，正确的是 （ ） 。",
     "options": [
@@ -23256,7 +23256,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3071,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2008b",
     "question": "下面关于通信子网规划设计的说法中，错误的是 （ ） 。",
     "options": [
@@ -23427,7 +23427,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3082,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2008a",
     "question": "ipv6地址以16进制数表示，每4个16进制数为一组，组之间用冒号分隔，下面的ipv6地址adbf:0000:feea:0000:0000:00ea:00ac:deed的简化写法是 （ ） 。",
     "options": [
@@ -23442,7 +23442,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3083,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2008a",
     "question": "浏览器与web服务器通过建立 （ ） 连接来传送网页。",
     "options": [
@@ -23457,7 +23457,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3084,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2008a",
     "question": "在tcp协议中，采用 （ ） 来区分不同的应用进程。",
     "options": [
@@ -23472,7 +23472,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3085,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2008a",
     "question": "arp协议的作用是由ip地址求mac地址，arp请求是广播发送，arp响应是 （ ） 发送。",
     "options": [
@@ -23487,7 +23487,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3086,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2008a",
     "question": "下面有关bgp4协议的描述中，不正确的是 （ ） 。",
     "options": [
@@ -23502,7 +23502,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3087,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2008a",
     "question": "icmp协议在网络中起到了差错控制和交通控制的作用。如果在ip数据报的传送过程中，如果出现拥塞，则路由器发出 （ ） 报文。",
     "options": [
@@ -23517,7 +23517,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3088,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2008a",
     "question": "若linux用户需要将ftp默认的21号端口修改为8800，可以修改 （ ） 配置文件。",
     "options": [
@@ -23532,7 +23532,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3089,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2008a",
     "question": "在windows server 2003的“管理您的服务器”界面中，可以通过 （ ） 安装配置dhcp服务器。",
     "options": [
@@ -23547,7 +23547,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3090,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2008a",
     "question": "用户可以通过http://www.a.com和http://www.b.com访问在同一台服务器上 （ ）不同的两个web站点。",
     "options": [
@@ -23562,7 +23562,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3091,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2008a",
     "question": "在windows操作系统下，ftp客户端可以使用 （ ） 命令显示客户端当前目录中的文件。",
     "options": [
@@ -23577,7 +23577,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3092,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2008a",
     "question": "设置计算机的无线网卡，使该计算机与实验室的无线访问点labap之间的通信能够受密码保护，指定密钥为2350ad9fe0，则下图中应设置 （ ） 。",
     "options": [
@@ -23622,7 +23622,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3095,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2008a",
     "question": "（ ） 不属于电子邮件协议。",
     "options": [
@@ -23637,7 +23637,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3096,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2008a",
     "question": "某客户端采用ping命令检测网络连接故障时，发现可以ping通127.0.0.1及本机的ip地址，但无法ping通同一网段内其他工作正常的计算机的ip地址。该客户端的故障可能是 （ ） 。",
     "options": [
@@ -23667,7 +23667,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3098,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2008a",
     "question": "私网地址用于配置本地网络，下面的地址中，属于私网地址的是 （ ） 。",
     "options": [
@@ -23682,7 +23682,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3099,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2008a",
     "question": "以下给出的地址中，不属于子网192.168.64.0/20的主机地址是 （ ） 。",
     "options": [
@@ -23712,7 +23712,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3101,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2008a",
     "question": "路由器console端口默认的数据速率为 （ ） 。",
     "options": [
@@ -23727,7 +23727,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3102,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2008a",
     "question": "当启用vtp修剪功能后，如果交换端口中加入一个新的vlan，则立即 （ ） 。",
     "options": [
@@ -23742,7 +23742,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3103,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2008a",
     "question": "以太网的csma/cd协议采用坚持型监听算法。与其他监听算法相比，这种算法的主要特点是 （ ） 。",
     "options": [
@@ -23757,7 +23757,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3104,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2008a",
     "question": "ieee 802局域网中的地址分为两级，其中llc地址是 （ ） 。",
     "options": [
@@ -23772,7 +23772,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3105,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2008a",
     "question": "快速以太网物理层规范100base-tx规定使用 （ ） 。",
     "options": [
@@ -23787,7 +23787,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3106,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2008a",
     "question": "以下关于网络存储描述正确的是 （ ） 。",
     "options": [
@@ -23802,7 +23802,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3107,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2008a",
     "question": "（ ） 是错误的网络设备选型原则。",
     "options": [
@@ -23817,7 +23817,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3108,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2008a",
     "question": "下面关于网络工程需求分析的论述中，正确的是 （ ） 。",
     "options": [
@@ -23928,7 +23928,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3115,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2007b",
     "question": "若文件系统容许不同用户的文件可以具有相同的文件名，则操作系统应采用 （ ） 来实现。",
     "options": [
@@ -23958,7 +23958,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3117,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "按照美国制定的光纤通信标准SONET，OC-48的线路速率是 （ ） Mb/s。",
     "options": [
@@ -23973,7 +23973,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3118,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2007b",
     "question": "关于交换机，下面说法中错误的是 （ ） 。",
     "options": [
@@ -23988,7 +23988,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3119,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "关于路由器，下列说法中正确的是 （ ） 。",
     "options": [
@@ -24033,7 +24033,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3122,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "使用ADSL拨号上网，需要在用户端安装 （ ） 协议。",
     "options": [
@@ -24048,7 +24048,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3123,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "简单邮件传输协议（SMTP）默认的端口号是 （ ） 。",
     "options": [
@@ -24063,7 +24063,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3124,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "在FTP协议中，控制连接是由 （ ） 主动建立的。",
     "options": [
@@ -24078,7 +24078,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3125,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "开放最短路径优先协议（OSPF）采用 （ ） 算法计算最佳路由。",
     "options": [
@@ -24093,7 +24093,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3126,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "关于OSPF协议，下列说法错误的是 （ ） 。",
     "options": [
@@ -24108,7 +24108,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3127,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "在RIP协议中，可以采用水平分割法（Split Horizon）解决路由环路问题，下面的说法中正确的是 （ ） 。",
     "options": [
@@ -24123,7 +24123,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3128,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "关于链路状态协议与距离矢量协议的区别，以下说法中错误的是 （ ） 。",
     "options": [
@@ -24138,7 +24138,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3129,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "关于自治系统（Autonomous System，AS），以下说法错误的是 （ ） 。",
     "options": [
@@ -24153,7 +24153,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3130,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "TCP段头的最小长度是 （ ） 字节。",
     "options": [
@@ -24183,7 +24183,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3132,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2007b",
     "question": "要使Samba服务器在网上邻居中出现的主机为smbserver，其配置文件smb.conf中应包含 （ ） 。",
     "options": [
@@ -24213,7 +24213,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3134,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "以下关于FTP和TFTP描述中，正确的是 （ ） 。",
     "options": [
@@ -24288,7 +24288,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3139,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2007b",
     "question": "在Windows XP中用事件查看器查看日志文件，可看到的日志包括 （ ） 。",
     "options": [
@@ -24303,7 +24303,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3140,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "有4个子网：10.1.201.0/24、10.1.203.0/24、10.1.207.0/24和10.1.199.0/24，经路由汇聚后得到的网络地址是 （ ） 。",
     "options": [
@@ -24318,7 +24318,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3141,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "私网地址用于企业内部IP地址分配，网络标准规定的私网地址有 （52） 。",
     "options": [
@@ -24333,7 +24333,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3142,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "下面的地址中，属于本地回路地址的是 （ ） 。",
     "options": [
@@ -24348,7 +24348,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3143,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "在路由器的特权模式下键入命令setup，则路由器进入 （ ） 模式。",
     "options": [
@@ -24363,7 +24363,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3144,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "要进入以太网端口配置模式，下面的路由器命令中，哪一条是正确的？ （ ） 。",
     "options": [
@@ -24378,7 +24378,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3145,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2007b",
     "question": "要显示路由器的运行配置，下面的路由器命令中，哪一条是正确的？ （ ） 。",
     "options": [
@@ -24393,7 +24393,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3146,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2007b",
     "question": "下面关于802.1q协议的说明中正确的是 （ ） 。",
     "options": [
@@ -24408,7 +24408,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3147,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2007b",
     "question": "配置VLAN有多种方法，下面哪一条不是配置VLAN的方法？ （ ） 。",
     "options": [
@@ -24423,7 +24423,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3148,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2007b",
     "question": "下面哪个设备可以转发不同VLAN之间的通信？ （ ） 。",
     "options": [
@@ -24438,7 +24438,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3149,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2007b",
     "question": "以太网协议中使用了二进制指数后退算法，这个算法的特点是 （ ） 。",
     "options": [
@@ -24453,7 +24453,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3150,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2007b",
     "question": "以下属于万兆以太网物理层标准的是 （ ） 。",
     "options": [
@@ -24468,7 +24468,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3151,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2007b",
     "question": "快速以太网标准比原来的以太网标准的数据速率提高了10倍，这时它的网络跨距（最大段长） （ ） 。",
     "options": [
@@ -24483,7 +24483,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3152,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2007b",
     "question": "无线局域网（WLAN）标准IEEE 802.11g规定的最大数据速率是 （ ） 。",
     "options": [
@@ -24498,7 +24498,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3153,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2007b",
     "question": "无线局域网标准IEEE 802.11i提出了新的TKIP协议来解决 （ ） 中存在的安全隐患。",
     "options": [
@@ -24513,7 +24513,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3154,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2007b",
     "question": "采用以太网链路聚合技术将 （ ） 。",
     "options": [
@@ -24699,7 +24699,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3166,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007a",
     "question": "关于路由器，下列说法中错误的是 （ ） 。",
     "options": [
@@ -24714,7 +24714,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3167,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2007a",
     "question": "100base-fx采用4b/5b和nrz-i编码，这种编码方式的效率为 （ ） 。",
     "options": [
@@ -24729,7 +24729,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3168,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2007a",
     "question": "在以太网中使用crc校验码，其生成多项式是 （ ） 。",
     "options": [
@@ -24774,7 +24774,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3171,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2007a",
     "question": "在hfc网络中，cable modem的作用是 （ ） 。",
     "options": [
@@ -24789,7 +24789,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3172,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2007a",
     "question": "以下属于对称数字用户线路（symmetrical digital subscriber line）的是 （ ） 。",
     "options": [
@@ -24804,7 +24804,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3173,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007a",
     "question": "关于arp表，以下描述中正确的是 （ ） 。",
     "options": [
@@ -24819,7 +24819,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3174,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2007a",
     "question": "bgp协议的作用是 （ ） 。",
     "options": [
@@ -24834,7 +24834,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3175,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2007a",
     "question": "关于rip，以下选项中错误的是 （ ） 。",
     "options": [
@@ -24849,7 +24849,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3176,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007a",
     "question": "路由汇聚（route summarization）是把小的子网汇聚成大的网络，下面4个子网：172.16.193.0/24、172.16.194.0/24、172.16.196.0/24和172.16.198.0/24，进行路由汇聚后的网络地址是 （ ） 。",
     "options": [
@@ -24864,7 +24864,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3177,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007a",
     "question": "分配给某校园网的地址块是202.105.192.0/18，该校园网包含 （ ） 个c类网络。",
     "options": [
@@ -24879,7 +24879,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3178,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007a",
     "question": "以下地址中属于d类地址的是 （ ） 。",
     "options": [
@@ -24894,7 +24894,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3179,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2007a",
     "question": "在windows操作系统中，采用 （ ） 命令来测试到达目标所经过的路由器数目及ip地址。",
     "options": [
@@ -24909,7 +24909,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3180,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2007a",
     "question": "在linux操作系统中， （ ） 文件负责配置dns，它包含了主机的域名搜索顺序和dns服务器的地址。",
     "options": [
@@ -24924,7 +24924,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3181,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2007a",
     "question": "linux系统在默认情况下将创建的普通文件的权限设置为 （ ） 。",
     "options": [
@@ -24939,7 +24939,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3182,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2007a",
     "question": "在linux系统中，用户组加密后的口令存储在 （ ） 文件中。",
     "options": [
@@ -24954,7 +24954,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3183,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2007a",
     "question": "以下关于windows server 2003的域管理模式的描述中，正确的是 （ ） 。",
     "options": [
@@ -24969,7 +24969,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3184,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2007a",
     "question": "在windows server 2003中，默认情况下 （ ） 组用户拥有访问和完全控制终端服务器的权限。",
     "options": [
@@ -25029,7 +25029,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3188,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2007a",
     "question": "在linux系统中，利用 （ ） 命令可以分页显示文件的内容。",
     "options": [
@@ -25044,7 +25044,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3189,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2007a",
     "question": "在windows操作系统中，要实现一台具有多个域名的web服务器，正确的方法是 （ ） 。",
     "options": [
@@ -25179,7 +25179,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3198,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007a",
     "question": "把ip网络划分成子网，这样做的好处是 （ ） 。",
     "options": [
@@ -25194,7 +25194,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3199,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007a",
     "question": "下面的地址中，属于私网地址的是 （ ） 。",
     "options": [
@@ -25209,7 +25209,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3200,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007a",
     "question": "一个主机的ip地址是172.16.2.12/24，该主机所属的网络地址是 （ ） 。",
     "options": [
@@ -25224,7 +25224,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3201,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2007a",
     "question": "配置路由器端口，应该在哪种提示符下进行？ （ ）",
     "options": [
@@ -25239,7 +25239,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3202,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2007a",
     "question": "（ ） 能够显示路由器配置了哪种路由协议。",
     "options": [
@@ -25254,7 +25254,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3203,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2007a",
     "question": "某端口的ip地址为172.16.7.131/26，则该ip地址所在网络的广播地址是 （ ） 。",
     "options": [
@@ -25269,7 +25269,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3204,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2007a",
     "question": "当数据在两个vlan之间传输时需要哪种设备？ （ ）",
     "options": [
@@ -25284,7 +25284,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3205,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2007a",
     "question": "在生成树协议stp中，根交换机是根据什么来选择的？ （ ）",
     "options": [
@@ -25299,7 +25299,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3206,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2007a",
     "question": "下面的交换机命令中哪一条为端口指定vlan？ （ ）",
     "options": [
@@ -25314,7 +25314,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3207,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2007a",
     "question": "在以太网协议中使用1-坚持型监听算法的特点是 （ ） 。",
     "options": [
@@ -25329,7 +25329,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3208,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2007a",
     "question": "在千兆以太网物理层标准中，采用长波（1300nm）激光信号源的是 （ ） 。",
     "options": [
@@ -25359,7 +25359,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3210,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2007a",
     "question": "wlan采用扩频技术传输数据，下面哪一项不是扩频技术的优点？ （ ）",
     "options": [
@@ -25374,7 +25374,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3211,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2007a",
     "question": "建立一个家庭无线局域网，使得计算机不但能够连接因特网，而且wlan内部还可以直接通信，正确的组网方案是 （ ） 。",
     "options": [
@@ -25404,7 +25404,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3213,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2007a",
     "question": "以下协议中属于传输层的是 （ ） 。",
     "options": [
@@ -25515,7 +25515,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3220,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2006b",
     "question": "以太网交换机是按照 （ ） 进行转发的。",
     "options": [
@@ -25530,7 +25530,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3221,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2006b",
     "question": "快速以太网标准100base－tx采用的传输介质是 （ ） 。",
     "options": [
@@ -25545,7 +25545,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3222,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "路由器的s0端口连接 （ ） 。",
     "options": [
@@ -25620,7 +25620,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3227,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "接入因特网的方式有多种，下面关于各种接入方式的描述中，不正确的是 （ ） 。",
     "options": [
@@ -25650,7 +25650,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3229,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "igrp是cisco设计的路由协议，它发布路由更新信息的周期是 （ ） 。",
     "options": [
@@ -25665,7 +25665,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3230,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "ripv1与ripv2的区别是 （ ） 。",
     "options": [
@@ -25680,7 +25680,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3231,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "关于ospf协议，下面的描述中不正确的是 （ ） 。",
     "options": [
@@ -25695,7 +25695,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3232,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2006b",
     "question": "802.11标准定义了3种物理层通信技术，这3种技术不包括 （ ） 。",
     "options": [
@@ -25710,7 +25710,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3233,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2006b",
     "question": "802.11标准定义的分布式协调功能采用了 （ ） 协议。",
     "options": [
@@ -25725,7 +25725,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3234,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2006b",
     "question": "在linux操作系统中，命令“chmod －777 /home/abc”的作用是 （ ） 。",
     "options": [
@@ -25755,7 +25755,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3236,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2006b",
     "question": "在windows操作系统中，与访问web无关的组件是 （ ） 。",
     "options": [
@@ -25830,7 +25830,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3241,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2006b",
     "question": "某公司用三台web服务器维护相同的web信息，并共享同一域名。在windows的dns服务器中通过 （ ） 操作，可以确保域名解析并实现负载均衡。",
     "options": [
@@ -25845,7 +25845,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3242,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "在voip系统中，通过 （ ） 对声音信号进行压缩编码。",
     "options": [
@@ -25860,7 +25860,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3243,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2006b",
     "question": "关于windows操作系统中dhcp服务器的租约，下列说法错误的是 （ ） 。",
     "options": [
@@ -25875,7 +25875,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3244,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "某网络结构如下图所示。除了pc1外其他pc机都能访问服务器server1，造成pc1不能正常访问server1的原因可能是 （ ） 。",
     "options": [
@@ -25905,7 +25905,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3246,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2006b",
     "question": "若在windows“运行”窗口中键入 （ ） 命令，则可运行microsoft管理控制台。",
     "options": [
@@ -25920,7 +25920,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3247,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2006b",
     "question": "在windows操作系统中，如果要查找从本地出发，经过三个跳步，到达名字为enric的目标主机的路径，则键入的命令是 （ ） 。",
     "options": [
@@ -25935,7 +25935,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3248,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2006b",
     "question": "能显示tcp和udp连接信息的命令是 （ ） 。",
     "options": [
@@ -25950,7 +25950,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3249,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "设有两个子网202.118.133.0/24和202.118.130.0/24，如果进行路由汇聚，得到的网络地址是 （ ） 。",
     "options": [
@@ -25965,7 +25965,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3250,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "路由器收到一个数据包，其目标地址为195.26.17.4，该地址属于 （ ） 子网。",
     "options": [
@@ -25980,7 +25980,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3251,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "主机地址172.16.2.160属于下面哪一个子网？ （ ） 。",
     "options": [
@@ -25995,7 +25995,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3252,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "如果用户网络需要划分成5个子网，每个子网最多20台主机，则适用的子网掩码是 （ ） 。",
     "options": [
@@ -26010,7 +26010,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3253,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "cidr技术的作用是 （ ） 。",
     "options": [
@@ -26025,7 +26025,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3254,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "路由器命令router﹥sh int的作用是 （ ） 。",
     "options": [
@@ -26040,7 +26040,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3255,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "下面列出了路由器的各种命令状态，可以配置路由器全局参数的是 （ ） 。",
     "options": [
@@ -26055,7 +26055,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3256,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "网络配置如下图所示，为路由器router1配置访问以太网2的命令是 （ ） 。",
     "options": [
@@ -26070,7 +26070,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3257,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2006b",
     "question": "可以采用静态或动态方式来划分vlan，下面属于静态划分的方法是 （ ） 。",
     "options": [
@@ -26085,7 +26085,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3258,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2006b",
     "question": "在以太网中，最大传输单元（mtu）是 （ ） 字节。",
     "options": [
@@ -26100,7 +26100,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3259,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2006b",
     "question": "在下面关于以太网与令牌环网性能的比较中，正确的是 （ ） 。",
     "options": [
@@ -26115,7 +26115,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3260,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2006b",
     "question": "确定网络的层次结构及各层采用的协议是网络设计中 （ ） 阶段的主要任务。",
     "options": [
@@ -26130,7 +26130,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3261,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2006b",
     "question": "在层次化园区网络设计中， （ ） 是接入层的功能。",
     "options": [
@@ -26145,7 +26145,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3262,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2006b",
     "question": "园区网络设计中，如果网络需求对qos要求很高，应考虑采用 （ ） 网络。",
     "options": [
@@ -26160,7 +26160,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3263,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "在ipv4中，组播地址是 （ ） 地址。",
     "options": [
@@ -26175,7 +26175,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3264,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2006b",
     "question": "以下关于samba的描述中，不正确的是 （ ） 。",
     "options": [
@@ -26190,7 +26190,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3265,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2006b",
     "question": "adsl采用的两种接入方式是 （ ） 。",
     "options": [
@@ -26331,7 +26331,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3274,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2006a",
     "question": "某ip网络连接如下图所示，在这种配置下ip全局广播分组不能够通过的路径是 （ ） 。",
     "options": [
@@ -26346,7 +26346,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3275,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2006a",
     "question": "关于hdlc协议的帧顺序控制，下面的语句中正确的是 （ ） 。",
     "options": [
@@ -26361,7 +26361,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3276,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2006a",
     "question": "以下关于x.25网络的描述中，正确的是 （ ） 。",
     "options": [
@@ -26376,7 +26376,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3277,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2006a",
     "question": "帧中继的地址格式中，标识虚电路标识符的是 （ ） 。",
     "options": [
@@ -26406,7 +26406,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3279,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2006a",
     "question": "关于无连接的通信，下面描述中正确的是 （ ） 。",
     "options": [
@@ -26421,7 +26421,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3280,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2006a",
     "question": "以太网的数据帧封装如下图所示，包含tcp段中的数据部分最长应该是 （ ） 字节。",
     "options": [
@@ -26436,7 +26436,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3281,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2006a",
     "question": "下面关于icmp协议的描述中，正确的是 （ ） 。",
     "options": [
@@ -26451,7 +26451,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3282,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2006a",
     "question": "下面信息中 （ ） 包含在tcp头中而不包含在udp头中。",
     "options": [
@@ -26466,7 +26466,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3283,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2006a",
     "question": "在x.25网络中， （ ） 是网络层协议。",
     "options": [
@@ -26481,7 +26481,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3284,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2006a",
     "question": "下列语句中准确的描述了isdn接口类型的是 （ ） 。",
     "options": [
@@ -26496,7 +26496,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3285,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2006a",
     "question": "以下关于ospf协议的描述中，最准确的是 （ ） 。",
     "options": [
@@ -26541,7 +26541,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3288,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2006a",
     "question": "建立ppp连接以后，发送方就发出一个提问消息（challenge message），接收方根据提问消息计算一个散列值。 （ ） 协议采用这种方式进行用户认证。",
     "options": [
@@ -26556,7 +26556,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3289,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2006a",
     "question": "cdma系统中使用的多路复用技术是 （ ） 。",
     "options": [
@@ -26571,7 +26571,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3290,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2006a",
     "question": "下列关于1000baset的叙述中错误的是 （ ） 。",
     "options": [
@@ -26601,7 +26601,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3292,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2006a",
     "question": "光纤布线系统的测试指标不包括 （ ） 。",
     "options": [
@@ -26616,7 +26616,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3293,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2006a",
     "question": "在linux操作系统中把外部设备当做文件统一管理，外部设备文件通常放在 （ ） 目录中。",
     "options": [
@@ -26631,7 +26631,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3294,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2006a",
     "question": "下列 （ ） 命令可以更改一个文件的权限设置。",
     "options": [
@@ -26646,7 +26646,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3295,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2006a",
     "question": "通过samba组件实现linux与windows文件资源共享时，需要提供的守护进程（daemon）是 （ ） 。",
     "options": [
@@ -26811,7 +26811,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3306,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2006a",
     "question": "通常路由器不进行转发的网络地址是 （ ） 。",
     "options": [
@@ -26826,7 +26826,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3307,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2006a",
     "question": "在网络202.115.144.0/20中可分配的主机地址数是 （ ） 。",
     "options": [
@@ -26841,7 +26841,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3308,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2006a",
     "question": "设有下面4条路由：10.1.193.0/24、10.1.194../24、10.1.196.0/24和10.1.198.0/24，如果进行路由汇聚，覆盖这四条路由的地址是 （ ） 。",
     "options": [
@@ -26856,7 +26856,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3309,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2006a",
     "question": "3台路由器的连接与ip地址分配如下图所示，在r2中配置到达子网192.168.1.0/24的静态路由的命令是 （ ） 。",
     "options": [
@@ -26871,7 +26871,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3310,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2006a",
     "question": "网络连接和ip地址分配如下图所示，并且配置了ripv2路由协议。如果路由器r1上运行命令：r1 # show ip route，下面4条显示信息中正确的是 （ ） 。",
     "options": [
@@ -26886,7 +26886,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3311,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2006a",
     "question": "路由器r1的连接和地址分配如下图所示，如果在r1上安装ospf协议，运行下列命令：router ospf 100，则配置s0和e0端口的命令是 （ ） 。",
     "options": [
@@ -26901,7 +26901,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3312,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2006a",
     "question": "下面有关vlan的语句中，正确的是 （ ） 。",
     "options": [
@@ -26916,7 +26916,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3313,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2006a",
     "question": "划分vlan的方法有多种，这些方法中不包括 （ ） 。",
     "options": [
@@ -26931,7 +26931,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3314,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2006a",
     "question": "下图中v0至v2的最短路径长度为 （ ） 。",
     "options": [
@@ -26961,7 +26961,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3316,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2006a",
     "question": "层次化网络设计方案中， （ ） 是核心层的主要任务。",
     "options": [
@@ -26991,7 +26991,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3318,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2006a",
     "question": "在windows操作系统中可以通过安装 （ ） 组件创建web站点。",
     "options": [
@@ -27006,7 +27006,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3319,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2006a",
     "question": "我国自行研制的移动通信3g标准是 （ ） 。",
     "options": [
@@ -27207,7 +27207,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3332,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2005b",
     "question": "在 iso osi/rm 中， （ ） 实现数据压缩功能。",
     "options": [
@@ -27222,7 +27222,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3333,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2005b",
     "question": "以太网中的帧属于 （ ） 协议数据单元。",
     "options": [
@@ -27252,7 +27252,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3335,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2005b",
     "question": "通常情况下，信息插座的安装位置距离地面的高度为 （ ） cm 。",
     "options": [
@@ -27267,7 +27267,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3336,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2005b",
     "question": "在 linux 操作系统中手工安装 apache 服务器时，默认的 web 站点的目录为 （ ） 。",
     "options": [
@@ -27282,7 +27282,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3337,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2005b",
     "question": "在 linux 中， （ ） 命令可用显示当前用户的工作目录。",
     "options": [
@@ -27297,7 +27297,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3338,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2005b",
     "question": "下列选项中， （ ） 不属于 windows 的网络应用程序接口（api）。",
     "options": [
@@ -27312,7 +27312,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3339,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2005b",
     "question": "atm 适配层的功能是 （ ） 。",
     "options": [
@@ -27327,7 +27327,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3340,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2005b",
     "question": "fttx ＋ lan 接入网采用的传输介质为 （ ） 。",
     "options": [
@@ -27357,7 +27357,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3342,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2005b",
     "question": "在 rip 协议中，默认的路由更新周期是 （ ） 秒。",
     "options": [
@@ -27372,7 +27372,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3343,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2005b",
     "question": "在距离矢量路由协议中，可以使用多种方法防止路由循环，以下选项中，不属于这些方法的是 （ ） 。",
     "options": [
@@ -27387,7 +27387,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3344,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2005b",
     "question": "关于外部网关协议 bgp ，以下选项中，不正确的是 （ ） 。",
     "options": [
@@ -27402,7 +27402,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3345,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2005b",
     "question": "运行 ospf 协议的路由器每 10 秒钟向它的各个接口发送 hello 分组，接收到 hello 分组的路由器就知道了邻居的存在。如果在 （ ） 秒内没有从特定的邻居接收到这种分组，路由器就认为那个邻居不存在了。",
     "options": [
@@ -27417,7 +27417,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3346,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2005b",
     "question": "在广播网络中， ospf 协议要选出一个指定路由器（designated router ，dr）。 dr 有几个作用，以下关于 dr 的描述中， （ ） 不是 dr 的作用。",
     "options": [
@@ -27507,7 +27507,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3352,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2005b",
     "question": "属于网络 112.10.200.0/21 的地址是 （ ） 。",
     "options": [
@@ -27522,7 +27522,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3353,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2005b",
     "question": "设有下面 4 条路由： 172.18.129.0/24 、 172.18.130.0/24 、 172.18.132.0/24 和 172.18.133.0/24 ，如果进行路由汇聚，能覆盖这 4 条路由的地址是 （ ） 。",
     "options": [
@@ -27537,7 +27537,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3354,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2005b",
     "question": "网络 122.21.136.0/24 和 122.21.143.0/24 经过路由汇聚，得到的网络地址是（ ） 。",
     "options": [
@@ -27552,7 +27552,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3355,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2005b",
     "question": "如果路由器配置了 bgp 协议，要把网络地址 133.1.2.0/24 发布给邻居，那么发布这个公告的命令是 （ ） 。",
     "options": [
@@ -27567,7 +27567,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3356,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2005b",
     "question": "如果要彻底退出路由器或者交换机的配置模式，输入的命令是 （ ） 。",
     "options": [
@@ -27582,7 +27582,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3357,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2005b",
     "question": "把路由器配置脚本从 ram 写入 nvram 的命令是 （ ） 。",
     "options": [
@@ -27597,7 +27597,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3358,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2005b",
     "question": "虚拟局域网中继协议（vtp）有三种工作模式，即服务器模式、客户机模式和透明模式，以下关于这 3 种工作模式的叙述中，不正确的是 （ ） 。",
     "options": [
@@ -27612,7 +27612,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3359,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2005b",
     "question": "按照网络分级设计模型，通常把网络设计分为 3 层，即核心层、汇聚层和接入层，以下关于分级网络的描述中，不正确的是 （ ） 。",
     "options": [
@@ -27627,7 +27627,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3360,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2005b",
     "question": "以太网中如果发生介质访问冲突，按照二进制指数后退算法决定下一次重发的时间，使用二进制后退算法的理由是 （ ） 。",
     "options": [
@@ -27642,7 +27642,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3361,
     "type": "single",
-    "category": "无线网络",
+    "category": "无线通信网",
     "paper": "real2005b",
     "question": "在 802.11 定义的各种业务中，优先级最低的是 （ ） 。",
     "options": [
@@ -27672,7 +27672,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3363,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2005b",
     "question": "下列路由器协议中， （ ） 用于 as 之间的路由选择。",
     "options": [
@@ -27687,7 +27687,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3364,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2005b",
     "question": "iee802.3ae 10gb/s 以太网标准支持的工作模式是 （ ） 。",
     "options": [
@@ -27717,7 +27717,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3366,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2005b",
     "question": "下列 （ ） 设备可以隔离 arp 广播帧。",
     "options": [
@@ -27732,7 +27732,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3367,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2005b",
     "question": "在 windows 系统中， （ ） 不是网络服务组件。",
     "options": [
@@ -27747,7 +27747,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3368,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2005b",
     "question": "在 osi 参考模型中，数据链路层处理的数据单位是 （ ） 。",
     "options": [
@@ -27888,7 +27888,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3377,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2005a",
     "question": "在osi参考模型中，上层协议实体与下层协议实体之回的逻辑接口叫做服务访问点（sap）。在internet中，网络层的服务访问点是 （ ） 。",
     "options": [
@@ -27903,7 +27903,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3378,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2005a",
     "question": "在osi参考模型中，实现端到端的应答、分组排序和流量控制功能的协议层是 （ ） 。",
     "options": [
@@ -27933,7 +27933,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3380,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2005a",
     "question": "n-isdn有两种接口：基本速率接口（2b+d）和基群速率接口（30b+d），有关这，两种接口的描述中，正确的是 （ ） 。",
     "options": [
@@ -27948,7 +27948,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3381,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2005a",
     "question": "在atm网络中，aal5用于lan仿真，以下有关aal5的描述中不正确的是 （ ） 。",
     "options": [
@@ -27963,7 +27963,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3382,
     "type": "single",
-    "category": "广域网技术",
+    "category": "网络互连",
     "paper": "real2005a",
     "question": "以下有关帧中继网的描述中不正确的是 （ ） 。",
     "options": [
@@ -27978,7 +27978,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3383,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2005a",
     "question": "网络连接如下图所示，要使计算机能访问到服务器，在路由器r1中配置路由表的命令是 （ ） 。",
     "options": [
@@ -27993,7 +27993,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3384,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2005a",
     "question": "以下协议中支持可变长子网掩码（vlsm）和路由汇聚功能（route summarization）的是 （ ） 。",
     "options": [
@@ -28008,7 +28008,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3385,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2005a",
     "question": "关于ospf拓扑数据库，下面选项中正确的是 （ ） 。",
     "options": [
@@ -28023,7 +28023,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3386,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2005a",
     "question": "ospf协议使用 （ ） 分组来保持与其邻居的连接。",
     "options": [
@@ -28038,7 +28038,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3387,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2005a",
     "question": "下面有关边界网关协议bgp4的描述中，不正确的是 （ ） 。",
     "options": [
@@ -28053,7 +28053,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3388,
     "type": "single",
-    "category": "交换技术",
+    "category": "局域网",
     "paper": "real2005a",
     "question": "多协议标记交换（mpls）是ietf提出的第三层交换标准，下面有关mpls的描述中，正确的是 （ ） 。",
     "options": [
@@ -28068,7 +28068,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3389,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2005a",
     "question": "下给出的地址中，属于子网192.168.15.19/28的主机地址是 （ ） 。",
     "options": [
@@ -28083,7 +28083,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3390,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2005a",
     "question": "在一条点对点的链路上，为了减少地址的浪费，子网掩码应该指定为 （ ） 。",
     "options": [
@@ -28098,7 +28098,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3391,
     "type": "single",
-    "category": "网络互联与IP编址",
+    "category": "网络互连",
     "paper": "real2005a",
     "question": "下面的地址中，属于单播地址的是 （ ） 。",
     "options": [
@@ -28113,7 +28113,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3392,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2005a",
     "question": "若web站点的默认文档中依次有index.htm，default.htm，default.asp，ih.htm四个文档，则主页显示的是 （ ） 的内容。",
     "options": [
@@ -28143,7 +28143,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3394,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2005a",
     "question": "在一台256m ram的计算机上安装linux系统，交换分区（swap）的大小合理的设置应该为 （ ） 。",
     "options": [
@@ -28158,7 +28158,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3395,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2005a",
     "question": "在linux中系统的配置文件存放在 （ ） 目录下。",
     "options": [
@@ -28173,7 +28173,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3396,
     "type": "single",
-    "category": "网络操作系统",
+    "category": "网络操作系统与应用服务器",
     "paper": "real2005a",
     "question": "在linux中，下列 （ ） 可以获得任何linux命令的在线帮助。",
     "options": [
@@ -28218,7 +28218,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3399,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2005a",
     "question": "不使用面向连接传输服务的应用层协议是 （ ） 。",
     "options": [
@@ -28233,7 +28233,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3400,
     "type": "single",
-    "category": "局域网与以太网",
+    "category": "局域网",
     "paper": "real2005a",
     "question": "在下面关于vlan的描述中，不正确的是 （ ） 。",
     "options": [
@@ -28278,7 +28278,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3403,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "paper": "real2005a",
     "question": "对路由选择协议的一个要求是必须能够快速收敛，所谓“路由收敛”是指 （ ） 。",
     "options": [
@@ -28308,7 +28308,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3405,
     "type": "single",
-    "category": "计算机网络体系结构",
+    "category": "计算机网络概论",
     "paper": "real2005a",
     "question": "在tcp／ip网络中，为各种公共服务保留的端口号范围是 （ ） 。",
     "options": [
@@ -28323,7 +28323,7 @@ window.QUESTIONS = window.QUESTIONS || [];
   {
     "id": 3406,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "paper": "real2005a",
     "question": "在以下网络应用中，要求带宽最高的应用是 （ ） 。",
     "options": [

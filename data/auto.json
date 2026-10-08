@@ -2,7 +2,7 @@
   {
     "id": 1513,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "question": "在距离矢量路由协议中，路由器主要依据什么信息来决定最佳路径？",
     "options": [
       "A. 到达目的网络的跳数或度量值",
@@ -16,7 +16,7 @@
   {
     "id": 1514,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "question": "RIP协议为了防止路由环路，规定一条路由的最大跳数是多少？",
     "options": [
       "A. 8",
@@ -30,7 +30,7 @@
   {
     "id": 1515,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "question": "OSPF协议中，用于描述路由器自身接口状态和链路开销的LSA类型是？",
     "options": [
       "A. Type 1 LSA",
@@ -44,7 +44,7 @@
   {
     "id": 1516,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "question": "BGP协议中，用于建立可靠对等会话的传输层协议和端口号是？",
     "options": [
       "A. UDP 179",
@@ -58,7 +58,7 @@
   {
     "id": 1517,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "question": "在OSPF中，DR和BDR的选举主要依据哪个参数？",
     "options": [
       "A. 路由器接口的IP地址大小",
@@ -72,7 +72,7 @@
   {
     "id": 1518,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "question": "以下关于静态路由和动态路由的说法，正确的是？",
     "options": [
       "A. 静态路由能自动适应网络拓扑变化",
@@ -86,7 +86,7 @@
   {
     "id": 1519,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "question": "RIP协议默认的路由更新周期是多少秒？",
     "options": [
       "A. 10",
@@ -100,7 +100,7 @@
   {
     "id": 1520,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "question": "OSPF协议中，Hello报文的作用不包括以下哪一项？",
     "options": [
       "A. 发现和维持邻居关系",
@@ -114,7 +114,7 @@
   {
     "id": 1521,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "question": "BGP中，用于防止AS之间路由环路的属性是？",
     "options": [
       "A. Next Hop",
@@ -128,7 +128,7 @@
   {
     "id": 1522,
     "type": "single",
-    "category": "路由协议",
+    "category": "网络互连",
     "question": "在OSPF中，若路由器接口优先级为0，则意味着什么？",
     "options": [
       "A. 该接口不参与DR/BDR选举",
@@ -142,7 +142,7 @@
   {
     "id": 1523,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "question": "在结构化网络设计中，将网络划分为核心层、汇聚层和接入层的主要目的是什么？",
     "options": [
       "A. 提高网络设备的采购成本",
@@ -156,7 +156,7 @@
   {
     "id": 1524,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "question": "某企业需要为新建园区网选择拓扑结构，要求具有较高的可靠性且便于故障定位，同时布线成本相对较低。下列哪种拓扑最合适？",
     "options": [
       "A. 总线型拓扑",
@@ -170,7 +170,7 @@
   {
     "id": 1525,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "question": "在网络需求分析阶段，通常不需要重点考虑的是以下哪一项？",
     "options": [
       "A. 用户数量和业务类型",
@@ -184,7 +184,7 @@
   {
     "id": 1526,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "question": "在核心层设计中，为提高可靠性和带宽，常采用的关键技术是？",
     "options": [
       "A. 冗余链路与负载均衡",
@@ -198,7 +198,7 @@
   {
     "id": 1527,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "question": "某公司计划将总部与多个分支机构互联，要求各分支机构之间能够直接通信且网络具有较好的扩展性。下列哪种方案最合适？",
     "options": [
       "A. 各分支机构通过拨号连接到总部",
@@ -212,7 +212,7 @@
   {
     "id": 1528,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "question": "在网络物理设计中，综合布线系统通常不包括以下哪个子系统？",
     "options": [
       "A. 工作区子系统",
@@ -226,7 +226,7 @@
   {
     "id": 1529,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "question": "在进行网络逻辑设计时，IP地址规划的主要原则不包括？",
     "options": [
       "A. 唯一性",
@@ -240,7 +240,7 @@
   {
     "id": 1530,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "question": "某园区网需要为访客提供接入服务，同时要求访客不能访问内部服务器。最合适的措施是？",
     "options": [
       "A. 将访客接入单独的VLAN并配置ACL",
@@ -254,7 +254,7 @@
   {
     "id": 1531,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "question": "在网络设计中，为满足未来业务增长而预留一定的带宽和端口，这体现了什么设计原则？",
     "options": [
       "A. 安全性",
@@ -268,7 +268,7 @@
   {
     "id": 1532,
     "type": "single",
-    "category": "网络规划与设计",
+    "category": "网络规划和设计",
     "question": "下列哪项属于网络规划与设计中的逻辑设计内容？",
     "options": [
       "A. 选择双绞线或光纤介质",

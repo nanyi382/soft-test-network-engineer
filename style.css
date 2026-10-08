@@ -187,6 +187,21 @@ html, body {
   transition: width .3s ease;
 }
 
+/* ---------- 题号导航（自由翻看） ---------- */
+.qnav { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0 2px; }
+.qnav-item {
+  min-width: 34px; height: 34px; padding: 0 6px;
+  border: 1.5px solid var(--border); border-radius: 8px;
+  background: #fff; color: var(--text-muted); font-size: 13px; font-weight: 600;
+  cursor: pointer; font-family: inherit; transition: all .15s ease;
+}
+.qnav-item:hover { border-color: var(--primary); }
+.qnav-item.qnav-un { background: #f1f5f9; }
+.qnav-item.qnav-ok { background: var(--success-weak); border-color: #86efac; color: var(--success); }
+.qnav-item.qnav-no { background: var(--danger-weak); border-color: #fca5a5; color: var(--danger); }
+.qnav-item.qnav-done { background: var(--primary-weak); border-color: #93c5fd; color: var(--primary); }
+.qnav-item.qnav-cur { outline: 2px solid var(--primary); outline-offset: 1px; }
+
 /* ---------- 刷题区 ---------- */
 .quiz-head {
   display: flex;
@@ -224,6 +239,16 @@ html, body {
   font-size: 15px;
   white-space: pre-wrap;
 }
+
+.diagram {
+  margin: 0 0 16px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+  overflow-x: auto;
+}
+.diagram svg { display: block; max-width: 100%; height: auto; }
 
 .options { display: flex; flex-direction: column; gap: 10px; }
 .option {

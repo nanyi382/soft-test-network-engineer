@@ -27,18 +27,33 @@
 
   <main id="app"></main>
 
+  <!-- DATA_SCRIPTS:BEGIN（由 scripts/generate-quiz.js 生成，勿手改） -->
+  <script src="data/manifest.js"></script>
   <script src="data/papers.js"></script>
+  <script src="data/chapters_meta.js"></script>
+  <script src="data/auto.js"></script>
+  <script src="data/case_config.js"></script>
+  <script src="data/chapters.js"></script>
   <script src="data/paper1.js"></script>
   <script src="data/paper2.js"></script>
   <script src="data/paper3.js"></script>
   <script src="data/paper4.js"></script>
-  <script src="data/auto.js"></script>
   <script src="data/real_papers.js"></script>
-  <script src="data/chapters.js"></script>
+  <!-- DATA_SCRIPTS:END -->
   <script src="app.js"></script>
   <script>
     // 注册 Service Worker（用于离线缓存；file:// 或 https 环境下会静默跳过）
     if ('serviceWorker' in navigator) {
+      // 新版本 Service Worker 激活后，SW 会广播 SW_UPDATED，这里刷新一次用上新题库
+      navigator.serviceWorker.addEventListener('message', function (e) {
+        var d = e.data;
+        if (!d || d.type !== 'SW_UPDATED') return;
+        try {
+          if (sessionStorage.getItem('npe.sw') === d.cache) return; // 同一版本只刷新一次，避免循环
+          sessionStorage.setItem('npe.sw', d.cache);
+        } catch (err) { /* 隐私模式下 sessionStorage 不可用，直接刷新 */ }
+        location.reload();
+      });
       window.addEventListener('load', function () {
         navigator.serviceWorker.register('./sw.js').catch(function () {});
       });

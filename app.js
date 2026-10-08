@@ -235,17 +235,29 @@
 
   /* ===================== 章节练习 ===================== */
   function renderChapter(app) {
-    const cats = QUIZ.categories();
     const stats = Store.getStats();
-    const rows = cats.map(cat => {
-      const qs = QUIZ.byCategory(cat).filter(q => !q.paper);
+
+    // 章节来源：优先用 data/chapters_meta.js 的大纲目录（有稳定顺序和「第 N 章」编号），
+    // 再追加题库里出现、但目录未收录的 category，保证不丢题
+    const entries = (window.CHAPTERS || []).map(m => ({
+      cat: m.name, no: m.no, summary: m.summary || ''
+    }));
+    const known = new Set(entries.map(e => e.cat));
+    QUIZ.categories().forEach(c => {
+      if (!known.has(c)) entries.push({ cat: c, no: null, summary: '' });
+    });
+
+    const rows = entries.map(e => {
+      const qs = QUIZ.byCategory(e.cat).filter(q => !q.paper);
       if (!qs.length) return '';
-      const s = stats[cat] || { done: 0, correct: 0 };
+      const s = stats[e.cat] || { done: 0, correct: 0 };
       const pct = s.done ? Math.round(s.correct / s.done * 100) : 0;
+      const title = e.no ? `第 ${e.no} 章 ${e.cat}` : e.cat;
       return `
-        <div class="chapter-item" data-cat="${esc(cat)}">
+        <div class="chapter-item" data-cat="${esc(e.cat)}">
           <div style="flex:1">
-            <div class="name">${esc(cat)}</div>
+            <div class="name">${esc(title)}</div>
+            ${e.summary ? `<div class="count">${esc(e.summary)}</div>` : ''}
             <div class="count">共 ${qs.length} 题 · 已做 ${s.done} · 正确率 ${pct}%</div>
             <div class="bar"><i style="width:${pct}%"></i></div>
           </div>
@@ -254,14 +266,16 @@
     }).join('');
 
     app.innerHTML = `
-      <div class="card"><h2>📚 章节练习</h2><p class="muted">选择章节开始刷题（答一题即时判分并显示解析）</p></div>
+      <div class="card"><h2>📚 章节练习</h2><p class="muted">章节依据官方《网络工程师教程（第 6 版）》目录（配套 2024 审定版考试大纲）。答一题即时判分并显示解析。</p></div>
       <div class="chapter-list">${rows || '<div class="empty">暂无章节题目</div>'}</div>`;
 
     $$('.chapter-item', app).forEach(el => {
       el.addEventListener('click', () => {
         const cat = el.dataset.cat;
+        const e = entries.find(x => x.cat === cat) || { no: null };
+        const label = e.no ? `第 ${e.no} 章 ${cat}` : cat;
         const list = shuffle(QUIZ.byCategory(cat).filter(q => !q.paper));
-        startPractice(list, `章节练习 · ${cat}`, () => showView('chapter'));
+        startPractice(list, `章节练习 · ${label}`, () => showView('chapter'));
       });
     });
   }
@@ -300,30 +314,52 @@
       const qs = QUIZ.byPaper(p.id);
       const singles = QUIZ.singleOf(qs).length;
       const cases = QUIZ.caseOf(qs).length;
+      // 题数为 0 说明该卷的题库文件没被加载（多为旧缓存所致），给明确的提示与补救入口
+      const actions = (singles + cases === 0)
+        ? `<div class="muted small" style="margin-top:10px">⚠ 该卷题库未加载，通常是浏览器缓存了旧版本</div>
+           <div style="margin-top:10px"><button class="btn" data-reload="1">重新加载题库</button></div>`
+        : `<div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+             ${singles > 0 ? `<button class="btn primary" data-am="${esc(p.id)}">上午场（150 分钟）</button>` : ''}
+             ${cases > 0 ? `<button class="btn" data-pm="${esc(p.id)}">下午场（150 分钟）</button>` : ''}
+           </div>`;
       return `
         <div class="card">
-          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
-            <div>
-              <h2 style="margin:0">${esc(p.name)}</h2>
-              <div class="muted small" style="margin-top:4px">${esc(p.cover)}</div>
-              <div class="muted small">上午场 ${singles} 选择 · 下午场 ${cases} 案例</div>
-            </div>
+          <div>
+            <h2 style="margin:0">${esc(p.name)}</h2>
+            <div class="muted small" style="margin-top:4px">${esc(p.cover)}</div>
+            <div class="muted small">上午场 ${singles} 选择 · 下午场 ${cases} 案例</div>
           </div>
-          <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
-            <button class="btn primary" data-am="${esc(p.id)}">上午场（150 分钟）</button>
-            ${cases > 0 ? `<button class="btn" data-pm="${esc(p.id)}">下午场（150 分钟）</button>` : ''}
-          </div>
+          ${actions}
         </div>`;
     }).join('');
 
+    const emptyCount = papers.filter(p => QUIZ.byPaper(p.id).length === 0).length;
+
     app.innerHTML = `
       <div class="card"><h2>📝 模拟考试</h2>
-        <p class="muted">每套卷分上午场（75 选择）与下午场（5 案例），各 150 分钟，45 分及格。交卷后判分并可回看解析。</p>
+        <p class="muted">共 ${papers.length} 套卷，每套分上午场（75 选择）与下午场（5 案例），各 150 分钟，45 分及格。交卷后判分并可回看解析。</p>
+        ${emptyCount ? `<p class="muted small">⚠ 有 ${emptyCount} 套卷的题库未加载，可点卷面下方「重新加载题库」修复。</p>` : ''}
       </div>
       ${cards || '<div class="empty">暂无试卷</div>'}`;
 
     $$('[data-am]', app).forEach(b => b.addEventListener('click', () => startExam(b.dataset.am, 'am')));
     $$('[data-pm]', app).forEach(b => b.addEventListener('click', () => startExam(b.dataset.pm, 'pm')));
+    $$('[data-reload]', app).forEach(b => b.addEventListener('click', () => reloadQuizData()));
+  }
+
+  // 清掉 Service Worker 与缓存后重载，用于修复「题库版本过旧」的情况
+  async function reloadQuizData() {
+    try {
+      if (window.caches && caches.keys) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map(k => caches.delete(k)));
+      }
+      if (navigator.serviceWorker && navigator.serviceWorker.getRegistrations) {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(regs.map(r => r.unregister()));
+      }
+    } catch (e) { /* 清理失败也直接刷新 */ }
+    location.reload();
   }
 
   /* ===================== 错题本 ===================== */
@@ -384,6 +420,19 @@
     showView('__practice');
   }
 
+  // 题号导航：显示每道题的作答状态，点击可自由跳转
+  function practiceNavHtml(p, cur) {
+    return p.list.map((q, i) => {
+      const ans = p.answers[q.id];
+      let cls = 'qnav-item';
+      if (ans == null) cls += ' qnav-un';
+      else if (q.type === 'single') cls += ans === q.answer ? ' qnav-ok' : ' qnav-no';
+      else cls += ' qnav-done'; // 案例题：已作答（问答可能还需自评）
+      if (i === cur) cls += ' qnav-cur';
+      return `<button class="${cls}" data-nav="${i}">${i + 1}</button>`;
+    }).join('');
+  }
+
   function renderPractice(app) {
     const p = state.practice;
     const q = p.list[p.index];
@@ -407,10 +456,12 @@
               <span class="key">${letter}</span><span>${esc(opt.replace(/^[A-D][.．]\s*/, ''))}</span></button>`;
           }).join('')}
         </div>
-        <div style="margin-top:16px;display:flex;gap:10px;justify-content:space-between;align-items:center">
+        <div style="margin-top:16px;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+          <button class="btn" id="prev-btn" ${idx === 0 ? 'disabled' : ''}>← 上一题</button>
+          <span style="flex:1"></span>
           <button class="btn" id="fav-btn">${isFavorite(q.id) ? '★ 已收藏' : '☆ 收藏'}</button>
           <button class="btn primary" id="submit-btn" ${answered ? 'style="display:none"' : ''}>确认答案</button>
-          <button class="btn success" id="next-btn" ${answered ? '' : 'style="display:none"'}>${idx === total - 1 ? '完成' : '下一题'} →</button>
+          <button class="btn success" id="next-btn" ${idx === total - 1 ? 'disabled' : ''}>下一题 →</button>
         </div>
         <div id="explain-box"></div>`;
     } else {
@@ -434,11 +485,14 @@
       body = `
         <div class="tag">${esc(q.category)}</div>
         <div class="case-bg">${esc(q.question)}</div>
+        ${q.diagram ? `<div class="diagram">${q.diagram}</div>` : ''}
         ${parts}
-        <div style="margin-top:8px;display:flex;gap:10px;justify-content:space-between;align-items:center">
+        <div style="margin-top:8px;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+          <button class="btn" id="prev-btn" ${idx === 0 ? 'disabled' : ''}>← 上一题</button>
+          <span style="flex:1"></span>
           <button class="btn" id="fav-btn">${isFavorite(q.id) ? '★ 已收藏' : '☆ 收藏'}</button>
           <button class="btn primary" id="submit-btn" ${answered ? 'style="display:none"' : ''}>提交答案</button>
-          <button class="btn success" id="next-btn" ${answered ? '' : 'style="display:none"'}>${idx === total - 1 ? '完成' : '下一题'} →</button>
+          <button class="btn success" id="next-btn" ${idx === total - 1 ? 'disabled' : ''}>下一题 →</button>
         </div>
         <div id="explain-box"></div>`;
     }
@@ -447,16 +501,27 @@
       <div class="card">
         <div class="quiz-head">
           <div><span class="muted">${esc(p.title)}</span> · 第 <b>${idx + 1}</b> / ${total} 题</div>
-          <button class="btn ghost btn-sm" id="quit-btn">退出</button>
+          <div style="display:flex;gap:6px">
+            <button class="btn ghost btn-sm" id="submit-all-btn">交卷</button>
+            <button class="btn ghost btn-sm" id="quit-btn">退出</button>
+          </div>
         </div>
         <div class="bar"><i style="width:${(idx / total * 100).toFixed(1)}%"></i></div>
+        <div class="qnav">${practiceNavHtml(p, idx)}</div>
         <div style="margin-top:14px">${body}</div>
       </div>`;
 
     $('#quit-btn', app).addEventListener('click', () => { p.backTo ? p.backTo() : showView('home'); });
+    $('#submit-all-btn', app).addEventListener('click', () => { p.done = true; renderPracticeDone(app); });
     $('#fav-btn', app).addEventListener('click', (e) => {
       toggleFavorite(q.id);
       e.target.textContent = isFavorite(q.id) ? '★ 已收藏' : '☆ 收藏';
+    });
+    $('#prev-btn', app).addEventListener('click', () => {
+      if (p.index > 0) { p.index--; renderPractice(app); }
+    });
+    $$('.qnav-item', app).forEach(btn => {
+      btn.addEventListener('click', () => { p.index = Number(btn.dataset.nav); renderPractice(app); });
     });
 
     if (!answered) {
@@ -492,8 +557,7 @@
     }
 
     $('#next-btn', app).addEventListener('click', () => {
-      p.index++;
-      renderPractice(app);
+      if (p.index < total - 1) { p.index++; renderPractice(app); }
     });
 
     saveProgress();
@@ -970,17 +1034,40 @@
     if (!isNative) return;
 
     const REMOTE = 'https://nanyi382.github.io/soft-test-network-engineer/';
-    const files = ['data/papers.js', 'data/chapters.js', 'data/paper1.js', 'data/paper2.js', 'data/paper3.js', 'data/paper4.js', 'data/auto.js', 'data/real_papers.js'];
-    const backupQ = window.QUESTIONS;
-    const backupP = window.PAPERS;
-    window.QUESTIONS = null;
+    // 文件清单来自单一事实来源 data/manifest.js，不再硬编码，
+    // 避免「拉到了新版 papers.js、却没拉对应的题库文件」导致卷面 0 题
+    const files = (window.DATA_FILES && window.DATA_FILES.length)
+      ? window.DATA_FILES.slice()
+      : ['data/papers.js', 'data/chapters_meta.js', 'data/paper1.js', 'data/paper2.js',
+         'data/paper3.js', 'data/paper4.js', 'data/auto.js', 'data/real_papers.js',
+         'data/chapters.js', 'data/case_config.js'];
+
+    const backupQ = window.QUESTIONS || [];
+    const backupP = window.PAPERS || [];
+    const backupC = window.CHAPTERS || [];
+    // QUESTIONS 置空数组（各数据文件会往它 push）；PAPERS/CHAPTERS 置 null，
+    // 这样内置文件里的 `window.PAPERS = window.PAPERS || [...]` 才会重新赋值
+    window.QUESTIONS = [];
     window.PAPERS = null;
-    try {
-      for (const f of files) await loadScript(REMOTE + f);
-      if (!window.QUESTIONS || !window.QUESTIONS.length) throw new Error('empty remote');
-    } catch (e) {
+    window.CHAPTERS = null;
+
+    const failed = [];
+    for (const f of files) {
+      try {
+        await loadScript(REMOTE + f);
+      } catch (e) {
+        // 单个文件拉取失败：回退到 App 内置的那一份，不影响其余文件
+        failed.push(f);
+        try { await loadScript(f); } catch (e2) { /* 内置也没有则该文件跳过 */ }
+      }
+    }
+    if (failed.length) console.warn('[题库同步] 以下文件远程拉取失败，已用内置版本兜底：', failed);
+
+    // 全部失败（内置也没恢复出来）→ 用启动时的备份兜底
+    if (!window.QUESTIONS.length) {
       window.QUESTIONS = backupQ;
       window.PAPERS = backupP;
+      window.CHAPTERS = backupC;
     }
   }
 

@@ -4,7 +4,8 @@
   "description": "软考网络工程师刷题 App（安卓）",
   "private": true,
   "scripts": {
-    "sync": "cap sync android",
+    "sync-www": "node scripts/sync-www.js",
+    "sync": "npm run sync-www && cap sync android",
     "open": "cap open android"
   },
   "dependencies": {

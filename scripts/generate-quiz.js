@@ -1,9 +1,13 @@
 /* ==========================================================================
- * 题库自动更新脚本 v2（GitHub Actions 定时调用，DeepSeek API）
+ * 题库自动更新脚本 v3（GitHub Actions 定时调用，DeepSeek API）
  *
- * 两种模式（环境变量 TASK 控制）：
- *   TASK=chapter（默认，每周）：生成章节练习题（选择题 + 案例题）追加到 data/auto.js
- *   TASK=paper  （每月）：生成一整套模拟卷，创建 data/paperN.js
+ * 三种模式（环境变量 TASK 控制）：
+ *   TASK=chapter（默认，每周）：全部 10 章各生成 10 选择 + 1 案例，追加到 data/auto.js
+ *   TASK=fill             ：把每一章补到 TARGET_PER_CAT（默认 100）题
+ *   TASK=paper  （每月）  ：生成一整套模拟卷，创建 data/paperN.js
+ *
+ * 章节清单来自 data/chapters_meta.js（官方《网络工程师教程（第 6 版）》目录），
+ * 每章带上大纲子考点提示，保证题目严格落在本章考纲范围内。
  *
  * 截止日期：超过 DEADLINE（默认 2027-01-01）后自动停止更新（空跑退出）。
  * 用法：DEEPSEEK_API_KEY=... TASK=chapter node scripts/generate-quiz.js
@@ -12,6 +16,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const vm = require('vm');
 
 const API_URL = process.env.LLM_API_URL || 'https://api.deepseek.com/chat/completions';
 const API_KEY = process.env.DEEPSEEK_API_KEY;
@@ -22,52 +27,76 @@ const DEADLINE = process.env.DEADLINE || '2027-01-01';
 const DATA_DIR = 'data';
 const AUTO_JSON = path.join(DATA_DIR, 'auto.json');
 const AUTO_JS = path.join(DATA_DIR, 'auto.js');
+const MANIFEST_JS = path.join(DATA_DIR, 'manifest.js');
 
-const ALL_CATS = [
-  '计算机网络体系结构', '数据通信基础', '局域网与以太网', '广域网技术',
-  '网络互联与 IP 编址', '交换技术', '路由协议', '无线网络',
-  '网络安全', '网络管理', '网络操作系统', '网络规划与设计'
-];
+/* 章节练习的题池文件（都是不带 paper 字段的章节题） */
+const CHAPTER_POOL_FILES = ['chapters.js', 'auto.js', 'case_config.js'];
 
-if (!API_KEY) {
-  console.error('缺少环境变量 DEEPSEEK_API_KEY');
-  process.exit(1);
+/* ---------- 章节目录（单一事实来源 data/chapters_meta.js） ---------- */
+function loadChapters() {
+  const src = fs.readFileSync(path.join(DATA_DIR, 'chapters_meta.js'), 'utf8');
+  const sandbox = {};
+  sandbox.window = sandbox;
+  vm.createContext(sandbox);
+  vm.runInContext(src, sandbox, { filename: 'chapters_meta.js' });
+  const list = sandbox.CHAPTERS || [];
+  if (!list.length) throw new Error('data/chapters_meta.js 里没有 window.CHAPTERS');
+  return list;
 }
 
-// 截止日期判断
-if (Date.now() >= new Date(DEADLINE + 'T00:00:00Z').getTime()) {
-  console.log(`已到截止日期 ${DEADLINE}，自动更新停止。`);
-  process.exit(0);
+/* 参与生成的正文章节（排除「配置命令专项」这类 no 为 null 的专项入口） */
+function syllabusChapters() {
+  return loadChapters().filter((c) => c.no);
 }
 
-/* ---------- 工具 ---------- */
+/* 章节练习现有题池（只取不带 paper 的章节题） */
+function chapterPool() {
+  const sandbox = {};
+  sandbox.window = sandbox;
+  vm.createContext(sandbox);
+  ['papers.js', 'chapters_meta.js'].concat(CHAPTER_POOL_FILES).forEach((f) => {
+    const p = path.join(DATA_DIR, f);
+    if (fs.existsSync(p)) vm.runInContext(fs.readFileSync(p, 'utf8'), sandbox, { filename: f });
+  });
+  return (sandbox.QUESTIONS || []).filter((q) => !q.paper);
+}
+
+function chapterCounts() {
+  const counts = {};
+  chapterPool().forEach((q) => { counts[q.category] = (counts[q.category] || 0) + 1; });
+  return counts;
+}
+
+/* ---------- 数据文件清单（供 index.html / sw.js 引用） ---------- */
+// 扫描 data/ 目录，凡是有 window.QUESTIONS / PAPERS / CHAPTERS 的都算数据文件，
+// 避免手工维护漏文件（papers.js 挂的是 PAPERS、chapters_meta.js 挂的是 CHAPTERS）
+function listDataFiles() {
+  const all = fs.readdirSync(DATA_DIR)
+    .filter((f) => f.endsWith('.js') && f !== 'manifest.js')
+    .filter((f) => /window\.(QUESTIONS|PAPERS|CHAPTERS)\s*=/.test(fs.readFileSync(path.join(DATA_DIR, f), 'utf8')));
+  const head = ['papers.js', 'chapters_meta.js'].filter((f) => all.includes(f));
+  const rest = all.filter((f) => !head.includes(f)).sort();
+  return head.concat(rest).map((f) => 'data/' + f);
+}
+
+const MAX_ID_RE = /["']?id["']?\s*:\s*(\d+)/g;
+
 function readAllData() {
   return fs.readdirSync(DATA_DIR)
-    .filter(f => f.endsWith('.js'))
-    .map(f => fs.readFileSync(path.join(DATA_DIR, f), 'utf8'))
+    .filter((f) => f.endsWith('.js'))
+    .map((f) => fs.readFileSync(path.join(DATA_DIR, f), 'utf8'))
     .join('\n');
 }
 
 function maxId(src) {
-  const ids = [...src.matchAll(/["']?id["']?\s*:\s*(\d+)/g)].map(m => +m[1]);
+  const ids = [...src.matchAll(MAX_ID_RE)].map((m) => +m[1]);
   return ids.length ? Math.max(...ids) : 0;
-}
-
-function categoryCounts(src) {
-  const c = {};
-  for (const m of src.matchAll(/["']?category["']?\s*:\s*"([^"]+)"/g)) c[m[1]] = (c[m[1]] || 0) + 1;
-  return c;
-}
-
-function pickCategories(src, n) {
-  const counts = categoryCounts(src);
-  return ALL_CATS.slice().sort((a, b) => (counts[a] || 0) - (counts[b] || 0)).slice(0, n);
 }
 
 function currentPaperCount() {
   const src = fs.readFileSync(path.join(DATA_DIR, 'papers.js'), 'utf8');
   const m = src.match(/\{ id: "paper(\d+)"/g);
-  return m ? Math.max(...m.map(x => +x.match(/paper(\d+)/)[1])) : 0;
+  return m ? Math.max(...m.map((x) => +x.match(/paper(\d+)/)[1])) : 0;
 }
 
 /* ---------- 通用 AI 调用 ---------- */
@@ -107,7 +136,13 @@ function extractJson(text) {
   const i = text.indexOf('[');
   const j = text.lastIndexOf(']');
   if (i < 0 || j <= i) throw new Error('AI 输出中未找到 JSON 数组');
-  return JSON.parse(text.slice(i, j + 1));
+  const raw = text.slice(i, j + 1);
+  try {
+    return JSON.parse(raw);
+  } catch (e) {
+    // 容错：去掉 JSON 中不合法的尾随逗号
+    return JSON.parse(raw.replace(/,\s*([\]}])/g, '$1'));
+  }
 }
 
 /* ---------- 选择题 ---------- */
@@ -199,7 +234,7 @@ async function genCases(catHint, count) {
     cs = extractJson(await chat(sys, user));
   }
   if (!Array.isArray(cs) || cs.length !== count) throw new Error(`案例题数不符：期望 ${count}，得到 ${cs && cs.length}`);
-  return cs.map(c => validateCase(c));
+  return cs.map((c) => validateCase(c));
 }
 
 /* ---------- 落盘：auto.js（章节题追加） ---------- */
@@ -207,7 +242,7 @@ function writeAuto(newQuestions) {
   const old = fs.existsSync(AUTO_JSON) ? JSON.parse(fs.readFileSync(AUTO_JSON, 'utf8')) : [];
   const merged = old.concat(newQuestions);
   fs.writeFileSync(AUTO_JSON, JSON.stringify(merged, null, 2));
-  const js = '/* 自动更新的章节练习题（由 GitHub Actions 每周自动生成，勿手改） */\n'
+  const js = '/* 自动更新的章节练习题（由 GitHub Actions 自动生成，勿手改） */\n'
     + 'window.QUESTIONS = window.QUESTIONS || [];\n'
     + '(function () {\n  const A = ' + JSON.stringify(merged) + ';\n  A.forEach(q => window.QUESTIONS.push(q));\n})();\n';
   fs.writeFileSync(AUTO_JS, js);
@@ -242,70 +277,179 @@ function writePaper(paperNo, singles, cases) {
   return P;
 }
 
-/* ---------- 更新关联文件（幂等） ---------- */
-function syncRefs(newDataFile) {
-  // index.html
+/* ---------- 同步关联文件（以 data/manifest.js 为单一事实来源） ----------
+ * 之前这里用 `replace("'data/chapters.js']", ...)` 改 app.js 的硬编码清单，
+ * 锚点永远匹配不到（chapters.js 在数组中间），导致新题库文件从未被加进
+ * APK 的远程同步列表 —— 这就是「真题模拟卷（四）及之后 0 题」的根因。
+ * 现在改为：扫描 data/ 目录生成清单，再据此重写 index.html 的 script 标签。 */
+function syncRefs() {
+  const files = listDataFiles();
+  const changed = [];
+
+  // 1) data/manifest.js —— 单一事实来源
+  const manifest = '/* 题库数据文件清单（单一事实来源）\n'
+    + ' *\n'
+    + ' * 三处引用本清单，加题库文件时只需维护这里：\n'
+    + ' *   1. index.html 的 <script> 标签（网页版加载）\n'
+    + ' *   2. sw.js 的 ASSETS（用 importScripts 读本文件，离线缓存）\n'
+    + ' *   3. app.js 的 syncRemoteQuiz()（APK 联网同步）\n'
+    + ' *\n'
+    + ' * 同时挂在 window（页面）和 self（Service Worker）上，两种环境都能读。\n'
+    + ' * 由 scripts/generate-quiz.js 的 syncRefs() 自动维护，勿手改。 */\n'
+    + '(function (g) {\n'
+    + '  g.DATA_FILES = [\n'
+    + files.map((f) => `    '${f}'`).join(',\n') + '\n'
+    + '  ];\n'
+    + '})(typeof self !== \'undefined\' ? self : this);\n';
+  const oldManifest = fs.existsSync(MANIFEST_JS) ? fs.readFileSync(MANIFEST_JS, 'utf8') : '';
+  if (oldManifest !== manifest) {
+    fs.writeFileSync(MANIFEST_JS, manifest);
+    changed.push('data/manifest.js');
+  }
+
+  // 2) index.html —— 按标记块重写 script 标签，不再靠脆弱字符串锚点
+  const BEGIN = '  <!-- DATA_SCRIPTS:BEGIN（由 scripts/generate-quiz.js 生成，勿手改） -->';
+  const END = '  <!-- DATA_SCRIPTS:END -->';
   let html = fs.readFileSync('index.html', 'utf8');
-  if (!html.includes(newDataFile)) {
-    html = html.replace('<script src="data/chapters.js"></script>', `<script src="data/${newDataFile}"></script>\n  <script src="data/chapters.js"></script>`);
-    fs.writeFileSync('index.html', html);
+  const block = [BEGIN]
+    .concat(['  <script src="data/manifest.js"></script>'])
+    .concat(files.map((f) => `  <script src="${f}"></script>`))
+    .concat([END])
+    .join('\n');
+  const re = new RegExp(BEGIN.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '[\\s\\S]*?' + END.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  if (re.test(html)) {
+    const next = html.replace(re, block);
+    if (next !== html) { html = next; fs.writeFileSync('index.html', html); changed.push('index.html'); }
+  } else {
+    console.warn('⚠ index.html 里没找到 DATA_SCRIPTS 标记块，跳过 script 标签同步');
   }
-  // app.js：远程同步列表 + 首页试卷数
-  let app = fs.readFileSync('app.js', 'utf8');
-  if (!app.includes(`'data/${newDataFile}'`)) {
-    app = app.replace("'data/chapters.js']", `'data/chapters.js', 'data/${newDataFile}']`);
-  }
-  const paperCnt = currentPaperCount();
-  app = app.replace(/(<div class="desc">)(\d+)( 套全真真题卷)/, (_, a, b, c) => a + paperCnt + c);
-  fs.writeFileSync('app.js', app);
-  // sw.js：ASSETS + CACHE +1
+
+  // 3) sw.js —— 资源清单由 importScripts(manifest.js) 读取，这里只需 bump 缓存版本
   let sw = fs.readFileSync('sw.js', 'utf8');
-  if (!sw.includes(`'./data/${newDataFile}'`)) {
-    sw = sw.replace("  './data/chapters.js'", `  './data/${newDataFile}',\n  './data/chapters.js'`);
-  }
-  sw = sw.replace(/const CACHE = 'npe-v(\d+)';/, (_, v) => `const CACHE = 'npe-v${+v + 1}';`);
-  fs.writeFileSync('sw.js', sw);
+  const bumped = sw.replace(/const CACHE = 'npe-v(\d+)';/, (_, v) => `const CACHE = 'npe-v${+v + 1}';`);
+  if (bumped !== sw) { fs.writeFileSync('sw.js', bumped); changed.push('sw.js(CACHE)'); }
+
+  console.log('同步关联文件：' + (changed.length ? changed.join('、') : '无变化'));
+  return files;
 }
 
-/* ---------- 模式：章节题 ---------- */
+/* ---------- 把一批新题转成题目对象 ---------- */
+function toQuestionObjs(cat, singles, cases, startId) {
+  const out = [];
+  const nextId = () => startId + out.length;
+  singles.forEach((q) => out.push({
+    id: nextId(), type: 'single', category: cat,
+    question: q.question, options: q.options, answer: Number(q.answer), explanation: q.explanation
+  }));
+  cases.forEach((c) => out.push({
+    id: nextId(), type: 'case', category: cat, question: c.question, parts: c.parts
+  }));
+  return out;
+}
+
+/* ---------- 模式：章节题（每周一轮全章节） ---------- */
 async function runChapter() {
-  const src = readAllData();
-  const nextId = maxId(src) + 1;
-  const cats = pickCategories(src, 2);
+  const chapters = syllabusChapters();
   const perCat = Number(process.env.PER_CAT || 10);
   const casePerCat = Number(process.env.CASE_PER_CAT || 1);
 
-  console.log(`[章节题] 考点：${cats.join('、')}，各 ${perCat} 选择 + ${casePerCat} 案例，起始 id=${nextId}`);
+  const src = readAllData();
+  const nextId = maxId(src) + 1;
+  console.log(`[章节题] ${chapters.length} 章，各 ${perCat} 选择 + ${casePerCat} 案例，起始 id=${nextId}`);
 
+  let total = 0;
   const fresh = [];
-  for (const cat of cats) {
-    const singles = await genSingles(cat, perCat);
-    singles.forEach(q => fresh.push({ id: nextId + fresh.length, type: 'single', category: cat, question: q.question, options: q.options, answer: Number(q.answer), explanation: q.explanation }));
-
-    const cases = await genCases(cat, casePerCat);
-    cases.forEach(c => fresh.push({ id: nextId + fresh.length, type: 'case', category: cat, question: c.question, parts: c.parts }));
+  for (const ch of chapters) {
+    const hint = `${ch.name}（本章考纲要点：${ch.summary}）`;
+    const singles = await genSingles(hint, perCat);
+    const cases = await genCases(hint, casePerCat);
+    const objs = toQuestionObjs(ch.name, singles, cases, nextId + fresh.length);
+    fresh.push(...objs);
+    console.log(`  ${ch.name}：+${objs.length} 题`);
   }
 
-  const total = writeAuto(fresh);
-  syncRefs('auto.js');
+  total = writeAuto(fresh);
+  syncRefs();
   console.log(`完成：新增 ${fresh.length} 题，auto 累计 ${total} 题。`);
+}
+
+/* ---------- 模式：补齐到每章目标题量 ---------- */
+async function runFill() {
+  const chapters = syllabusChapters();
+  const target = Number(process.env.TARGET_PER_CAT || 100);
+  const batch = Number(process.env.BATCH || 10);
+  const casePerCat = Number(process.env.CASE_PER_CAT || 1);
+
+  const counts = chapterCounts();
+  console.log(`[补齐] 目标每章 ${target} 题`);
+  chapters.forEach((ch) => {
+    console.log(`  ${ch.name}：现有 ${counts[ch.name] || 0} 题，缺 ${Math.max(0, target - (counts[ch.name] || 0))} 题`);
+  });
+
+  const src = readAllData();
+  let nextId = maxId(src) + 1;
+  let addedTotal = 0;
+
+  for (const ch of chapters) {
+    let need = target - (counts[ch.name] || 0);
+    if (need <= 0) { console.log(`\n${ch.name}：已达标，跳过`); continue; }
+    console.log(`\n${ch.name}：开始补 ${need} 题`);
+    const hint = `${ch.name}（本章考纲要点：${ch.summary}）`;
+
+    // 选择题分批生成；每批落盘一次，中途失败也不丢已生成的题
+    const singleNeed = Math.max(0, need - casePerCat);
+    for (let got = 0; got < singleNeed; got += batch) {
+      const n = Math.min(batch, singleNeed - got);
+      try {
+        const singles = await genSingles(hint, n);
+        const objs = toQuestionObjs(ch.name, singles, [], nextId);
+        nextId += objs.length;
+        writeAuto(objs);
+        addedTotal += objs.length;
+        console.log(`  选择题 +${objs.length}（本章累计 ${got + objs.length}/${singleNeed}）`);
+      } catch (e) {
+        console.error(`  选择题批次失败，跳过：${e.message}`);
+      }
+    }
+
+    // 案例题
+    if (casePerCat > 0 && need > 0) {
+      try {
+        const cases = await genCases(hint, casePerCat);
+        const objs = toQuestionObjs(ch.name, [], cases, nextId);
+        nextId += objs.length;
+        writeAuto(objs);
+        addedTotal += objs.length;
+        console.log(`  案例题 +${objs.length}`);
+      } catch (e) {
+        console.error(`  案例题生成失败，跳过：${e.message}`);
+      }
+    }
+  }
+
+  syncRefs();
+  const after = chapterCounts();
+  console.log('\n补齐完成，新增 %d 题。各章现有题数：', addedTotal);
+  chapters.forEach((ch) => console.log(`  ${ch.name}：${after[ch.name] || 0}`));
 }
 
 /* ---------- 模式：整套模拟卷 ---------- */
 async function runPaper() {
+  const chapters = syllabusChapters();
   const paperNo = currentPaperCount() + 1;
   const singleCount = Number(process.env.PAPER_SINGLE || 75);
   const caseCount = Number(process.env.PAPER_CASE || 5);
   console.log(`[模拟卷] 生成真题模拟卷（${paperNo}）：${singleCount} 选择 + ${caseCount} 案例`);
+
+  const hintOf = (i) => `${chapters[i % chapters.length].name}（本章考纲要点：${chapters[i % chapters.length].summary}）`;
 
   const singles = [];
   const perBatch = 15;
   const batches = Math.ceil(singleCount / perBatch);
   for (let b = 0; b < batches; b++) {
     const n = Math.min(perBatch, singleCount - singles.length);
-    const catHint = ALL_CATS[b % ALL_CATS.length] + ' 等综合考点';
-    const qs = await genSingles(catHint, n);
-    qs.forEach(q => singles.push(q));
+    const qs = await genSingles(hintOf(b) + ' 等综合考点', n);
+    qs.forEach((q) => singles.push(q));
   }
 
   const cases = [];
@@ -313,22 +457,38 @@ async function runPaper() {
   const caseBatches = Math.ceil(caseCount / caseBatch);
   for (let b = 0; b < caseBatches; b++) {
     const n = Math.min(caseBatch, caseCount - cases.length);
-    const cs = await genCases(ALL_CATS[b % ALL_CATS.length] + ' 等综合考点', n);
-    cs.forEach(c => cases.push(c));
+    const cs = await genCases(hintOf(b) + ' 等综合考点', n);
+    cs.forEach((c) => cases.push(c));
   }
 
   const P = writePaper(paperNo, singles, cases);
-  syncRefs(`${P}.js`);
+  syncRefs();
   console.log(`完成：生成 ${P}（${singles.length} 选择 + ${cases.length} 案例）。`);
 }
 
 /* ---------- 入口 ---------- */
-(async () => {
-  try {
-    if (TASK === 'paper') await runPaper();
-    else await runChapter();
-  } catch (e) {
-    console.error('更新失败：', e.message);
-    process.exit(1);
-  }
-})();
+if (require.main === module) {
+  (async () => {
+    try {
+      if (!API_KEY) {
+        console.error('缺少环境变量 DEEPSEEK_API_KEY');
+        process.exit(1);
+      }
+      if (Date.now() >= new Date(DEADLINE + 'T00:00:00Z').getTime()) {
+        console.log(`已到截止日期 ${DEADLINE}，自动更新停止。`);
+        process.exit(0);
+      }
+      if (TASK === 'paper') await runPaper();
+      else if (TASK === 'fill') await runFill();
+      else await runChapter();
+    } catch (e) {
+      console.error('更新失败：', e.message);
+      process.exit(1);
+    }
+  })();
+}
+
+/* 供本地校验使用：node -e "require('./scripts/generate-quiz.js').syncRefs()" */
+module.exports = {
+  listDataFiles, syncRefs, chapterCounts, syllabusChapters, maxId, readAllData, loadChapters
+};

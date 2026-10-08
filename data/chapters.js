@@ -3,16 +3,16 @@ window.QUESTIONS = window.QUESTIONS || [];
 (function () {
   const A = [
     // ========== 第1章 计算机网络体系结构 ==========
-    { id: 501, type: "single", category: "计算机网络体系结构", question: "OSI 参考模型从下到上第三层是（　）。", options: ["A. 网络层", "B. 传输层", "C. 数据链路层", "D. 会话层"], answer: 0, explanation: "OSI 从下到上：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层，第三层是网络层。" },
-    { id: 502, type: "single", category: "计算机网络体系结构", question: "数据在发送方从高层到低层传递的过程称为（　）。", options: ["A. 封装", "B. 解封装", "C. 路由", "D. 交换"], answer: 0, explanation: "发送方数据自顶向下逐层添加控制信息称为封装；接收方逐层剥离头部称为解封装。" },
-    { id: 503, type: "single", category: "计算机网络体系结构", question: "TCP/IP 四层模型不包括（　）。", options: ["A. 会话层", "B. 网络接口层", "C. 网络层", "D. 传输层"], answer: 0, explanation: "TCP/IP 四层为：网络接口层、网络层、传输层、应用层，没有单独的会话层/表示层。" },
-    { id: 504, type: "single", category: "计算机网络体系结构", question: "在 OSI 模型中，为数据加解密、压缩等提供服务的层是（　）。", options: ["A. 表示层", "B. 网络层", "C. 传输层", "D. 数据链路层"], answer: 0, explanation: "表示层负责数据的表示与转换，包括加解密、压缩、编码格式转换等。" },
-    { id: 505, type: "single", category: "计算机网络体系结构", question: "下列哪个端口号属于知名端口（well-known）范围？", options: ["A. 80", "B. 5000", "C. 30000", "D. 60000"], answer: 0, explanation: "知名端口范围为 0~1023，如 80（HTTP）、443（HTTPS）、21（FTP）等。" },
-    { id: 506, type: "single", category: "计算机网络体系结构", question: "TCP 中，用于标识数据段序号、实现有序接收的字段是（　）。", options: ["A. 序号字段", "B. 校验和", "C. 窗口", "D. 标志位"], answer: 0, explanation: "序号字段标识报文段第一个字节的编号，用于排序和重传，保证数据有序可靠。" },
-    { id: 507, type: "single", category: "计算机网络体系结构", question: "HTTP 协议基于（　）传输层协议。", options: ["A. TCP", "B. UDP", "C. ICMP", "D. ARP"], answer: 0, explanation: "HTTP 基于面向连接的 TCP 协议，默认端口 80，保证网页数据传输的可靠性。" },
-    { id: 508, type: "single", category: "计算机网络体系结构", question: "下列协议中，用于网络设备间同步时间的是（　）。", options: ["A. NTP", "B. FTP", "C. SMTP", "D. SNMP"], answer: 0, explanation: "NTP（网络时间协议）用于在网络中同步设备时钟；SNMP 用于网络管理。" },
-    { id: 509, type: "single", category: "计算机网络体系结构", question: "在 OSI 模型中，路由器主要工作在（　）。", options: ["A. 网络层", "B. 物理层", "C. 数据链路层", "D. 应用层"], answer: 0, explanation: "路由器根据 IP 地址（网络层地址）转发数据包，工作在网络层。" },
-    { id: 510, type: "single", category: "计算机网络体系结构", question: "TCP 与 UDP 共有的功能是（　）。", options: ["A. 通过端口号区分应用", "B. 可靠传输", "C. 流量控制", "D. 三次握手"], answer: 0, explanation: "TCP 和 UDP 都通过端口号标识应用进程；可靠传输、流量控制、握手是 TCP 独有功能。" },
+    { id: 501, type: "single", category: "计算机网络概论", question: "OSI 参考模型从下到上第三层是（　）。", options: ["A. 网络层", "B. 传输层", "C. 数据链路层", "D. 会话层"], answer: 0, explanation: "OSI 从下到上：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层，第三层是网络层。" },
+    { id: 502, type: "single", category: "计算机网络概论", question: "数据在发送方从高层到低层传递的过程称为（　）。", options: ["A. 封装", "B. 解封装", "C. 路由", "D. 交换"], answer: 0, explanation: "发送方数据自顶向下逐层添加控制信息称为封装；接收方逐层剥离头部称为解封装。" },
+    { id: 503, type: "single", category: "计算机网络概论", question: "TCP/IP 四层模型不包括（　）。", options: ["A. 会话层", "B. 网络接口层", "C. 网络层", "D. 传输层"], answer: 0, explanation: "TCP/IP 四层为：网络接口层、网络层、传输层、应用层，没有单独的会话层/表示层。" },
+    { id: 504, type: "single", category: "计算机网络概论", question: "在 OSI 模型中，为数据加解密、压缩等提供服务的层是（　）。", options: ["A. 表示层", "B. 网络层", "C. 传输层", "D. 数据链路层"], answer: 0, explanation: "表示层负责数据的表示与转换，包括加解密、压缩、编码格式转换等。" },
+    { id: 505, type: "single", category: "计算机网络概论", question: "下列哪个端口号属于知名端口（well-known）范围？", options: ["A. 80", "B. 5000", "C. 30000", "D. 60000"], answer: 0, explanation: "知名端口范围为 0~1023，如 80（HTTP）、443（HTTPS）、21（FTP）等。" },
+    { id: 506, type: "single", category: "计算机网络概论", question: "TCP 中，用于标识数据段序号、实现有序接收的字段是（　）。", options: ["A. 序号字段", "B. 校验和", "C. 窗口", "D. 标志位"], answer: 0, explanation: "序号字段标识报文段第一个字节的编号，用于排序和重传，保证数据有序可靠。" },
+    { id: 507, type: "single", category: "计算机网络概论", question: "HTTP 协议基于（　）传输层协议。", options: ["A. TCP", "B. UDP", "C. ICMP", "D. ARP"], answer: 0, explanation: "HTTP 基于面向连接的 TCP 协议，默认端口 80，保证网页数据传输的可靠性。" },
+    { id: 508, type: "single", category: "计算机网络概论", question: "下列协议中，用于网络设备间同步时间的是（　）。", options: ["A. NTP", "B. FTP", "C. SMTP", "D. SNMP"], answer: 0, explanation: "NTP（网络时间协议）用于在网络中同步设备时钟；SNMP 用于网络管理。" },
+    { id: 509, type: "single", category: "计算机网络概论", question: "在 OSI 模型中，路由器主要工作在（　）。", options: ["A. 网络层", "B. 物理层", "C. 数据链路层", "D. 应用层"], answer: 0, explanation: "路由器根据 IP 地址（网络层地址）转发数据包，工作在网络层。" },
+    { id: 510, type: "single", category: "计算机网络概论", question: "TCP 与 UDP 共有的功能是（　）。", options: ["A. 通过端口号区分应用", "B. 可靠传输", "C. 流量控制", "D. 三次握手"], answer: 0, explanation: "TCP 和 UDP 都通过端口号标识应用进程；可靠传输、流量控制、握手是 TCP 独有功能。" },
 
     // ========== 第2章 数据通信基础 ==========
     { id: 511, type: "single", category: "数据通信基础", question: "在数字信号编码中，曼彻斯特编码的缺点是（　）。", options: ["A. 带宽利用率降低（波特率是比特率两倍）", "B. 无法同步", "C. 只能传模拟", "D. 抗干扰差"], answer: 0, explanation: "曼彻斯特编码每比特都有跳变，波特率是比特率的两倍，带宽效率减半，但自带时钟便于同步。" },
@@ -27,76 +27,76 @@ window.QUESTIONS = window.QUESTIONS || [];
     { id: 520, type: "single", category: "数据通信基础", question: "在数字通信中，误码率是指（　）。", options: ["A. 传输的差错比特占总比特的比例", "B. 传输速率", "C. 带宽利用率", "D. 信号功率"], answer: 0, explanation: "误码率（BER）是错误比特数与传输总比特数之比，是衡量传输质量的重要指标。" },
 
     // ========== 第3章 局域网与以太网 ==========
-    { id: 521, type: "single", category: "局域网与以太网", question: "以太网中，MAC 地址的前 3 字节表示（　）。", options: ["A. 厂商标识（OUI）", "B. 主机序号", "C. 端口号", "D. 网络地址"], answer: 0, explanation: "MAC 地址前 24 位是厂商唯一标识符（OUI），由 IEEE 分配；后 24 位由厂商自行分配。" },
-    { id: 522, type: "single", category: "局域网与以太网", question: "以太网交换机通过（　）决定帧从哪个端口转发。", options: ["A. 目的 MAC 地址", "B. 源 MAC 地址", "C. IP 地址", "D. 端口号"], answer: 0, explanation: "交换机查 MAC 地址表，根据目的 MAC 地址决定转发端口；未知则泛洪到除源端口外的所有端口。" },
-    { id: 523, type: "single", category: "局域网与以太网", question: "一个集线器连接的所有站点处于（　）。", options: ["A. 同一冲突域和广播域", "B. 不同冲突域", "C. 不同广播域", "D. 无任何域"], answer: 0, explanation: "集线器是物理层设备，所有端口共享同一冲突域和广播域，任一时刻只能一个站点发送。" },
-    { id: 524, type: "single", category: "局域网与以太网", question: "以太网帧的最大传输单元（MTU）通常为（　）字节。", options: ["A. 1500", "B. 1518", "C. 64", "D. 46"], answer: 0, explanation: "以太网数据字段最大 1500 字节（MTU），帧总长最大 1518 字节（含地址、类型、FCS）。" },
-    { id: 525, type: "single", category: "局域网与以太网", question: "下列以太网标准中，速率最高的是（　）。", options: ["A. 100GBASE-R", "B. 1000BASE-T", "C. 100BASE-TX", "D. 10BASE-T"], answer: 0, explanation: "100GBASE-R 是百吉（100G）以太网标准，速率远高于千兆、百兆和十兆以太网。" },
-    { id: 526, type: "single", category: "局域网与以太网", question: "CSMA/CD 中「载波监听」指的是（　）。", options: ["A. 发送前监听信道是否空闲", "B. 监听 IP 地址", "C. 监听 MAC 地址", "D. 监听端口"], answer: 0, explanation: "载波监听是发送前检测信道上是否有其他站点在传输，空闲才发送，以减少冲突。" },
-    { id: 527, type: "single", category: "局域网与以太网", question: "全双工以太网相比半双工以太网的优点是（　）。", options: ["A. 无冲突、带宽翻倍", "B. 更便宜", "C. 距离更远", "D. 布线更简单"], answer: 0, explanation: "全双工模式下收发独立，无冲突、无需 CSMA/CD，理论带宽是半双工的两倍。" },
-    { id: 528, type: "single", category: "局域网与以太网", question: "在以太网中，交换机收到未知目的 MAC 地址的帧时，会（　）。", options: ["A. 向除源端口外的所有端口泛洪", "B. 丢弃该帧", "C. 缓存起来", "D. 只发给一个端口"], answer: 0, explanation: "未知单播帧会被泛洪（flood）到除接收端口外的所有端口，直到学到目的 MAC 为止。" },
-    { id: 529, type: "single", category: "局域网与以太网", question: "以太网中，用来检测帧在传输中是否出错的是（　）。", options: ["A. FCS（帧校验序列）", "B. 前导码", "C. 类型字段", "D. 源地址"], answer: 0, explanation: "FCS 采用 CRC 校验，接收端重新计算并与帧尾 FCS 比较，检测传输差错。" },
-    { id: 530, type: "single", category: "局域网与以太网", question: "百兆以太网 100BASE-FX 使用的传输介质是（　）。", options: ["A. 光纤", "B. 双绞线", "C. 同轴电缆", "D. 无线"], answer: 0, explanation: "100BASE-FX 使用光纤传输，是百兆以太网的光纤标准；100BASE-TX 用双绞线。" },
+    { id: 521, type: "single", category: "局域网", question: "以太网中，MAC 地址的前 3 字节表示（　）。", options: ["A. 厂商标识（OUI）", "B. 主机序号", "C. 端口号", "D. 网络地址"], answer: 0, explanation: "MAC 地址前 24 位是厂商唯一标识符（OUI），由 IEEE 分配；后 24 位由厂商自行分配。" },
+    { id: 522, type: "single", category: "局域网", question: "以太网交换机通过（　）决定帧从哪个端口转发。", options: ["A. 目的 MAC 地址", "B. 源 MAC 地址", "C. IP 地址", "D. 端口号"], answer: 0, explanation: "交换机查 MAC 地址表，根据目的 MAC 地址决定转发端口；未知则泛洪到除源端口外的所有端口。" },
+    { id: 523, type: "single", category: "局域网", question: "一个集线器连接的所有站点处于（　）。", options: ["A. 同一冲突域和广播域", "B. 不同冲突域", "C. 不同广播域", "D. 无任何域"], answer: 0, explanation: "集线器是物理层设备，所有端口共享同一冲突域和广播域，任一时刻只能一个站点发送。" },
+    { id: 524, type: "single", category: "局域网", question: "以太网帧的最大传输单元（MTU）通常为（　）字节。", options: ["A. 1500", "B. 1518", "C. 64", "D. 46"], answer: 0, explanation: "以太网数据字段最大 1500 字节（MTU），帧总长最大 1518 字节（含地址、类型、FCS）。" },
+    { id: 525, type: "single", category: "局域网", question: "下列以太网标准中，速率最高的是（　）。", options: ["A. 100GBASE-R", "B. 1000BASE-T", "C. 100BASE-TX", "D. 10BASE-T"], answer: 0, explanation: "100GBASE-R 是百吉（100G）以太网标准，速率远高于千兆、百兆和十兆以太网。" },
+    { id: 526, type: "single", category: "局域网", question: "CSMA/CD 中「载波监听」指的是（　）。", options: ["A. 发送前监听信道是否空闲", "B. 监听 IP 地址", "C. 监听 MAC 地址", "D. 监听端口"], answer: 0, explanation: "载波监听是发送前检测信道上是否有其他站点在传输，空闲才发送，以减少冲突。" },
+    { id: 527, type: "single", category: "局域网", question: "全双工以太网相比半双工以太网的优点是（　）。", options: ["A. 无冲突、带宽翻倍", "B. 更便宜", "C. 距离更远", "D. 布线更简单"], answer: 0, explanation: "全双工模式下收发独立，无冲突、无需 CSMA/CD，理论带宽是半双工的两倍。" },
+    { id: 528, type: "single", category: "局域网", question: "在以太网中，交换机收到未知目的 MAC 地址的帧时，会（　）。", options: ["A. 向除源端口外的所有端口泛洪", "B. 丢弃该帧", "C. 缓存起来", "D. 只发给一个端口"], answer: 0, explanation: "未知单播帧会被泛洪（flood）到除接收端口外的所有端口，直到学到目的 MAC 为止。" },
+    { id: 529, type: "single", category: "局域网", question: "以太网中，用来检测帧在传输中是否出错的是（　）。", options: ["A. FCS（帧校验序列）", "B. 前导码", "C. 类型字段", "D. 源地址"], answer: 0, explanation: "FCS 采用 CRC 校验，接收端重新计算并与帧尾 FCS 比较，检测传输差错。" },
+    { id: 530, type: "single", category: "局域网", question: "百兆以太网 100BASE-FX 使用的传输介质是（　）。", options: ["A. 光纤", "B. 双绞线", "C. 同轴电缆", "D. 无线"], answer: 0, explanation: "100BASE-FX 使用光纤传输，是百兆以太网的光纤标准；100BASE-TX 用双绞线。" },
 
     // ========== 第4章 广域网技术 ==========
-    { id: 531, type: "single", category: "广域网技术", question: "广域网（WAN）与局域网（LAN）最本质的区别是（　）。", options: ["A. 覆盖范围更大，通常跨地域", "B. 使用不同网线", "C. 只有路由器", "D. 速率更高"], answer: 0, explanation: "WAN 覆盖范围大、跨城市/国家，通常租用电信线路；LAN 覆盖范围小、速率高。" },
-    { id: 532, type: "single", category: "广域网技术", question: "HDLC 帧中，用于标识帧开始和结束的定界符是（　）。", options: ["A. 01111110（0x7E）", "B. 01111111", "C. 00000000", "D. 11111111"], answer: 0, explanation: "HDLC 帧以 01111110（0x7E）作为开始/结束标志，并采用比特填充保证透明传输。" },
-    { id: 533, type: "single", category: "广域网技术", question: "PPP 协议属于（　）层协议。", options: ["A. 数据链路层", "B. 物理层", "C. 网络层", "D. 传输层"], answer: 0, explanation: "PPP 是数据链路层协议，用于点对点链路，提供封装、认证和网络层协议协商。" },
-    { id: 534, type: "single", category: "广域网技术", question: "下列技术中，基于固定长度信元交换的是（　）。", options: ["A. ATM", "B. 帧中继", "C. X.25", "D. 以太网"], answer: 0, explanation: "ATM 采用 53 字节固定信元交换；帧中继、X.25 采用变长帧，以太网也是变长帧。" },
-    { id: 535, type: "single", category: "广域网技术", question: "ISDN 中，B 信道的作用是（　）。", options: ["A. 承载用户数据/话音", "B. 传输信令", "C. 管理", "D. 同步"], answer: 0, explanation: "B 信道（承载信道）速率为 64kbps，用于传输用户数据、话音；D 信道传输信令。" },
-    { id: 536, type: "single", category: "广域网技术", question: "下列广域网接入技术中，利用有线电视网络实现宽带接入的是（　）。", options: ["A. Cable Modem（HFC）", "B. ADSL", "C. 拨号", "D. ISDN"], answer: 0, explanation: "Cable Modem 利用有线电视 HFC 网络实现高速互联网接入；ADSL 利用电话线。" },
-    { id: 537, type: "single", category: "广域网技术", question: "帧中继网络中，DLCI 的作用是（　）。", options: ["A. 标识一条虚电路", "B. 标识物理接口", "C. 表示优先级", "D. 加密"], answer: 0, explanation: "DLCI（数据链路连接标识）用于在帧中继网络中标识虚电路，仅在本地链路上有意义。" },
-    { id: 538, type: "single", category: "广域网技术", question: "PPP 的 NCP（网络控制协议）负责（　）。", options: ["A. 协商网络层协议参数", "B. 建立链路", "C. 用户认证", "D. 检测链路质量"], answer: 0, explanation: "NCP 为不同网络层协议（如 IPCP 用于 IP）协商参数；LCP 负责链路建立；认证由 PAP/CHAP。" },
-    { id: 539, type: "single", category: "广域网技术", question: "SDH 相比 PDH 的主要优势是（　）。", options: ["A. 统一速率标准、便于上下电路", "B. 速度更低", "C. 只能传语音", "D. 无需同步"], answer: 0, explanation: "SDH 统一了速率等级和帧结构，支持同步复用和灵活上下电路，克服了 PDH 标准不统一的问题。" },
-    { id: 540, type: "single", category: "广域网技术", question: "MPLS 中，转发等价类（FEC）是指（　）。", options: ["A. 以相同方式转发的一组分组", "B. 一种加密算法", "C. 一种路由协议", "D. 一个端口"], answer: 0, explanation: "FEC 是把具有相同转发特征（如同一目的地、同一优先级）的分组归为一类，分配同一标签转发。" },
+    { id: 531, type: "single", category: "网络互连", question: "广域网（WAN）与局域网（LAN）最本质的区别是（　）。", options: ["A. 覆盖范围更大，通常跨地域", "B. 使用不同网线", "C. 只有路由器", "D. 速率更高"], answer: 0, explanation: "WAN 覆盖范围大、跨城市/国家，通常租用电信线路；LAN 覆盖范围小、速率高。" },
+    { id: 532, type: "single", category: "网络互连", question: "HDLC 帧中，用于标识帧开始和结束的定界符是（　）。", options: ["A. 01111110（0x7E）", "B. 01111111", "C. 00000000", "D. 11111111"], answer: 0, explanation: "HDLC 帧以 01111110（0x7E）作为开始/结束标志，并采用比特填充保证透明传输。" },
+    { id: 533, type: "single", category: "网络互连", question: "PPP 协议属于（　）层协议。", options: ["A. 数据链路层", "B. 物理层", "C. 网络层", "D. 传输层"], answer: 0, explanation: "PPP 是数据链路层协议，用于点对点链路，提供封装、认证和网络层协议协商。" },
+    { id: 534, type: "single", category: "网络互连", question: "下列技术中，基于固定长度信元交换的是（　）。", options: ["A. ATM", "B. 帧中继", "C. X.25", "D. 以太网"], answer: 0, explanation: "ATM 采用 53 字节固定信元交换；帧中继、X.25 采用变长帧，以太网也是变长帧。" },
+    { id: 535, type: "single", category: "网络互连", question: "ISDN 中，B 信道的作用是（　）。", options: ["A. 承载用户数据/话音", "B. 传输信令", "C. 管理", "D. 同步"], answer: 0, explanation: "B 信道（承载信道）速率为 64kbps，用于传输用户数据、话音；D 信道传输信令。" },
+    { id: 536, type: "single", category: "网络互连", question: "下列广域网接入技术中，利用有线电视网络实现宽带接入的是（　）。", options: ["A. Cable Modem（HFC）", "B. ADSL", "C. 拨号", "D. ISDN"], answer: 0, explanation: "Cable Modem 利用有线电视 HFC 网络实现高速互联网接入；ADSL 利用电话线。" },
+    { id: 537, type: "single", category: "网络互连", question: "帧中继网络中，DLCI 的作用是（　）。", options: ["A. 标识一条虚电路", "B. 标识物理接口", "C. 表示优先级", "D. 加密"], answer: 0, explanation: "DLCI（数据链路连接标识）用于在帧中继网络中标识虚电路，仅在本地链路上有意义。" },
+    { id: 538, type: "single", category: "网络互连", question: "PPP 的 NCP（网络控制协议）负责（　）。", options: ["A. 协商网络层协议参数", "B. 建立链路", "C. 用户认证", "D. 检测链路质量"], answer: 0, explanation: "NCP 为不同网络层协议（如 IPCP 用于 IP）协商参数；LCP 负责链路建立；认证由 PAP/CHAP。" },
+    { id: 539, type: "single", category: "网络互连", question: "SDH 相比 PDH 的主要优势是（　）。", options: ["A. 统一速率标准、便于上下电路", "B. 速度更低", "C. 只能传语音", "D. 无需同步"], answer: 0, explanation: "SDH 统一了速率等级和帧结构，支持同步复用和灵活上下电路，克服了 PDH 标准不统一的问题。" },
+    { id: 540, type: "single", category: "网络互连", question: "MPLS 中，转发等价类（FEC）是指（　）。", options: ["A. 以相同方式转发的一组分组", "B. 一种加密算法", "C. 一种路由协议", "D. 一个端口"], answer: 0, explanation: "FEC 是把具有相同转发特征（如同一目的地、同一优先级）的分组归为一类，分配同一标签转发。" },
 
     // ========== 第5章 网络互联与 IP 编址 ==========
-    { id: 541, type: "single", category: "网络互联与 IP 编址", question: "IP 地址由（　）两部分组成。", options: ["A. 网络号和主机号", "B. 端口和协议", "C. MAC 和 IP", "D. 域名和端口"], answer: 0, explanation: "IP 地址由网络号（标识网段）和主机号（标识网段内主机）组成，子网掩码用于区分两者。" },
-    { id: 542, type: "single", category: "网络互联与 IP 编址", question: "A 类 IP 地址的第一个字节范围是（　）。", options: ["A. 1~126", "B. 128~191", "C. 192~223", "D. 224~239"], answer: 0, explanation: "A 类首字节 1~126（0 和 127 保留）；B 类 128~191；C 类 192~223；D 类 224~239。" },
-    { id: 543, type: "single", category: "网络互联与 IP 编址", question: "子网掩码的作用是（　）。", options: ["A. 区分 IP 地址的网络位和主机位", "B. 加密 IP 地址", "C. 加快传输", "D. 标识 MAC"], answer: 0, explanation: "子网掩码中为 1 的位对应网络位，为 0 的位对应主机位，用于判断目标是否在同一网段。" },
-    { id: 544, type: "single", category: "网络互联与 IP 编址", question: "IPv4 中，广播地址是指主机位（　）的地址。", options: ["A. 全为 1", "B. 全为 0", "C. 第一位为 1", "D. 最后一位为 0"], answer: 0, explanation: "广播地址主机位全为 1，代表向该网段所有主机发送；主机位全 0 为网络地址。" },
-    { id: 545, type: "single", category: "网络互联与 IP 编址", question: "IPv6 中，用于在邻居设备间交换链路层地址的协议是（　）。", options: ["A. NDP（邻居发现协议）", "B. ARP", "C. RARP", "D. DNS"], answer: 0, explanation: "IPv6 用 NDP（ICMPv6 的一部分）替代 IPv4 的 ARP，实现地址解析、邻居可达性检测等功能。" },
-    { id: 546, type: "single", category: "网络互联与 IP 编址", question: "一个 B 类地址 172.16.0.0 默认主机位有（　）位。", options: ["A. 16", "B. 8", "C. 24", "D. 32"], answer: 0, explanation: "B 类地址默认网络位 16 位，主机位 16 位，可容纳 2^16-2 台主机。" },
-    { id: 547, type: "single", category: "网络互联与 IP 编址", question: "下列地址中，属于环回地址的是（　）。", options: ["A. 127.0.0.1", "B. 0.0.0.0", "C. 255.255.255.255", "D. 224.0.0.1"], answer: 0, explanation: "127.0.0.0/8 是回环地址，127.0.0.1 常用于本机测试；0.0.0.0 表示未知地址；255.255.255.255 是受限广播。" },
-    { id: 548, type: "single", category: "网络互联与 IP 编址", question: "CIDR（无分类域间路由）表示法 192.168.1.0/27 表示主机位有（　）位。", options: ["A. 5", "B. 27", "C. 3", "D. 8"], answer: 0, explanation: "/27 表示网络位 27 位，主机位 = 32-27 = 5 位，可容纳 2^5-2=30 台主机。" },
-    { id: 549, type: "single", category: "网络互联与 IP 编址", question: "在 IP 网络中，TTL 值每经过一个路由器会（　）。", options: ["A. 减 1", "B. 加 1", "C. 不变", "D. 随机变化"], answer: 0, explanation: "TTL（生存时间）每经一个路由器转发减 1，减为 0 时分组被丢弃，防止无限循环。" },
-    { id: 550, type: "single", category: "网络互联与 IP 编址", question: "IPv6 的地址类型不包括（　）。", options: ["A. 广播地址", "B. 单播地址", "C. 组播地址", "D. 任播地址"], answer: 0, explanation: "IPv6 取消了广播地址，用组播和任播替代，地址类型包括单播、组播、任播。" },
+    { id: 541, type: "single", category: "网络互连", question: "IP 地址由（　）两部分组成。", options: ["A. 网络号和主机号", "B. 端口和协议", "C. MAC 和 IP", "D. 域名和端口"], answer: 0, explanation: "IP 地址由网络号（标识网段）和主机号（标识网段内主机）组成，子网掩码用于区分两者。" },
+    { id: 542, type: "single", category: "网络互连", question: "A 类 IP 地址的第一个字节范围是（　）。", options: ["A. 1~126", "B. 128~191", "C. 192~223", "D. 224~239"], answer: 0, explanation: "A 类首字节 1~126（0 和 127 保留）；B 类 128~191；C 类 192~223；D 类 224~239。" },
+    { id: 543, type: "single", category: "网络互连", question: "子网掩码的作用是（　）。", options: ["A. 区分 IP 地址的网络位和主机位", "B. 加密 IP 地址", "C. 加快传输", "D. 标识 MAC"], answer: 0, explanation: "子网掩码中为 1 的位对应网络位，为 0 的位对应主机位，用于判断目标是否在同一网段。" },
+    { id: 544, type: "single", category: "网络互连", question: "IPv4 中，广播地址是指主机位（　）的地址。", options: ["A. 全为 1", "B. 全为 0", "C. 第一位为 1", "D. 最后一位为 0"], answer: 0, explanation: "广播地址主机位全为 1，代表向该网段所有主机发送；主机位全 0 为网络地址。" },
+    { id: 545, type: "single", category: "网络互连", question: "IPv6 中，用于在邻居设备间交换链路层地址的协议是（　）。", options: ["A. NDP（邻居发现协议）", "B. ARP", "C. RARP", "D. DNS"], answer: 0, explanation: "IPv6 用 NDP（ICMPv6 的一部分）替代 IPv4 的 ARP，实现地址解析、邻居可达性检测等功能。" },
+    { id: 546, type: "single", category: "网络互连", question: "一个 B 类地址 172.16.0.0 默认主机位有（　）位。", options: ["A. 16", "B. 8", "C. 24", "D. 32"], answer: 0, explanation: "B 类地址默认网络位 16 位，主机位 16 位，可容纳 2^16-2 台主机。" },
+    { id: 547, type: "single", category: "网络互连", question: "下列地址中，属于环回地址的是（　）。", options: ["A. 127.0.0.1", "B. 0.0.0.0", "C. 255.255.255.255", "D. 224.0.0.1"], answer: 0, explanation: "127.0.0.0/8 是回环地址，127.0.0.1 常用于本机测试；0.0.0.0 表示未知地址；255.255.255.255 是受限广播。" },
+    { id: 548, type: "single", category: "网络互连", question: "CIDR（无分类域间路由）表示法 192.168.1.0/27 表示主机位有（　）位。", options: ["A. 5", "B. 27", "C. 3", "D. 8"], answer: 0, explanation: "/27 表示网络位 27 位，主机位 = 32-27 = 5 位，可容纳 2^5-2=30 台主机。" },
+    { id: 549, type: "single", category: "网络互连", question: "在 IP 网络中，TTL 值每经过一个路由器会（　）。", options: ["A. 减 1", "B. 加 1", "C. 不变", "D. 随机变化"], answer: 0, explanation: "TTL（生存时间）每经一个路由器转发减 1，减为 0 时分组被丢弃，防止无限循环。" },
+    { id: 550, type: "single", category: "网络互连", question: "IPv6 的地址类型不包括（　）。", options: ["A. 广播地址", "B. 单播地址", "C. 组播地址", "D. 任播地址"], answer: 0, explanation: "IPv6 取消了广播地址，用组播和任播替代，地址类型包括单播、组播、任播。" },
 
     // ========== 第6章 路由协议 ==========
-    { id: 551, type: "single", category: "路由协议", question: "动态路由协议按作用范围可分为（　）。", options: ["A. 内部网关协议和外部网关协议", "B. 静态和动态", "C. 有类和无类", "D. TCP 和 UDP"], answer: 0, explanation: "按作用范围分 IGP（如 RIP、OSPF，用于 AS 内）和 EGP（如 BGP，用于 AS 间）。" },
-    { id: 552, type: "single", category: "路由协议", question: "下列路由协议中，属于链路状态协议的是（　）。", options: ["A. OSPF", "B. RIP", "C. IGRP", "D. BGP"], answer: 0, explanation: "OSPF 是链路状态协议；RIP、IGRP 是距离矢量协议；BGP 是路径矢量协议。" },
-    { id: 553, type: "single", category: "路由协议", question: "RIP 每隔（　）秒向邻居发送一次路由更新。", options: ["A. 30", "B. 10", "C. 60", "D. 90"], answer: 0, explanation: "RIP 默认每 30 秒广播/组播发送完整路由表更新，180 秒未收到更新则标记路由不可达。" },
-    { id: 554, type: "single", category: "路由协议", question: "OSPF 使用的度量值（Cost）通常与（　）有关。", options: ["A. 链路带宽", "B. 跳数", "C. 延迟", "D. 负载"], answer: 0, explanation: "OSPF 默认 Cost = 参考带宽 / 链路带宽，带宽越大 Cost 越小，路径越优。" },
-    { id: 555, type: "single", category: "路由协议", question: "在路由器上配置静态路由的命令格式中，目的网络后跟的是（　）。", options: ["A. 子网掩码和下一跳", "B. 端口号", "C. 主机名", "D. 域名"], answer: 0, explanation: "静态路由格式：ip route 目的网络 子网掩码 下一跳地址/出接口，如 ip route 10.0.0.0 255.0.0.0 192.168.1.1。" },
-    { id: 556, type: "single", category: "路由协议", question: "BGP 基于（　）建立会话。", options: ["A. TCP（端口 179）", "B. UDP", "C. ICMP", "D. IP 直连"], answer: 0, explanation: "BGP 运行在 TCP 179 端口之上，利用 TCP 的可靠传输在邻居间交换路由信息。" },
-    { id: 557, type: "single", category: "路由协议", question: "路由表中，一条路由的管理距离为 0 表示（　）。", options: ["A. 直连网络", "B. 静态路由", "C. OSPF 路由", "D. BGP 路由"], answer: 0, explanation: "直连网络的管理距离为 0，优先级最高；静态路由为 1，OSPF 为 110，BGP 外部为 20。" },
-    { id: 558, type: "single", category: "路由协议", question: "OSPF 中，Hello 报文的作用不包括（　）。", options: ["A. 传输路由更新", "B. 发现邻居", "C. 选举 DR/BDR", "D. 维持邻接"], answer: 0, explanation: "Hello 报文用于发现邻居、协商参数、选举 DR/BDR 和维护邻接关系；路由更新由 LSU 传输。" },
-    { id: 559, type: "single", category: "路由协议", question: "距离矢量路由协议的典型缺点是（　）。", options: ["A. 收敛慢，可能产生路由环路", "B. 收敛快", "C. 无需更新", "D. 只适合大型网络"], answer: 0, explanation: "距离矢量协议（如 RIP）逐跳传播、收敛慢，且易产生环路（用水平分割、毒性逆转等缓解）。" },
-    { id: 560, type: "single", category: "路由协议", question: "路由器进行路由选择时，最长前缀匹配原则是指（　）。", options: ["A. 优先选择子网掩码最长（最具体）的路由", "B. 选择最短路径", "C. 选择跳数最少", "D. 随机选择"], answer: 0, explanation: "最长前缀匹配：目的地址匹配到的路由中，网络前缀最长（最精确）者优先转发。" },
+    { id: 551, type: "single", category: "网络互连", question: "动态路由协议按作用范围可分为（　）。", options: ["A. 内部网关协议和外部网关协议", "B. 静态和动态", "C. 有类和无类", "D. TCP 和 UDP"], answer: 0, explanation: "按作用范围分 IGP（如 RIP、OSPF，用于 AS 内）和 EGP（如 BGP，用于 AS 间）。" },
+    { id: 552, type: "single", category: "网络互连", question: "下列路由协议中，属于链路状态协议的是（　）。", options: ["A. OSPF", "B. RIP", "C. IGRP", "D. BGP"], answer: 0, explanation: "OSPF 是链路状态协议；RIP、IGRP 是距离矢量协议；BGP 是路径矢量协议。" },
+    { id: 553, type: "single", category: "网络互连", question: "RIP 每隔（　）秒向邻居发送一次路由更新。", options: ["A. 30", "B. 10", "C. 60", "D. 90"], answer: 0, explanation: "RIP 默认每 30 秒广播/组播发送完整路由表更新，180 秒未收到更新则标记路由不可达。" },
+    { id: 554, type: "single", category: "网络互连", question: "OSPF 使用的度量值（Cost）通常与（　）有关。", options: ["A. 链路带宽", "B. 跳数", "C. 延迟", "D. 负载"], answer: 0, explanation: "OSPF 默认 Cost = 参考带宽 / 链路带宽，带宽越大 Cost 越小，路径越优。" },
+    { id: 555, type: "single", category: "网络互连", question: "在路由器上配置静态路由的命令格式中，目的网络后跟的是（　）。", options: ["A. 子网掩码和下一跳", "B. 端口号", "C. 主机名", "D. 域名"], answer: 0, explanation: "静态路由格式：ip route 目的网络 子网掩码 下一跳地址/出接口，如 ip route 10.0.0.0 255.0.0.0 192.168.1.1。" },
+    { id: 556, type: "single", category: "网络互连", question: "BGP 基于（　）建立会话。", options: ["A. TCP（端口 179）", "B. UDP", "C. ICMP", "D. IP 直连"], answer: 0, explanation: "BGP 运行在 TCP 179 端口之上，利用 TCP 的可靠传输在邻居间交换路由信息。" },
+    { id: 557, type: "single", category: "网络互连", question: "路由表中，一条路由的管理距离为 0 表示（　）。", options: ["A. 直连网络", "B. 静态路由", "C. OSPF 路由", "D. BGP 路由"], answer: 0, explanation: "直连网络的管理距离为 0，优先级最高；静态路由为 1，OSPF 为 110，BGP 外部为 20。" },
+    { id: 558, type: "single", category: "网络互连", question: "OSPF 中，Hello 报文的作用不包括（　）。", options: ["A. 传输路由更新", "B. 发现邻居", "C. 选举 DR/BDR", "D. 维持邻接"], answer: 0, explanation: "Hello 报文用于发现邻居、协商参数、选举 DR/BDR 和维护邻接关系；路由更新由 LSU 传输。" },
+    { id: 559, type: "single", category: "网络互连", question: "距离矢量路由协议的典型缺点是（　）。", options: ["A. 收敛慢，可能产生路由环路", "B. 收敛快", "C. 无需更新", "D. 只适合大型网络"], answer: 0, explanation: "距离矢量协议（如 RIP）逐跳传播、收敛慢，且易产生环路（用水平分割、毒性逆转等缓解）。" },
+    { id: 560, type: "single", category: "网络互连", question: "路由器进行路由选择时，最长前缀匹配原则是指（　）。", options: ["A. 优先选择子网掩码最长（最具体）的路由", "B. 选择最短路径", "C. 选择跳数最少", "D. 随机选择"], answer: 0, explanation: "最长前缀匹配：目的地址匹配到的路由中，网络前缀最长（最精确）者优先转发。" },
 
     // ========== 第7章 交换技术 ==========
-    { id: 561, type: "single", category: "交换技术", question: "VLAN 划分后，同一交换机上不同 VLAN 的主机之间（　）。", options: ["A. 二层不能直接通信，需经三层设备", "B. 可直接通信", "C. 物理隔离", "D. 无法通信"], answer: 0, explanation: "不同 VLAN 属不同广播域和网段，二层不能直接互通，必须通过路由器或三层交换机路由转发。" },
-    { id: 562, type: "single", category: "交换技术", question: "802.1Q 标签中，VLAN ID 字段占（　）位。", options: ["A. 12", "B. 8", "C. 16", "D. 4"], answer: 0, explanation: "802.1Q 标签的 VLAN ID 字段为 12 位，可标识 0~4095，其中可用 VLAN 为 1~4094。" },
-    { id: 563, type: "single", category: "交换技术", question: "生成树协议（STP）中，被阻塞的端口处于（　）状态。", options: ["A. Blocking", "B. Forwarding", "C. Listening", "D. Learning"], answer: 0, explanation: "被阻塞的冗余端口处于 Blocking 状态，不转发数据帧，仅监听 BPDU，防止环路。" },
-    { id: 564, type: "single", category: "交换技术", question: "三层交换机的「一次路由，多次交换」是指（　）。", options: ["A. 首包路由后建立转发表，后续直接交换转发", "B. 每次都路由", "C. 只交换不路由", "D. 随机转发"], answer: 0, explanation: "三层交换机对首个数据包做路由决策并建立硬件转发表，后续同流数据包直接高速交换转发。" },
-    { id: 565, type: "single", category: "交换技术", question: "交换机 MAC 地址表项通过（　）方式学习。", options: ["A. 记录数据帧的源 MAC 地址和接收端口", "B. 手动配置", "C. 广播询问", "D. 路由器下发"], answer: 0, explanation: "交换机收到帧时，把源 MAC 地址与接收端口记录下来形成 MAC 地址表项，即「源地址学习」。" },
-    { id: 566, type: "single", category: "交换技术", question: "VLAN 划分方式中，基于端口划分属于（　）VLAN。", options: ["A. 静态", "B. 动态", "C. 无线", "D. 三层"], answer: 0, explanation: "基于端口划分是静态 VLAN，把端口固定划入某 VLAN；基于 MAC/协议的划分属动态 VLAN。" },
-    { id: 567, type: "single", category: "交换技术", question: "链路聚合（LACP）使用的协议标准是（　）。", options: ["A. IEEE 802.3ad", "B. IEEE 802.1Q", "C. IEEE 802.1D", "D. IEEE 802.11"], answer: 0, explanation: "链路聚合标准是 IEEE 802.3ad（LACP 协议）；802.1Q 是 VLAN 干道，802.1D 是 STP。" },
-    { id: 568, type: "single", category: "交换技术", question: "交换机端口处于 Access 模式时，收到带 VLAN 标签的帧会（　）。", options: ["A. 丢弃该帧", "B. 正常转发", "C. 转发到所有端口", "D. 转发到 Trunk"], answer: 0, explanation: "Access 端口只属于一个 VLAN，收到带标签的帧会被丢弃（部分设备可能保留但不符合规范）。" },
-    { id: 569, type: "single", category: "交换技术", question: "STP 中，BPDU 默认每隔（　）秒发送一次。", options: ["A. 2", "B. 30", "C. 10", "D. 60"], answer: 0, explanation: "STP 根桥默认每 2 秒发送一次 BPDU（Hello Time），用于选举和维护生成树拓扑。" },
-    { id: 570, type: "single", category: "交换技术", question: "广播风暴的直接后果是（　）。", options: ["A. 网络带宽被耗尽、性能严重下降", "B. 提高网速", "C. 增强安全性", "D. 减少广播"], answer: 0, explanation: "广播风暴使广播帧在环路中无限循环复制，耗尽带宽和设备资源，导致网络瘫痪。" },
+    { id: 561, type: "single", category: "局域网", question: "VLAN 划分后，同一交换机上不同 VLAN 的主机之间（　）。", options: ["A. 二层不能直接通信，需经三层设备", "B. 可直接通信", "C. 物理隔离", "D. 无法通信"], answer: 0, explanation: "不同 VLAN 属不同广播域和网段，二层不能直接互通，必须通过路由器或三层交换机路由转发。" },
+    { id: 562, type: "single", category: "局域网", question: "802.1Q 标签中，VLAN ID 字段占（　）位。", options: ["A. 12", "B. 8", "C. 16", "D. 4"], answer: 0, explanation: "802.1Q 标签的 VLAN ID 字段为 12 位，可标识 0~4095，其中可用 VLAN 为 1~4094。" },
+    { id: 563, type: "single", category: "局域网", question: "生成树协议（STP）中，被阻塞的端口处于（　）状态。", options: ["A. Blocking", "B. Forwarding", "C. Listening", "D. Learning"], answer: 0, explanation: "被阻塞的冗余端口处于 Blocking 状态，不转发数据帧，仅监听 BPDU，防止环路。" },
+    { id: 564, type: "single", category: "局域网", question: "三层交换机的「一次路由，多次交换」是指（　）。", options: ["A. 首包路由后建立转发表，后续直接交换转发", "B. 每次都路由", "C. 只交换不路由", "D. 随机转发"], answer: 0, explanation: "三层交换机对首个数据包做路由决策并建立硬件转发表，后续同流数据包直接高速交换转发。" },
+    { id: 565, type: "single", category: "局域网", question: "交换机 MAC 地址表项通过（　）方式学习。", options: ["A. 记录数据帧的源 MAC 地址和接收端口", "B. 手动配置", "C. 广播询问", "D. 路由器下发"], answer: 0, explanation: "交换机收到帧时，把源 MAC 地址与接收端口记录下来形成 MAC 地址表项，即「源地址学习」。" },
+    { id: 566, type: "single", category: "局域网", question: "VLAN 划分方式中，基于端口划分属于（　）VLAN。", options: ["A. 静态", "B. 动态", "C. 无线", "D. 三层"], answer: 0, explanation: "基于端口划分是静态 VLAN，把端口固定划入某 VLAN；基于 MAC/协议的划分属动态 VLAN。" },
+    { id: 567, type: "single", category: "局域网", question: "链路聚合（LACP）使用的协议标准是（　）。", options: ["A. IEEE 802.3ad", "B. IEEE 802.1Q", "C. IEEE 802.1D", "D. IEEE 802.11"], answer: 0, explanation: "链路聚合标准是 IEEE 802.3ad（LACP 协议）；802.1Q 是 VLAN 干道，802.1D 是 STP。" },
+    { id: 568, type: "single", category: "局域网", question: "交换机端口处于 Access 模式时，收到带 VLAN 标签的帧会（　）。", options: ["A. 丢弃该帧", "B. 正常转发", "C. 转发到所有端口", "D. 转发到 Trunk"], answer: 0, explanation: "Access 端口只属于一个 VLAN，收到带标签的帧会被丢弃（部分设备可能保留但不符合规范）。" },
+    { id: 569, type: "single", category: "局域网", question: "STP 中，BPDU 默认每隔（　）秒发送一次。", options: ["A. 2", "B. 30", "C. 10", "D. 60"], answer: 0, explanation: "STP 根桥默认每 2 秒发送一次 BPDU（Hello Time），用于选举和维护生成树拓扑。" },
+    { id: 570, type: "single", category: "局域网", question: "广播风暴的直接后果是（　）。", options: ["A. 网络带宽被耗尽、性能严重下降", "B. 提高网速", "C. 增强安全性", "D. 减少广播"], answer: 0, explanation: "广播风暴使广播帧在环路中无限循环复制，耗尽带宽和设备资源，导致网络瘫痪。" },
 
     // ========== 第8章 网络操作系统 ==========
-    { id: 571, type: "single", category: "网络操作系统", question: "下列不属于网络操作系统的是（　）。", options: ["A. Windows 7 家庭版", "B. Windows Server", "C. Linux", "D. UNIX"], answer: 0, explanation: "Windows 7 家庭版是桌面操作系统，不提供完整网络服务；Windows Server、Linux、UNIX 是网络操作系统。" },
-    { id: 572, type: "single", category: "网络操作系统", question: "Linux 中，用于查看目录内容的命令是（　）。", options: ["A. ls", "B. cd", "C. pwd", "D. rm"], answer: 0, explanation: "ls 列出目录内容；cd 切换目录；pwd 显示当前路径；rm 删除文件。" },
-    { id: 573, type: "single", category: "网络操作系统", question: "Windows Server 中，用于域名解析服务的是（　）。", options: ["A. DNS 服务器", "B. DHCP 服务器", "C. FTP 服务器", "D. 打印服务器"], answer: 0, explanation: "DNS 服务器提供域名到 IP 的解析；DHCP 分配 IP；FTP 文件传输。" },
-    { id: 574, type: "single", category: "网络操作系统", question: "DHCP 服务器的地址池中，为特定主机固定分配同一 IP 的功能称为（　）。", options: ["A. DHCP 保留（Reservation）", "B. 租约", "C. 中继", "D. 作用域"], answer: 0, explanation: "DHCP 保留根据 MAC 地址为特定主机固定分配同一 IP，兼顾动态管理和地址稳定。" },
-    { id: 575, type: "single", category: "网络操作系统", question: "Linux 文件权限 rwxr-xr-x 对应的数字表示是（　）。", options: ["A. 755", "B. 644", "C. 777", "D. 700"], answer: 0, explanation: "rwx=7、r-x=5、r-x=5，故 rwxr-xr-x = 755，表示属主可读写执行，其他只读执行。" },
-    { id: 576, type: "single", category: "网络操作系统", question: "FTP 的主动模式下，服务器用（　）端口主动连接客户端的数据端口。", options: ["A. 20", "B. 21", "C. 80", "D. 443"], answer: 0, explanation: "主动模式：服务器用 20 端口主动连接客户端的数据端口；控制连接始终用 21 端口。" },
-    { id: 577, type: "single", category: "网络操作系统", question: "在 Linux 中，用于修改文件所属用户的命令是（　）。", options: ["A. chown", "B. chmod", "C. chgrp", "D. ls"], answer: 0, explanation: "chown 修改文件属主；chmod 修改权限；chgrp 修改属组；ls 列目录。" },
-    { id: 578, type: "single", category: "网络操作系统", question: "Windows 中，用于查看和修改注册表网络配置的命令行工具是（　）。", options: ["A. netsh", "B. notepad", "C. calc", "D. mspaint"], answer: 0, explanation: "netsh 是网络配置命令行工具，可配置 IP、防火墙、路由等；其余为普通应用。" },
-    { id: 579, type: "single", category: "网络操作系统", question: "DNS 中，CNAME 记录的作用是（　）。", options: ["A. 为域名设置别名", "B. 映射 IPv4", "C. 映射 IPv6", "D. 邮件交换"], answer: 0, explanation: "CNAME（别名记录）把一个域名指向另一个域名，如 www 指向主域名。" },
-    { id: 580, type: "single", category: "网络操作系统", question: "Linux 中，以文本方式查看正在实时更新的日志文件可用（　）。", options: ["A. tail -f", "B. head", "C. cat", "D. less"], answer: 0, explanation: "tail -f 实时跟踪文件末尾新增内容，常用于监控日志；head 看开头，cat 全量输出。" },
+    { id: 571, type: "single", category: "网络操作系统与应用服务器", question: "下列不属于网络操作系统的是（　）。", options: ["A. Windows 7 家庭版", "B. Windows Server", "C. Linux", "D. UNIX"], answer: 0, explanation: "Windows 7 家庭版是桌面操作系统，不提供完整网络服务；Windows Server、Linux、UNIX 是网络操作系统。" },
+    { id: 572, type: "single", category: "网络操作系统与应用服务器", question: "Linux 中，用于查看目录内容的命令是（　）。", options: ["A. ls", "B. cd", "C. pwd", "D. rm"], answer: 0, explanation: "ls 列出目录内容；cd 切换目录；pwd 显示当前路径；rm 删除文件。" },
+    { id: 573, type: "single", category: "网络操作系统与应用服务器", question: "Windows Server 中，用于域名解析服务的是（　）。", options: ["A. DNS 服务器", "B. DHCP 服务器", "C. FTP 服务器", "D. 打印服务器"], answer: 0, explanation: "DNS 服务器提供域名到 IP 的解析；DHCP 分配 IP；FTP 文件传输。" },
+    { id: 574, type: "single", category: "网络操作系统与应用服务器", question: "DHCP 服务器的地址池中，为特定主机固定分配同一 IP 的功能称为（　）。", options: ["A. DHCP 保留（Reservation）", "B. 租约", "C. 中继", "D. 作用域"], answer: 0, explanation: "DHCP 保留根据 MAC 地址为特定主机固定分配同一 IP，兼顾动态管理和地址稳定。" },
+    { id: 575, type: "single", category: "网络操作系统与应用服务器", question: "Linux 文件权限 rwxr-xr-x 对应的数字表示是（　）。", options: ["A. 755", "B. 644", "C. 777", "D. 700"], answer: 0, explanation: "rwx=7、r-x=5、r-x=5，故 rwxr-xr-x = 755，表示属主可读写执行，其他只读执行。" },
+    { id: 576, type: "single", category: "网络操作系统与应用服务器", question: "FTP 的主动模式下，服务器用（　）端口主动连接客户端的数据端口。", options: ["A. 20", "B. 21", "C. 80", "D. 443"], answer: 0, explanation: "主动模式：服务器用 20 端口主动连接客户端的数据端口；控制连接始终用 21 端口。" },
+    { id: 577, type: "single", category: "网络操作系统与应用服务器", question: "在 Linux 中，用于修改文件所属用户的命令是（　）。", options: ["A. chown", "B. chmod", "C. chgrp", "D. ls"], answer: 0, explanation: "chown 修改文件属主；chmod 修改权限；chgrp 修改属组；ls 列目录。" },
+    { id: 578, type: "single", category: "网络操作系统与应用服务器", question: "Windows 中，用于查看和修改注册表网络配置的命令行工具是（　）。", options: ["A. netsh", "B. notepad", "C. calc", "D. mspaint"], answer: 0, explanation: "netsh 是网络配置命令行工具，可配置 IP、防火墙、路由等；其余为普通应用。" },
+    { id: 579, type: "single", category: "网络操作系统与应用服务器", question: "DNS 中，CNAME 记录的作用是（　）。", options: ["A. 为域名设置别名", "B. 映射 IPv4", "C. 映射 IPv6", "D. 邮件交换"], answer: 0, explanation: "CNAME（别名记录）把一个域名指向另一个域名，如 www 指向主域名。" },
+    { id: 580, type: "single", category: "网络操作系统与应用服务器", question: "Linux 中，以文本方式查看正在实时更新的日志文件可用（　）。", options: ["A. tail -f", "B. head", "C. cat", "D. less"], answer: 0, explanation: "tail -f 实时跟踪文件末尾新增内容，常用于监控日志；head 看开头，cat 全量输出。" },
 
     // ========== 第9章 网络安全 ==========
     { id: 581, type: "single", category: "网络安全", question: "网络安全三要素（CIA）是指（　）。", options: ["A. 保密性、完整性、可用性", "B. 速度、容量、可靠性", "C. 加密、压缩、传输", "D. 认证、授权、审计"], answer: 0, explanation: "CIA 三元组：保密性（Confidentiality）、完整性（Integrity）、可用性（Availability）是信息安全核心目标。" },
@@ -123,28 +123,28 @@ window.QUESTIONS = window.QUESTIONS || [];
     { id: 600, type: "single", category: "网络管理", question: "在 Windows 中，用于将主机名解析为 IP 地址的命令是（　）。", options: ["A. nslookup", "B. ping", "C. ipconfig", "D. netstat"], answer: 0, explanation: "nslookup 查询 DNS，将域名/主机名解析为 IP 地址；ping 测试连通性。" },
 
     // ========== 第11章 无线网络 ==========
-    { id: 601, type: "single", category: "无线网络", question: "无线局域网中，BSS 是指（　）。", options: ["A. 基本服务集（一个 AP 及其关联的客户端）", "B. 广域网", "C. 路由器", "D. 防火墙"], answer: 0, explanation: "BSS（基本服务集）由一个 AP 和与其关联的无线客户端组成；多个 BSS 可组成 ESS 扩展服务集。" },
-    { id: 602, type: "single", category: "无线网络", question: "802.11g 标准的工作频段和最高速率分别是（　）。", options: ["A. 2.4GHz、54Mbps", "B. 5GHz、54Mbps", "C. 2.4GHz、11Mbps", "D. 5GHz、1Gbps"], answer: 0, explanation: "802.11g 工作在 2.4GHz，最高 54Mbps；802.11a 工作在 5GHz 也是 54Mbps；802.11b 为 11Mbps。" },
-    { id: 603, type: "single", category: "无线网络", question: "无线网络中，用于将无线信号覆盖区域称为（　）。", options: ["A. 小区（Cell）", "B. 网段", "C. 广播域", "D. 路由域"], answer: 0, explanation: "无线 AP 的覆盖范围称为小区（Cell），多个小区蜂窝式覆盖实现区域无缝连接。" },
-    { id: 604, type: "single", category: "无线网络", question: "WEP 加密协议已被淘汰的主要原因是（　）。", options: ["A. 加密算法存在严重漏洞、易被破解", "B. 速度太慢", "C. 需要硬件", "D. 不支持多用户"], answer: 0, explanation: "WEP 的 RC4 密钥管理和 IV 重用存在严重缺陷，几分钟内即可被破解，已被 WPA/WPA2/WPA3 取代。" },
-    { id: 605, type: "single", category: "无线网络", question: "无线 AP 支持多个 SSID 时，可为不同 SSID 分配不同 VLAN，这种技术称为（　）。", options: ["A. 多 SSID/VLAN 绑定", "B. 链路聚合", "C. 负载均衡", "D. 漫游"], answer: 0, explanation: "多 SSID 支持在一台 AP 上创建多个虚拟无线网络，并映射到不同 VLAN，实现隔离和分级接入。" },
-    { id: 606, type: "single", category: "无线网络", question: "蓝牙技术最典型的应用场景是（　）。", options: ["A. 近距离设备互连（耳机、鼠标等）", "B. 广域网接入", "C. 长途通信", "D. 卫星通信"], answer: 0, explanation: "蓝牙用于 10 米左右的近距离设备无线互连，如耳机、鼠标、键盘、手机互联等。" },
-    { id: 607, type: "single", category: "无线网络", question: "无线网络中，RSSI 是指（　）。", options: ["A. 接收信号强度指示", "B. 传输速率", "C. 信道编号", "D. 加密算法"], answer: 0, explanation: "RSSI（接收信号强度指示）表示接收到的无线信号强度，常用于判断信号质量和定位。" },
-    { id: 608, type: "single", category: "无线网络", question: "802.11 帧的三种类型不包括（　）。", options: ["A. 路由帧", "B. 管理帧", "C. 控制帧", "D. 数据帧"], answer: 0, explanation: "802.11 帧分为管理帧（关联、认证）、控制帧（RTS/CTS/ACK）、数据帧三类，无路由帧。" },
-    { id: 609, type: "single", category: "无线网络", question: "无线客户端从一个 AP 漫游到另一个 AP 时，通常依据（　）决定切换。", options: ["A. 信号强度", "B. 密码", "C. 颜色", "D. 时间"], answer: 0, explanation: "漫游时客户端根据接收信号强度（RSSI）等指标，在信号衰减到阈值以下时切换到信号更好的 AP。" },
-    { id: 610, type: "single", category: "无线网络", question: "下列频段中，WiFi 6E 新增使用的是（　）。", options: ["A. 6GHz", "B. 2.4GHz", "C. 5GHz", "D. 900MHz"], answer: 0, explanation: "WiFi 6E 在原有 2.4GHz/5GHz 基础上新增 6GHz 频段，提供更多连续信道和更高带宽。" },
+    { id: 601, type: "single", category: "无线通信网", question: "无线局域网中，BSS 是指（　）。", options: ["A. 基本服务集（一个 AP 及其关联的客户端）", "B. 广域网", "C. 路由器", "D. 防火墙"], answer: 0, explanation: "BSS（基本服务集）由一个 AP 和与其关联的无线客户端组成；多个 BSS 可组成 ESS 扩展服务集。" },
+    { id: 602, type: "single", category: "无线通信网", question: "802.11g 标准的工作频段和最高速率分别是（　）。", options: ["A. 2.4GHz、54Mbps", "B. 5GHz、54Mbps", "C. 2.4GHz、11Mbps", "D. 5GHz、1Gbps"], answer: 0, explanation: "802.11g 工作在 2.4GHz，最高 54Mbps；802.11a 工作在 5GHz 也是 54Mbps；802.11b 为 11Mbps。" },
+    { id: 603, type: "single", category: "无线通信网", question: "无线网络中，用于将无线信号覆盖区域称为（　）。", options: ["A. 小区（Cell）", "B. 网段", "C. 广播域", "D. 路由域"], answer: 0, explanation: "无线 AP 的覆盖范围称为小区（Cell），多个小区蜂窝式覆盖实现区域无缝连接。" },
+    { id: 604, type: "single", category: "无线通信网", question: "WEP 加密协议已被淘汰的主要原因是（　）。", options: ["A. 加密算法存在严重漏洞、易被破解", "B. 速度太慢", "C. 需要硬件", "D. 不支持多用户"], answer: 0, explanation: "WEP 的 RC4 密钥管理和 IV 重用存在严重缺陷，几分钟内即可被破解，已被 WPA/WPA2/WPA3 取代。" },
+    { id: 605, type: "single", category: "无线通信网", question: "无线 AP 支持多个 SSID 时，可为不同 SSID 分配不同 VLAN，这种技术称为（　）。", options: ["A. 多 SSID/VLAN 绑定", "B. 链路聚合", "C. 负载均衡", "D. 漫游"], answer: 0, explanation: "多 SSID 支持在一台 AP 上创建多个虚拟无线网络，并映射到不同 VLAN，实现隔离和分级接入。" },
+    { id: 606, type: "single", category: "无线通信网", question: "蓝牙技术最典型的应用场景是（　）。", options: ["A. 近距离设备互连（耳机、鼠标等）", "B. 广域网接入", "C. 长途通信", "D. 卫星通信"], answer: 0, explanation: "蓝牙用于 10 米左右的近距离设备无线互连，如耳机、鼠标、键盘、手机互联等。" },
+    { id: 607, type: "single", category: "无线通信网", question: "无线网络中，RSSI 是指（　）。", options: ["A. 接收信号强度指示", "B. 传输速率", "C. 信道编号", "D. 加密算法"], answer: 0, explanation: "RSSI（接收信号强度指示）表示接收到的无线信号强度，常用于判断信号质量和定位。" },
+    { id: 608, type: "single", category: "无线通信网", question: "802.11 帧的三种类型不包括（　）。", options: ["A. 路由帧", "B. 管理帧", "C. 控制帧", "D. 数据帧"], answer: 0, explanation: "802.11 帧分为管理帧（关联、认证）、控制帧（RTS/CTS/ACK）、数据帧三类，无路由帧。" },
+    { id: 609, type: "single", category: "无线通信网", question: "无线客户端从一个 AP 漫游到另一个 AP 时，通常依据（　）决定切换。", options: ["A. 信号强度", "B. 密码", "C. 颜色", "D. 时间"], answer: 0, explanation: "漫游时客户端根据接收信号强度（RSSI）等指标，在信号衰减到阈值以下时切换到信号更好的 AP。" },
+    { id: 610, type: "single", category: "无线通信网", question: "下列频段中，WiFi 6E 新增使用的是（　）。", options: ["A. 6GHz", "B. 2.4GHz", "C. 5GHz", "D. 900MHz"], answer: 0, explanation: "WiFi 6E 在原有 2.4GHz/5GHz 基础上新增 6GHz 频段，提供更多连续信道和更高带宽。" },
 
     // ========== 第12章 网络规划与设计 ==========
-    { id: 611, type: "single", category: "网络规划与设计", question: "网络拓扑设计中，星型拓扑的优点是（　）。", options: ["A. 结构简单、故障易隔离", "B. 可靠性最高", "C. 成本最低", "D. 无需中心设备"], answer: 0, explanation: "星型拓扑所有节点连到中心设备，结构简单、管理方便、单点故障易定位，但中心设备是瓶颈。" },
-    { id: 612, type: "single", category: "网络规划与设计", question: "综合布线六大子系统中，连接设备间与工作区信息插座的是（　）。", options: ["A. 水平子系统", "B. 垂直子系统", "C. 建筑群子系统", "D. 管理子系统"], answer: 0, explanation: "水平子系统连接楼层配线间与工作区信息插座；垂直子系统连接设备间与楼层配线间。" },
-    { id: 613, type: "single", category: "网络规划与设计", question: "网络设计中，可扩展性设计的目标是（　）。", options: ["A. 支持未来业务增长和规模扩展", "B. 减少成本", "C. 简化布线", "D. 降低带宽"], answer: 0, explanation: "可扩展性设计预留容量和扩展接口，使网络能随业务增长平滑扩容，避免推倒重来。" },
-    { id: 614, type: "single", category: "网络规划与设计", question: "在园区网设计中，核心层设备选型应重点考虑（　）。", options: ["A. 高性能、高可靠、高吞吐", "B. 端口多、价格低", "C. 功能简单", "D. 便于终端接入"], answer: 0, explanation: "核心层是全网流量枢纽，应选高性能、高可靠、支持冗余和快速转发的设备。" },
-    { id: 615, type: "single", category: "网络规划与设计", question: "网络地址规划时，为便于路由汇总，应尽量采用（　）。", options: ["A. 连续的地址块", "B. 随机地址", "C. 私有地址", "D. 组播地址"], answer: 0, explanation: "连续、层次化的地址块便于路由汇总，可显著减少路由表条目，提高效率。" },
-    { id: 616, type: "single", category: "网络规划与设计", question: "综合布线系统中，配线架属于（　）子系统。", options: ["A. 管理子系统", "B. 水平子系统", "C. 垂直子系统", "D. 工作区子系统"], answer: 0, explanation: "管理子系统包括楼层配线间内的配线架、跳线等，用于线路的端接、交叉连接和管理。" },
-    { id: 617, type: "single", category: "网络规划与设计", question: "网络设计中，把不同安全级别的区域隔离，通常在边界部署（　）。", options: ["A. 防火墙", "B. 集线器", "C. 中继器", "D. 网线"], answer: 0, explanation: "防火墙部署在不同安全级别区域的边界，实施访问控制和隔离，保护内网安全。" },
-    { id: 618, type: "single", category: "网络规划与设计", question: "在需求分析阶段，需要明确的内容不包括（　）。", options: ["A. 设备具体品牌型号清单", "B. 业务需求", "C. 用户规模", "D. 性能需求"], answer: 0, explanation: "需求分析关注业务、用户、性能、安全等需求，设备品牌型号属于后续物理设计/选型阶段。" },
-    { id: 619, type: "single", category: "网络规划与设计", question: "网络可用性用（　）指标衡量。", options: ["A. 正常运行时间占比", "B. 带宽大小", "C. 端口数量", "D. 设备价格"], answer: 0, explanation: "可用性指系统正常运行时间占总时间的比例，如「五个九」（99.999%）表示年停机约 5 分钟。" },
-    { id: 620, type: "single", category: "网络规划与设计", question: "综合布线测试中，衡量链路传输质量的重要指标是（　）。", options: ["A. 近端串扰、衰减、回波损耗", "B. 颜色", "C. 重量", "D. 长度只要求"], answer: 0, explanation: "布线测试主要测衰减、近端串扰（NEXT）、回波损耗、插入损耗等指标，确保链路达标。" },
+    { id: 611, type: "single", category: "网络规划和设计", question: "网络拓扑设计中，星型拓扑的优点是（　）。", options: ["A. 结构简单、故障易隔离", "B. 可靠性最高", "C. 成本最低", "D. 无需中心设备"], answer: 0, explanation: "星型拓扑所有节点连到中心设备，结构简单、管理方便、单点故障易定位，但中心设备是瓶颈。" },
+    { id: 612, type: "single", category: "网络规划和设计", question: "综合布线六大子系统中，连接设备间与工作区信息插座的是（　）。", options: ["A. 水平子系统", "B. 垂直子系统", "C. 建筑群子系统", "D. 管理子系统"], answer: 0, explanation: "水平子系统连接楼层配线间与工作区信息插座；垂直子系统连接设备间与楼层配线间。" },
+    { id: 613, type: "single", category: "网络规划和设计", question: "网络设计中，可扩展性设计的目标是（　）。", options: ["A. 支持未来业务增长和规模扩展", "B. 减少成本", "C. 简化布线", "D. 降低带宽"], answer: 0, explanation: "可扩展性设计预留容量和扩展接口，使网络能随业务增长平滑扩容，避免推倒重来。" },
+    { id: 614, type: "single", category: "网络规划和设计", question: "在园区网设计中，核心层设备选型应重点考虑（　）。", options: ["A. 高性能、高可靠、高吞吐", "B. 端口多、价格低", "C. 功能简单", "D. 便于终端接入"], answer: 0, explanation: "核心层是全网流量枢纽，应选高性能、高可靠、支持冗余和快速转发的设备。" },
+    { id: 615, type: "single", category: "网络规划和设计", question: "网络地址规划时，为便于路由汇总，应尽量采用（　）。", options: ["A. 连续的地址块", "B. 随机地址", "C. 私有地址", "D. 组播地址"], answer: 0, explanation: "连续、层次化的地址块便于路由汇总，可显著减少路由表条目，提高效率。" },
+    { id: 616, type: "single", category: "网络规划和设计", question: "综合布线系统中，配线架属于（　）子系统。", options: ["A. 管理子系统", "B. 水平子系统", "C. 垂直子系统", "D. 工作区子系统"], answer: 0, explanation: "管理子系统包括楼层配线间内的配线架、跳线等，用于线路的端接、交叉连接和管理。" },
+    { id: 617, type: "single", category: "网络规划和设计", question: "网络设计中，把不同安全级别的区域隔离，通常在边界部署（　）。", options: ["A. 防火墙", "B. 集线器", "C. 中继器", "D. 网线"], answer: 0, explanation: "防火墙部署在不同安全级别区域的边界，实施访问控制和隔离，保护内网安全。" },
+    { id: 618, type: "single", category: "网络规划和设计", question: "在需求分析阶段，需要明确的内容不包括（　）。", options: ["A. 设备具体品牌型号清单", "B. 业务需求", "C. 用户规模", "D. 性能需求"], answer: 0, explanation: "需求分析关注业务、用户、性能、安全等需求，设备品牌型号属于后续物理设计/选型阶段。" },
+    { id: 619, type: "single", category: "网络规划和设计", question: "网络可用性用（　）指标衡量。", options: ["A. 正常运行时间占比", "B. 带宽大小", "C. 端口数量", "D. 设备价格"], answer: 0, explanation: "可用性指系统正常运行时间占总时间的比例，如「五个九」（99.999%）表示年停机约 5 分钟。" },
+    { id: 620, type: "single", category: "网络规划和设计", question: "综合布线测试中，衡量链路传输质量的重要指标是（　）。", options: ["A. 近端串扰、衰减、回波损耗", "B. 颜色", "C. 重量", "D. 长度只要求"], answer: 0, explanation: "布线测试主要测衰减、近端串扰（NEXT）、回波损耗、插入损耗等指标，确保链路达标。" },
   ];
   A.forEach(q => window.QUESTIONS.push(q));
 })();
@@ -153,7 +153,7 @@ window.QUESTIONS = window.QUESTIONS || [];
 (function () {
   const C = [
     {
-      id: 1501, type: "case", category: "计算机网络体系结构",
+      id: 1501, type: "case", category: "计算机网络概论",
       question: "【案例背景】主机 A 通过浏览器访问 Web 服务器 B，请求一个网页。请从 TCP/IP 分层模型的角度分析该过程。",
       parts: [
         { prompt: "（1）HTTP 协议基于传输层的哪个协议？", type: "fill", blanks: ["TCP", "tcp"], score: 4, explanation: "HTTP 基于面向连接、可靠的 TCP 协议传输，保证网页数据完整可靠。" },
@@ -173,7 +173,7 @@ window.QUESTIONS = window.QUESTIONS || [];
       ]
     },
     {
-      id: 1503, type: "case", category: "局域网与以太网",
+      id: 1503, type: "case", category: "局域网",
       question: "【案例背景】某办公室原使用集线器组建局域网，冲突频繁、网速慢，现计划更换为交换机。",
       parts: [
         { prompt: "（1）传统以太网采用的介质访问控制方法是？", type: "fill", blanks: ["CSMA/CD", "CSMA CD", "csmacd"], score: 4, explanation: "传统共享式以太网采用 CSMA/CD（载波监听多路访问/冲突检测）。" },
@@ -183,7 +183,7 @@ window.QUESTIONS = window.QUESTIONS || [];
       ]
     },
     {
-      id: 1504, type: "case", category: "广域网技术",
+      id: 1504, type: "case", category: "网络互连",
       question: "【案例背景】某企业总部与分支机构通过专线互连，需在串行链路上配置 PPP 协议并启用认证。",
       parts: [
         { prompt: "（1）在 Cisco 路由器串行接口上把封装协议改为 PPP 的命令是？", type: "fill", blanks: ["encapsulation ppp"], score: 4, explanation: "进入串行接口配置模式后执行 encapsulation ppp，将默认 HDLC 封装改为 PPP。" },
@@ -193,7 +193,7 @@ window.QUESTIONS = window.QUESTIONS || [];
       ]
     },
     {
-      id: 1505, type: "case", category: "网络互联与 IP 编址",
+      id: 1505, type: "case", category: "网络互连",
       question: "【案例背景】某单位获得 C 类网络 192.168.50.0/24，需要划分为 8 个子网供 8 个科室使用。",
       parts: [
         { prompt: "（1）要划分 8 个子网，需要从主机位借用多少位？", type: "fill", blanks: ["3", "3位", "三位"], score: 4, explanation: "2^n ≥ 8，n=3，即借用 3 位主机位作子网位，可划分 2^3=8 个子网。" },
@@ -203,7 +203,7 @@ window.QUESTIONS = window.QUESTIONS || [];
       ]
     },
     {
-      id: 1506, type: "case", category: "路由协议",
+      id: 1506, type: "case", category: "网络互连",
       question: "【案例背景】某网络管理员需要在路由器上配置静态路由，使总部能访问分支机构网络 10.20.0.0/16，下一跳为 192.168.1.2。",
       parts: [
         { prompt: "（1）在 Cisco 路由器上配置该静态路由的命令是？", type: "fill", blanks: ["ip route 10.20.0.0 255.255.0.0 192.168.1.2"], score: 5, explanation: "静态路由格式：ip route 目的网络 子网掩码 下一跳地址。" },
@@ -213,7 +213,7 @@ window.QUESTIONS = window.QUESTIONS || [];
       ]
     },
     {
-      id: 1507, type: "case", category: "交换技术",
+      id: 1507, type: "case", category: "局域网",
       question: "【案例背景】某公司财务部和人事部在同一台交换机上，要求两个部门二层隔离、互不通信，管理员计划用 VLAN 实现。",
       parts: [
         { prompt: "（1）VLAN 的中文名称是？", type: "fill", blanks: ["虚拟局域网", "虚拟局域网VLAN"], score: 3, explanation: "VLAN（Virtual LAN）即虚拟局域网，在二层把物理网络逻辑划分为多个广播域。" },
@@ -223,7 +223,7 @@ window.QUESTIONS = window.QUESTIONS || [];
       ]
     },
     {
-      id: 1508, type: "case", category: "网络操作系统",
+      id: 1508, type: "case", category: "网络操作系统与应用服务器",
       question: "【案例背景】某企业部署 Windows Server 提供 DHCP 和 DNS 服务，员工主机自动获取 IP 并通过域名访问内网资源。",
       parts: [
         { prompt: "（1）DHCP 的作用是？", type: "fill", blanks: ["自动分配IP地址", "自动分配IP地址等配置", "自动分配IP", "动态分配IP地址"], score: 3, explanation: "DHCP 自动为客户端分配 IP、掩码、网关、DNS 等网络配置，简化管理。" },
@@ -253,7 +253,7 @@ window.QUESTIONS = window.QUESTIONS || [];
       ]
     },
     {
-      id: 1511, type: "case", category: "无线网络",
+      id: 1511, type: "case", category: "无线通信网",
       question: "【案例背景】某公司会议室需部署无线网络，要求安全可靠，供员工笔记本和手机接入。",
       parts: [
         { prompt: "（1）无线局域网采用的 IEEE 标准是？", type: "fill", blanks: ["802.11", "IEEE 802.11"], score: 3, explanation: "IEEE 802.11 是 WLAN 标准族，包含 a/b/g/n/ac/ax 等。" },
@@ -263,7 +263,7 @@ window.QUESTIONS = window.QUESTIONS || [];
       ]
     },
     {
-      id: 1512, type: "case", category: "网络规划与设计",
+      id: 1512, type: "case", category: "网络规划和设计",
       question: "【案例背景】某企业新建办公楼，需要规划三层网络架构并设计综合布线，要求核心可靠、可扩展、便于管理。",
       parts: [
         { prompt: "（1）三层网络架构包括哪三层？", type: "fill", blanks: ["核心层汇聚层接入层", "核心层、汇聚层、接入层", "核心汇聚接入"], score: 4, explanation: "三层架构：核心层（高速转发）、汇聚层（策略/汇聚）、接入层（终端接入）。" },
