@@ -9,7 +9,7 @@
  *     Service Worker 卡在 waiting 状态、导致老缓存永久生效。
  *
  * 改了代码/题库要强制刷新时，把下面 CACHE 版本号加一即可。 */
-const CACHE = 'npe-v13';
+const CACHE = 'npe-v14';
 
 /* 核心外壳资源（必须存在）；题库文件清单从 manifest.js 读取 */
 const CORE_ASSETS = [
